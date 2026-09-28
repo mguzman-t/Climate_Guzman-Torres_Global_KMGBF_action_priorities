@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KM-GBF Quantitative Priorities</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/perliedman-leaflet-control-geocoder/4.0.0/Control.Geocoder.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Quantitative prioritisation of KM-GBF action classes</h1>
+    <p>IMAGE–MAgPIE mean scores. Select a scenario, period and layer.</p>
+  </header>
+
+  <main>
+    <aside>
+      <div id="status" class="status">Loading viewer…</div>
+
+      <label for="ssp">Scenario</label>
+      <select id="ssp"></select>
+
+      <label for="period">Period</label>
+      <select id="period"></select>
+
+      <label for="layer">Layer</label>
+      <select id="layer"></select>
+
+      <label for="opacity">Opacity</label>
+      <input id="opacity" type="range" min="0" max="1" step="0.05" value="0.85">
+
+      <section id="legend"></section>
+
+      <section class="note">
+        <b>Interpretation</b>
+        <p>
+          The prioritised class is the action with the strongest
+          consensus-adjusted score. Other relevant actions remain available as
+          separate layers.
+        </p>
+      </section>
+    </aside>
+
+    <div id="map" aria-label="Interactive global KM-GBF priority map"></div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/perliedman-leaflet-control-geocoder/4.0.0/Control.Geocoder.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/georaster@1.6.0/dist/georaster.browser.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/georaster-layer-for-leaflet@3.10.0/dist/georaster-layer-for-leaflet.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #203026;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 10px 18px;
+  background: #244b35;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+header p {
+  margin: 4px 0 0;
+  font-size: 13px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 310px 1fr;
+  flex: 1;
+  min-height: 0;
+}
+
+aside {
+  padding: 16px;
+  background: #f5f7f4;
+  overflow-y: auto;
+  border-right: 1px solid #ccd7ce;
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+  margin: 0 0 5px;
+  font-weight: 700;
+}
+
+select,
+input[type="range"] {
+  width: 100%;
+  margin: 0 0 14px;
+  box-sizing: border-box;
+}
+
+select {
+  padding: 7px;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+  background: #eaf1f4;
+}
+
+.status {
+  padding: 8px;
+  margin-bottom: 14px;
+  background: #fff4cc;
+  border-left: 4px solid #d18b00;
+  font-size: 13px;
+}
+
+.status.ready {
+  background: #e8f5eb;
+  border-left-color: #3d8b5e;
+}
+
+.status.error {
+  background: #fdebea;
+  border-left-color: #b3261e;
+}
+
+#legend {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+#legend h3 {
+  margin: 8px 0;
+}
+
+.legend-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 5px 0;
+}
+
+.swatch {
+  width: 18px;
+  height: 14px;
+  border: 1px solid #555;
+  flex: 0 0 auto;
+}
+
+.note {
+  margin-top: 20px;
+  padding: 10px;
+  background: white;
+  border-left: 4px solid #c9792b;
+  font-size: 13px;
+}
+
+.leaflet-control-geocoder {
+  max-width: 300px;
+}
+
+.leaflet-control-geocoder-form input {
+  min-width: 210px;
+  font-size: 13px;
+}
+
+.global-view-button {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 18px;
+  background: white;
+  color: #244b35;
+  text-decoration: none;
+  display: block;
+}
+
+@media (max-width: 760px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 65vh;
+  }
+
+  aside {
+    border-right: 0;
+    border-bottom: 1px solid #ccd7ce;
+  }
+
+  #map {
+    min-height: 65vh;
+  }
+}

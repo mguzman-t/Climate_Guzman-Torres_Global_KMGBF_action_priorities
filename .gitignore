@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*~
+
+# Local environments
+.env
+.venv/
+venv/
+env/
+
+# Scientific intermediate outputs
+*.nc
+*.nc4
+*.zarr/
+*.pkl
+
+# Local test server files
+web_server.log
+
+# Temporary web builds
+docs/data/*.aux.xml

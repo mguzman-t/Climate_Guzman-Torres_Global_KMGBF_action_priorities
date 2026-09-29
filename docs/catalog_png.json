@@ -1,0 +1,3075 @@
+{
+  "classes": {
+    "1": "T1: spatial planning",
+    "2": "T2: connectivity restoration",
+    "8": "T8: climate vulnerability",
+    "10": "T10: biodiversity-sensitive production landscapes",
+    "31": "T3: climate-resilient conservation",
+    "32": "T3: ecological OECM screening",
+    "34": "T3: local area-based conservation",
+    "33": "T3: avoid encroachment",
+    "97": "Unresolved score tie"
+  },
+  "colors": {
+    "1": "#DA7C59",
+    "2": "#3D8B5E",
+    "8": "#BE7EA9",
+    "10": "#EEBA4D",
+    "31": "#87CEEB",
+    "32": "#2A75AD",
+    "34": "#30B1B5",
+    "33": "#4A3991",
+    "97": "#202020"
+  },
+  "model_labels": {
+    "combined": "IMAGE–MAgPIE combined",
+    "image": "IMAGE",
+    "magpie": "MAgPIE"
+  },
+  "projection": "EPSG:8857",
+  "layers": [
+    {
+      "file": "data_png/primary_ssp126soc-adapt_J1.png",
+      "title": "Prioritised action",
+      "kind": "categorical",
+      "ssp": "ssp126soc-adapt",
+      "period": "J1",
+      "model": "combined",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/winning_ssp126soc-adapt_J1.png",
+      "title": "Winning priority score",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J1",
+      "model": "combined",
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/margin_ssp126soc-adapt_J1.png",
+      "title": "Winning score margin",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J1",
+      "model": "combined",
+      "min": 0,
+      "max": 1,
+      "palette": "magma",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_1_combined_ssp126soc-adapt_J1.png",
+      "title": "T1: spatial planning",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J1",
+      "model": "combined",
+      "action": 1,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_2_combined_ssp126soc-adapt_J1.png",
+      "title": "T2: connectivity restoration",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J1",
+      "model": "combined",
+      "action": 2,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_8_combined_ssp126soc-adapt_J1.png",
+      "title": "T8: climate vulnerability",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J1",
+      "model": "combined",
+      "action": 8,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_10_combined_ssp126soc-adapt_J1.png",
+      "title": "T10: biodiversity-sensitive production landscapes",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J1",
+      "model": "combined",
+      "action": 10,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_31_combined_ssp126soc-adapt_J1.png",
+      "title": "T3: climate-resilient conservation",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J1",
+      "model": "combined",
+      "action": 31,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_32_combined_ssp126soc-adapt_J1.png",
+      "title": "T3: ecological OECM screening",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J1",
+      "model": "combined",
+      "action": 32,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_34_combined_ssp126soc-adapt_J1.png",
+      "title": "T3: local area-based conservation",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J1",
+      "model": "combined",
+      "action": 34,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_33_combined_ssp126soc-adapt_J1.png",
+      "title": "T3: avoid encroachment",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J1",
+      "model": "combined",
+      "action": 33,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_1_image_ssp126soc-adapt_J1.png",
+      "title": "T1: spatial planning",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J1",
+      "model": "image",
+      "action": 1,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_2_image_ssp126soc-adapt_J1.png",
+      "title": "T2: connectivity restoration",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J1",
+      "model": "image",
+      "action": 2,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_8_image_ssp126soc-adapt_J1.png",
+      "title": "T8: climate vulnerability",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J1",
+      "model": "image",
+      "action": 8,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_10_image_ssp126soc-adapt_J1.png",
+      "title": "T10: biodiversity-sensitive production landscapes",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J1",
+      "model": "image",
+      "action": 10,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_31_image_ssp126soc-adapt_J1.png",
+      "title": "T3: climate-resilient conservation",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J1",
+      "model": "image",
+      "action": 31,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_32_image_ssp126soc-adapt_J1.png",
+      "title": "T3: ecological OECM screening",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J1",
+      "model": "image",
+      "action": 32,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_34_image_ssp126soc-adapt_J1.png",
+      "title": "T3: local area-based conservation",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J1",
+      "model": "image",
+      "action": 34,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_33_image_ssp126soc-adapt_J1.png",
+      "title": "T3: avoid encroachment",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J1",
+      "model": "image",
+      "action": 33,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_1_magpie_ssp126soc-adapt_J1.png",
+      "title": "T1: spatial planning",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J1",
+      "model": "magpie",
+      "action": 1,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_2_magpie_ssp126soc-adapt_J1.png",
+      "title": "T2: connectivity restoration",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J1",
+      "model": "magpie",
+      "action": 2,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_8_magpie_ssp126soc-adapt_J1.png",
+      "title": "T8: climate vulnerability",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J1",
+      "model": "magpie",
+      "action": 8,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_10_magpie_ssp126soc-adapt_J1.png",
+      "title": "T10: biodiversity-sensitive production landscapes",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J1",
+      "model": "magpie",
+      "action": 10,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_31_magpie_ssp126soc-adapt_J1.png",
+      "title": "T3: climate-resilient conservation",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J1",
+      "model": "magpie",
+      "action": 31,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_32_magpie_ssp126soc-adapt_J1.png",
+      "title": "T3: ecological OECM screening",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J1",
+      "model": "magpie",
+      "action": 32,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_34_magpie_ssp126soc-adapt_J1.png",
+      "title": "T3: local area-based conservation",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J1",
+      "model": "magpie",
+      "action": 34,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_33_magpie_ssp126soc-adapt_J1.png",
+      "title": "T3: avoid encroachment",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J1",
+      "model": "magpie",
+      "action": 33,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/primary_ssp126soc-adapt_J2.png",
+      "title": "Prioritised action",
+      "kind": "categorical",
+      "ssp": "ssp126soc-adapt",
+      "period": "J2",
+      "model": "combined",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/winning_ssp126soc-adapt_J2.png",
+      "title": "Winning priority score",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J2",
+      "model": "combined",
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/margin_ssp126soc-adapt_J2.png",
+      "title": "Winning score margin",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J2",
+      "model": "combined",
+      "min": 0,
+      "max": 1,
+      "palette": "magma",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_1_combined_ssp126soc-adapt_J2.png",
+      "title": "T1: spatial planning",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J2",
+      "model": "combined",
+      "action": 1,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_2_combined_ssp126soc-adapt_J2.png",
+      "title": "T2: connectivity restoration",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J2",
+      "model": "combined",
+      "action": 2,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_8_combined_ssp126soc-adapt_J2.png",
+      "title": "T8: climate vulnerability",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J2",
+      "model": "combined",
+      "action": 8,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_10_combined_ssp126soc-adapt_J2.png",
+      "title": "T10: biodiversity-sensitive production landscapes",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J2",
+      "model": "combined",
+      "action": 10,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_31_combined_ssp126soc-adapt_J2.png",
+      "title": "T3: climate-resilient conservation",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J2",
+      "model": "combined",
+      "action": 31,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_32_combined_ssp126soc-adapt_J2.png",
+      "title": "T3: ecological OECM screening",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J2",
+      "model": "combined",
+      "action": 32,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_34_combined_ssp126soc-adapt_J2.png",
+      "title": "T3: local area-based conservation",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J2",
+      "model": "combined",
+      "action": 34,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_33_combined_ssp126soc-adapt_J2.png",
+      "title": "T3: avoid encroachment",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J2",
+      "model": "combined",
+      "action": 33,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_1_image_ssp126soc-adapt_J2.png",
+      "title": "T1: spatial planning",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J2",
+      "model": "image",
+      "action": 1,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_2_image_ssp126soc-adapt_J2.png",
+      "title": "T2: connectivity restoration",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J2",
+      "model": "image",
+      "action": 2,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_8_image_ssp126soc-adapt_J2.png",
+      "title": "T8: climate vulnerability",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J2",
+      "model": "image",
+      "action": 8,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_10_image_ssp126soc-adapt_J2.png",
+      "title": "T10: biodiversity-sensitive production landscapes",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J2",
+      "model": "image",
+      "action": 10,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_31_image_ssp126soc-adapt_J2.png",
+      "title": "T3: climate-resilient conservation",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J2",
+      "model": "image",
+      "action": 31,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_32_image_ssp126soc-adapt_J2.png",
+      "title": "T3: ecological OECM screening",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J2",
+      "model": "image",
+      "action": 32,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_34_image_ssp126soc-adapt_J2.png",
+      "title": "T3: local area-based conservation",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J2",
+      "model": "image",
+      "action": 34,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_33_image_ssp126soc-adapt_J2.png",
+      "title": "T3: avoid encroachment",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J2",
+      "model": "image",
+      "action": 33,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_1_magpie_ssp126soc-adapt_J2.png",
+      "title": "T1: spatial planning",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J2",
+      "model": "magpie",
+      "action": 1,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_2_magpie_ssp126soc-adapt_J2.png",
+      "title": "T2: connectivity restoration",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J2",
+      "model": "magpie",
+      "action": 2,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_8_magpie_ssp126soc-adapt_J2.png",
+      "title": "T8: climate vulnerability",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J2",
+      "model": "magpie",
+      "action": 8,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_10_magpie_ssp126soc-adapt_J2.png",
+      "title": "T10: biodiversity-sensitive production landscapes",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J2",
+      "model": "magpie",
+      "action": 10,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_31_magpie_ssp126soc-adapt_J2.png",
+      "title": "T3: climate-resilient conservation",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J2",
+      "model": "magpie",
+      "action": 31,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_32_magpie_ssp126soc-adapt_J2.png",
+      "title": "T3: ecological OECM screening",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J2",
+      "model": "magpie",
+      "action": 32,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_34_magpie_ssp126soc-adapt_J2.png",
+      "title": "T3: local area-based conservation",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J2",
+      "model": "magpie",
+      "action": 34,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_33_magpie_ssp126soc-adapt_J2.png",
+      "title": "T3: avoid encroachment",
+      "kind": "continuous",
+      "ssp": "ssp126soc-adapt",
+      "period": "J2",
+      "model": "magpie",
+      "action": 33,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/primary_ssp370soc-adapt_J1.png",
+      "title": "Prioritised action",
+      "kind": "categorical",
+      "ssp": "ssp370soc-adapt",
+      "period": "J1",
+      "model": "combined",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/winning_ssp370soc-adapt_J1.png",
+      "title": "Winning priority score",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J1",
+      "model": "combined",
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/margin_ssp370soc-adapt_J1.png",
+      "title": "Winning score margin",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J1",
+      "model": "combined",
+      "min": 0,
+      "max": 1,
+      "palette": "magma",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_1_combined_ssp370soc-adapt_J1.png",
+      "title": "T1: spatial planning",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J1",
+      "model": "combined",
+      "action": 1,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_2_combined_ssp370soc-adapt_J1.png",
+      "title": "T2: connectivity restoration",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J1",
+      "model": "combined",
+      "action": 2,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_8_combined_ssp370soc-adapt_J1.png",
+      "title": "T8: climate vulnerability",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J1",
+      "model": "combined",
+      "action": 8,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_10_combined_ssp370soc-adapt_J1.png",
+      "title": "T10: biodiversity-sensitive production landscapes",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J1",
+      "model": "combined",
+      "action": 10,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_31_combined_ssp370soc-adapt_J1.png",
+      "title": "T3: climate-resilient conservation",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J1",
+      "model": "combined",
+      "action": 31,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_32_combined_ssp370soc-adapt_J1.png",
+      "title": "T3: ecological OECM screening",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J1",
+      "model": "combined",
+      "action": 32,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_34_combined_ssp370soc-adapt_J1.png",
+      "title": "T3: local area-based conservation",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J1",
+      "model": "combined",
+      "action": 34,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_33_combined_ssp370soc-adapt_J1.png",
+      "title": "T3: avoid encroachment",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J1",
+      "model": "combined",
+      "action": 33,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_1_image_ssp370soc-adapt_J1.png",
+      "title": "T1: spatial planning",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J1",
+      "model": "image",
+      "action": 1,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_2_image_ssp370soc-adapt_J1.png",
+      "title": "T2: connectivity restoration",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J1",
+      "model": "image",
+      "action": 2,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_8_image_ssp370soc-adapt_J1.png",
+      "title": "T8: climate vulnerability",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J1",
+      "model": "image",
+      "action": 8,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_10_image_ssp370soc-adapt_J1.png",
+      "title": "T10: biodiversity-sensitive production landscapes",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J1",
+      "model": "image",
+      "action": 10,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_31_image_ssp370soc-adapt_J1.png",
+      "title": "T3: climate-resilient conservation",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J1",
+      "model": "image",
+      "action": 31,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_32_image_ssp370soc-adapt_J1.png",
+      "title": "T3: ecological OECM screening",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J1",
+      "model": "image",
+      "action": 32,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_34_image_ssp370soc-adapt_J1.png",
+      "title": "T3: local area-based conservation",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J1",
+      "model": "image",
+      "action": 34,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_33_image_ssp370soc-adapt_J1.png",
+      "title": "T3: avoid encroachment",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J1",
+      "model": "image",
+      "action": 33,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_1_magpie_ssp370soc-adapt_J1.png",
+      "title": "T1: spatial planning",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J1",
+      "model": "magpie",
+      "action": 1,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_2_magpie_ssp370soc-adapt_J1.png",
+      "title": "T2: connectivity restoration",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J1",
+      "model": "magpie",
+      "action": 2,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_8_magpie_ssp370soc-adapt_J1.png",
+      "title": "T8: climate vulnerability",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J1",
+      "model": "magpie",
+      "action": 8,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_10_magpie_ssp370soc-adapt_J1.png",
+      "title": "T10: biodiversity-sensitive production landscapes",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J1",
+      "model": "magpie",
+      "action": 10,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_31_magpie_ssp370soc-adapt_J1.png",
+      "title": "T3: climate-resilient conservation",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J1",
+      "model": "magpie",
+      "action": 31,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_32_magpie_ssp370soc-adapt_J1.png",
+      "title": "T3: ecological OECM screening",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J1",
+      "model": "magpie",
+      "action": 32,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_34_magpie_ssp370soc-adapt_J1.png",
+      "title": "T3: local area-based conservation",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J1",
+      "model": "magpie",
+      "action": 34,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_33_magpie_ssp370soc-adapt_J1.png",
+      "title": "T3: avoid encroachment",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J1",
+      "model": "magpie",
+      "action": 33,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/primary_ssp370soc-adapt_J2.png",
+      "title": "Prioritised action",
+      "kind": "categorical",
+      "ssp": "ssp370soc-adapt",
+      "period": "J2",
+      "model": "combined",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/winning_ssp370soc-adapt_J2.png",
+      "title": "Winning priority score",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J2",
+      "model": "combined",
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/margin_ssp370soc-adapt_J2.png",
+      "title": "Winning score margin",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J2",
+      "model": "combined",
+      "min": 0,
+      "max": 1,
+      "palette": "magma",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_1_combined_ssp370soc-adapt_J2.png",
+      "title": "T1: spatial planning",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J2",
+      "model": "combined",
+      "action": 1,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_2_combined_ssp370soc-adapt_J2.png",
+      "title": "T2: connectivity restoration",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J2",
+      "model": "combined",
+      "action": 2,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_8_combined_ssp370soc-adapt_J2.png",
+      "title": "T8: climate vulnerability",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J2",
+      "model": "combined",
+      "action": 8,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_10_combined_ssp370soc-adapt_J2.png",
+      "title": "T10: biodiversity-sensitive production landscapes",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J2",
+      "model": "combined",
+      "action": 10,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_31_combined_ssp370soc-adapt_J2.png",
+      "title": "T3: climate-resilient conservation",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J2",
+      "model": "combined",
+      "action": 31,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_32_combined_ssp370soc-adapt_J2.png",
+      "title": "T3: ecological OECM screening",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J2",
+      "model": "combined",
+      "action": 32,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_34_combined_ssp370soc-adapt_J2.png",
+      "title": "T3: local area-based conservation",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J2",
+      "model": "combined",
+      "action": 34,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_33_combined_ssp370soc-adapt_J2.png",
+      "title": "T3: avoid encroachment",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J2",
+      "model": "combined",
+      "action": 33,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_1_image_ssp370soc-adapt_J2.png",
+      "title": "T1: spatial planning",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J2",
+      "model": "image",
+      "action": 1,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_2_image_ssp370soc-adapt_J2.png",
+      "title": "T2: connectivity restoration",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J2",
+      "model": "image",
+      "action": 2,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_8_image_ssp370soc-adapt_J2.png",
+      "title": "T8: climate vulnerability",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J2",
+      "model": "image",
+      "action": 8,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_10_image_ssp370soc-adapt_J2.png",
+      "title": "T10: biodiversity-sensitive production landscapes",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J2",
+      "model": "image",
+      "action": 10,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_31_image_ssp370soc-adapt_J2.png",
+      "title": "T3: climate-resilient conservation",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J2",
+      "model": "image",
+      "action": 31,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_32_image_ssp370soc-adapt_J2.png",
+      "title": "T3: ecological OECM screening",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J2",
+      "model": "image",
+      "action": 32,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_34_image_ssp370soc-adapt_J2.png",
+      "title": "T3: local area-based conservation",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J2",
+      "model": "image",
+      "action": 34,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_33_image_ssp370soc-adapt_J2.png",
+      "title": "T3: avoid encroachment",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J2",
+      "model": "image",
+      "action": 33,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_1_magpie_ssp370soc-adapt_J2.png",
+      "title": "T1: spatial planning",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J2",
+      "model": "magpie",
+      "action": 1,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_2_magpie_ssp370soc-adapt_J2.png",
+      "title": "T2: connectivity restoration",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J2",
+      "model": "magpie",
+      "action": 2,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_8_magpie_ssp370soc-adapt_J2.png",
+      "title": "T8: climate vulnerability",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J2",
+      "model": "magpie",
+      "action": 8,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_10_magpie_ssp370soc-adapt_J2.png",
+      "title": "T10: biodiversity-sensitive production landscapes",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J2",
+      "model": "magpie",
+      "action": 10,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_31_magpie_ssp370soc-adapt_J2.png",
+      "title": "T3: climate-resilient conservation",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J2",
+      "model": "magpie",
+      "action": 31,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_32_magpie_ssp370soc-adapt_J2.png",
+      "title": "T3: ecological OECM screening",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J2",
+      "model": "magpie",
+      "action": 32,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_34_magpie_ssp370soc-adapt_J2.png",
+      "title": "T3: local area-based conservation",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J2",
+      "model": "magpie",
+      "action": 34,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_33_magpie_ssp370soc-adapt_J2.png",
+      "title": "T3: avoid encroachment",
+      "kind": "continuous",
+      "ssp": "ssp370soc-adapt",
+      "period": "J2",
+      "model": "magpie",
+      "action": 33,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/primary_ssp585soc-adapt_J1.png",
+      "title": "Prioritised action",
+      "kind": "categorical",
+      "ssp": "ssp585soc-adapt",
+      "period": "J1",
+      "model": "combined",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/winning_ssp585soc-adapt_J1.png",
+      "title": "Winning priority score",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J1",
+      "model": "combined",
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/margin_ssp585soc-adapt_J1.png",
+      "title": "Winning score margin",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J1",
+      "model": "combined",
+      "min": 0,
+      "max": 1,
+      "palette": "magma",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_1_combined_ssp585soc-adapt_J1.png",
+      "title": "T1: spatial planning",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J1",
+      "model": "combined",
+      "action": 1,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_2_combined_ssp585soc-adapt_J1.png",
+      "title": "T2: connectivity restoration",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J1",
+      "model": "combined",
+      "action": 2,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_8_combined_ssp585soc-adapt_J1.png",
+      "title": "T8: climate vulnerability",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J1",
+      "model": "combined",
+      "action": 8,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_10_combined_ssp585soc-adapt_J1.png",
+      "title": "T10: biodiversity-sensitive production landscapes",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J1",
+      "model": "combined",
+      "action": 10,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_31_combined_ssp585soc-adapt_J1.png",
+      "title": "T3: climate-resilient conservation",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J1",
+      "model": "combined",
+      "action": 31,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_32_combined_ssp585soc-adapt_J1.png",
+      "title": "T3: ecological OECM screening",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J1",
+      "model": "combined",
+      "action": 32,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_34_combined_ssp585soc-adapt_J1.png",
+      "title": "T3: local area-based conservation",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J1",
+      "model": "combined",
+      "action": 34,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_33_combined_ssp585soc-adapt_J1.png",
+      "title": "T3: avoid encroachment",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J1",
+      "model": "combined",
+      "action": 33,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_1_image_ssp585soc-adapt_J1.png",
+      "title": "T1: spatial planning",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J1",
+      "model": "image",
+      "action": 1,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_2_image_ssp585soc-adapt_J1.png",
+      "title": "T2: connectivity restoration",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J1",
+      "model": "image",
+      "action": 2,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_8_image_ssp585soc-adapt_J1.png",
+      "title": "T8: climate vulnerability",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J1",
+      "model": "image",
+      "action": 8,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_10_image_ssp585soc-adapt_J1.png",
+      "title": "T10: biodiversity-sensitive production landscapes",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J1",
+      "model": "image",
+      "action": 10,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_31_image_ssp585soc-adapt_J1.png",
+      "title": "T3: climate-resilient conservation",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J1",
+      "model": "image",
+      "action": 31,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_32_image_ssp585soc-adapt_J1.png",
+      "title": "T3: ecological OECM screening",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J1",
+      "model": "image",
+      "action": 32,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_34_image_ssp585soc-adapt_J1.png",
+      "title": "T3: local area-based conservation",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J1",
+      "model": "image",
+      "action": 34,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_33_image_ssp585soc-adapt_J1.png",
+      "title": "T3: avoid encroachment",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J1",
+      "model": "image",
+      "action": 33,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_1_magpie_ssp585soc-adapt_J1.png",
+      "title": "T1: spatial planning",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J1",
+      "model": "magpie",
+      "action": 1,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_2_magpie_ssp585soc-adapt_J1.png",
+      "title": "T2: connectivity restoration",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J1",
+      "model": "magpie",
+      "action": 2,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_8_magpie_ssp585soc-adapt_J1.png",
+      "title": "T8: climate vulnerability",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J1",
+      "model": "magpie",
+      "action": 8,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_10_magpie_ssp585soc-adapt_J1.png",
+      "title": "T10: biodiversity-sensitive production landscapes",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J1",
+      "model": "magpie",
+      "action": 10,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_31_magpie_ssp585soc-adapt_J1.png",
+      "title": "T3: climate-resilient conservation",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J1",
+      "model": "magpie",
+      "action": 31,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_32_magpie_ssp585soc-adapt_J1.png",
+      "title": "T3: ecological OECM screening",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J1",
+      "model": "magpie",
+      "action": 32,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_34_magpie_ssp585soc-adapt_J1.png",
+      "title": "T3: local area-based conservation",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J1",
+      "model": "magpie",
+      "action": 34,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_33_magpie_ssp585soc-adapt_J1.png",
+      "title": "T3: avoid encroachment",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J1",
+      "model": "magpie",
+      "action": 33,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/primary_ssp585soc-adapt_J2.png",
+      "title": "Prioritised action",
+      "kind": "categorical",
+      "ssp": "ssp585soc-adapt",
+      "period": "J2",
+      "model": "combined",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/winning_ssp585soc-adapt_J2.png",
+      "title": "Winning priority score",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J2",
+      "model": "combined",
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/margin_ssp585soc-adapt_J2.png",
+      "title": "Winning score margin",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J2",
+      "model": "combined",
+      "min": 0,
+      "max": 1,
+      "palette": "magma",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_1_combined_ssp585soc-adapt_J2.png",
+      "title": "T1: spatial planning",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J2",
+      "model": "combined",
+      "action": 1,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_2_combined_ssp585soc-adapt_J2.png",
+      "title": "T2: connectivity restoration",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J2",
+      "model": "combined",
+      "action": 2,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_8_combined_ssp585soc-adapt_J2.png",
+      "title": "T8: climate vulnerability",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J2",
+      "model": "combined",
+      "action": 8,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_10_combined_ssp585soc-adapt_J2.png",
+      "title": "T10: biodiversity-sensitive production landscapes",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J2",
+      "model": "combined",
+      "action": 10,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_31_combined_ssp585soc-adapt_J2.png",
+      "title": "T3: climate-resilient conservation",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J2",
+      "model": "combined",
+      "action": 31,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_32_combined_ssp585soc-adapt_J2.png",
+      "title": "T3: ecological OECM screening",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J2",
+      "model": "combined",
+      "action": 32,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_34_combined_ssp585soc-adapt_J2.png",
+      "title": "T3: local area-based conservation",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J2",
+      "model": "combined",
+      "action": 34,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_33_combined_ssp585soc-adapt_J2.png",
+      "title": "T3: avoid encroachment",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J2",
+      "model": "combined",
+      "action": 33,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_1_image_ssp585soc-adapt_J2.png",
+      "title": "T1: spatial planning",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J2",
+      "model": "image",
+      "action": 1,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_2_image_ssp585soc-adapt_J2.png",
+      "title": "T2: connectivity restoration",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J2",
+      "model": "image",
+      "action": 2,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_8_image_ssp585soc-adapt_J2.png",
+      "title": "T8: climate vulnerability",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J2",
+      "model": "image",
+      "action": 8,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_10_image_ssp585soc-adapt_J2.png",
+      "title": "T10: biodiversity-sensitive production landscapes",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J2",
+      "model": "image",
+      "action": 10,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_31_image_ssp585soc-adapt_J2.png",
+      "title": "T3: climate-resilient conservation",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J2",
+      "model": "image",
+      "action": 31,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_32_image_ssp585soc-adapt_J2.png",
+      "title": "T3: ecological OECM screening",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J2",
+      "model": "image",
+      "action": 32,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_34_image_ssp585soc-adapt_J2.png",
+      "title": "T3: local area-based conservation",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J2",
+      "model": "image",
+      "action": 34,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_33_image_ssp585soc-adapt_J2.png",
+      "title": "T3: avoid encroachment",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J2",
+      "model": "image",
+      "action": 33,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_1_magpie_ssp585soc-adapt_J2.png",
+      "title": "T1: spatial planning",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J2",
+      "model": "magpie",
+      "action": 1,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_2_magpie_ssp585soc-adapt_J2.png",
+      "title": "T2: connectivity restoration",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J2",
+      "model": "magpie",
+      "action": 2,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_8_magpie_ssp585soc-adapt_J2.png",
+      "title": "T8: climate vulnerability",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J2",
+      "model": "magpie",
+      "action": 8,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_10_magpie_ssp585soc-adapt_J2.png",
+      "title": "T10: biodiversity-sensitive production landscapes",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J2",
+      "model": "magpie",
+      "action": 10,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_31_magpie_ssp585soc-adapt_J2.png",
+      "title": "T3: climate-resilient conservation",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J2",
+      "model": "magpie",
+      "action": 31,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_32_magpie_ssp585soc-adapt_J2.png",
+      "title": "T3: ecological OECM screening",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J2",
+      "model": "magpie",
+      "action": 32,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_34_magpie_ssp585soc-adapt_J2.png",
+      "title": "T3: local area-based conservation",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J2",
+      "model": "magpie",
+      "action": 34,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    },
+    {
+      "file": "data_png/action_33_magpie_ssp585soc-adapt_J2.png",
+      "title": "T3: avoid encroachment",
+      "kind": "continuous",
+      "ssp": "ssp585soc-adapt",
+      "period": "J2",
+      "model": "magpie",
+      "action": 33,
+      "min": 0,
+      "max": 1,
+      "palette": "viridis",
+      "imageExtent": [
+        -17243959.062216945,
+        -8393410.20090566,
+        17215665.891875707,
+        8392927.598466454
+      ],
+      "projection": "EPSG:8857"
+    }
+  ],
+  "rendering": "transparent_rgba_png"
+}

@@ -3,21 +3,31 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>KM-GBF Quantitative Priorities</title>
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/perliedman-leaflet-control-geocoder/4.0.0/Control.Geocoder.min.css">
+  <title>KM-GBF Quantitative Priorities · Equal Earth</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@10.10.0/ol.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Quantitative prioritisation of KM-GBF action classes</h1>
-    <p>IMAGE–MAgPIE mean scores. Select a scenario, period and layer.</p>
+    <div>
+      <h1>Quantitative prioritisation of KM-GBF action classes</h1>
+      <p>Equal Earth interactive viewer · IMAGE, MAgPIE and combined scores</p>
+    </div>
+    <span class="projection-badge">Equal-area projection</span>
   </header>
 
   <main>
     <aside>
       <div id="status" class="status">Loading viewer…</div>
+
+      <section class="search-panel" aria-labelledby="search-title">
+        <label id="search-title" for="place-search">Find country or place</label>
+        <div class="search-row">
+          <input id="place-search" type="search" placeholder="e.g. Mexico" autocomplete="off">
+          <button id="search-button" type="button">Find</button>
+        </div>
+        <div id="search-results" class="search-results" aria-live="polite"></div>
+      </section>
 
       <label for="ssp">Scenario</label>
       <select id="ssp"></select>
@@ -25,31 +35,39 @@
       <label for="period">Period</label>
       <select id="period"></select>
 
+      <label for="model">Land-use model</label>
+      <select id="model"></select>
+      <p id="model-help" class="field-help"></p>
+
       <label for="layer">Layer</label>
       <select id="layer"></select>
 
       <label for="opacity">Opacity</label>
       <input id="opacity" type="range" min="0" max="1" step="0.05" value="0.85">
 
+      <div class="button-row">
+        <button id="global-view" type="button">Global view</button>
+      </div>
+
       <section id="legend"></section>
 
       <section class="note">
         <b>Interpretation</b>
         <p>
-          The prioritised class is the action with the strongest
-          consensus-adjusted score. Other relevant actions remain available as
-          separate layers.
+          Equal Earth preserves relative area, making continental comparisons
+          more appropriate than Web Mercator. Combined action scores are
+          consensus-adjusted IMAGE–MAgPIE scores. IMAGE and MAgPIE show
+          model-specific normalized within-action priorities.
         </p>
       </section>
     </aside>
 
-    <div id="map" aria-label="Interactive global KM-GBF priority map"></div>
+    <div id="map" class="map" aria-label="Equal Earth global KM-GBF priority map"></div>
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/perliedman-leaflet-control-geocoder/4.0.0/Control.Geocoder.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/georaster@1.6.0/dist/georaster.browser.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/georaster-layer-for-leaflet@3.10.0/dist/georaster-layer-for-leaflet.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/proj4@2.19.10/dist/proj4.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/geotiff"></script>
+  <script src="https://cdn.jsdelivr.net/npm/ol@10.10.0/dist/ol.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

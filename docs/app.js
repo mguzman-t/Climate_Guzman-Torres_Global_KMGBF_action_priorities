@@ -1,13 +1,13 @@
 "use strict";
 
-const PERIOD_LABELS = {J1: "2041–2070", J2: "2071–2100"};
+const PERIOD_LABELS = { J1: "Mid-century", J2: "Late century" };
 const SSP_LABELS = {
   "ssp126soc-adapt": "SSP1-2.6",
   "ssp370soc-adapt": "SSP3-7.0",
   "ssp585soc-adapt": "SSP5-8.5"
 };
 const MODEL_LABELS = {
-  combined: "IMAGE–MAgPIE combined",
+  combined: "IMAGE-MAgPIE consensus",
   image: "IMAGE",
   magpie: "MAgPIE"
 };
@@ -60,14 +60,16 @@ const view = new ol.View({
 });
 
 const oceanLayer = new ol.layer.Vector({
-  source: new ol.source.Vector({features: [
-    new ol.Feature(new ol.geom.Polygon([[
-      [WORLD_EXTENT[0], WORLD_EXTENT[1]], [WORLD_EXTENT[2], WORLD_EXTENT[1]],
-      [WORLD_EXTENT[2], WORLD_EXTENT[3]], [WORLD_EXTENT[0], WORLD_EXTENT[3]],
-      [WORLD_EXTENT[0], WORLD_EXTENT[1]]
-    ]]))
-  ]}),
-  style: new ol.style.Style({fill: new ol.style.Fill({color: "#EAF1F4"})}),
+  source: new ol.source.Vector({
+    features: [
+      new ol.Feature(new ol.geom.Polygon([[
+        [WORLD_EXTENT[0], WORLD_EXTENT[1]], [WORLD_EXTENT[2], WORLD_EXTENT[1]],
+        [WORLD_EXTENT[2], WORLD_EXTENT[3]], [WORLD_EXTENT[0], WORLD_EXTENT[3]],
+        [WORLD_EXTENT[0], WORLD_EXTENT[1]]
+      ]]))
+    ]
+  }),
+  style: new ol.style.Style({ fill: new ol.style.Fill({ color: "#EAF1F4" }) }),
   zIndex: 0
 });
 
@@ -75,13 +77,13 @@ const countrySource = new ol.source.Vector();
 const countriesLayer = new ol.layer.Vector({
   source: countrySource,
   style: new ol.style.Style({
-    fill: new ol.style.Fill({color: "rgba(255,255,255,0)"}),
-    stroke: new ol.style.Stroke({color: "#394842", width: 1.05})
+    fill: new ol.style.Fill({ color: "rgba(255,255,255,0)" }),
+    stroke: new ol.style.Stroke({ color: "#394842", width: 1.05 })
   }),
   zIndex: 20
 });
 
-const map = new ol.Map({target: "map", layers: [oceanLayer, countriesLayer], view});
+const map = new ol.Map({ target: "map", layers: [oceanLayer, countriesLayer], view });
 let catalog = null;
 let rasterLayer = null;
 let searchLayer = null;
@@ -104,7 +106,7 @@ function globalView() {
 async function loadCountryBoundaries() {
   const url = `data_boundaries/ne_110m_admin_0_countries_8857.geojson?v=${Date.now()}`;
   try {
-    const response = await fetch(url, {cache: "no-store"});
+    const response = await fetch(url, { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const json = await response.json();
     const features = new ol.format.GeoJSON().readFeatures(json, {
@@ -143,13 +145,13 @@ function selectedMetadata() { return matchingLayers()[Number(layerSelect.value |
 function updateHelp() {
   if (!modelHelp) return;
   modelHelp.textContent = modelSelect.value === "combined"
-    ? "Consensus-adjusted IMAGE–MAgPIE score. An ineligible model contributes zero."
-    : `Normalized within-action percentile calculated from ${MODEL_LABELS[modelSelect.value]} outputs only.`;
+    ? "Consensus-adjusted IMAGE-MAgPIE score. An ineligible model contributes zero."
+    : `Normalised within-action percentile calculated from ${MODEL_LABELS[modelSelect.value]} outputs only.`;
 }
 function updateLegend(item) {
   if (!legend || !item) return;
   if (item.kind === "categorical") {
-    legend.innerHTML = `<strong>${item.title}</strong>` + Object.entries(catalog.classes).map(([code, label]) => `<div><span style="display:inline-block;width:16px;height:12px;margin-right:6px;background:${catalog.colors[code]};border:1px solid #555"></span>${code}: ${label}</div>`).join("");
+    legend.innerHTML = `<strong>${item.title}</strong>` + Object.entries(catalog.classes).map(([code, label]) => `<div><span style="display:inline-block;width:16px;height:12px;margin-right:6px;background:${catalog.colors[code]};border:1px solid #555"></span>${label}</div>`).join("");
   } else {
     const text = modelSelect.value === "combined" ? "Consensus-adjusted score" : `${MODEL_LABELS[modelSelect.value]} normalized within-action percentile`;
     legend.innerHTML = `<strong>${item.title}</strong><div>${text}</div><div style="display:flex;justify-content:space-between"><span>${item.min}</span><span>${item.max}</span></div><div style="height:14px;background:linear-gradient(90deg,#440154,#31688e,#35b779,#fde725)"></div>`;
@@ -166,7 +168,7 @@ function loadSelectedLayer() {
     interpolate: item.kind !== "categorical",
     crossOrigin: "anonymous"
   });
-  rasterLayer = new ol.layer.Image({source, opacity: Number(opacityInput.value || 1), zIndex: 2});
+  rasterLayer = new ol.layer.Image({ source, opacity: Number(opacityInput.value || 1), zIndex: 2 });
   map.addLayer(rasterLayer);
   countriesLayer.setZIndex(20);
   source.on("imageloaderror", () => setStatus(`Layer failed to load: ${item.file}`, "error"));
@@ -197,11 +199,11 @@ function fitCountry(feature) {
   const extent = feature.getGeometry().getExtent();
   if (!extent.every(Number.isFinite) || extent[0] >= extent[2] || extent[1] >= extent[3]) return;
   map.updateSize();
-  view.fit(extent, {size: map.getSize(), padding: [55, 55, 55, 55], maxZoom: 6.5, duration: 400});
+  view.fit(extent, { size: map.getSize(), padding: [55, 55, 55, 55], maxZoom: 6.5, duration: 400 });
   if (searchLayer) map.removeLayer(searchLayer);
   const highlighted = feature.clone();
-  highlighted.setStyle(new ol.style.Style({fill: new ol.style.Fill({color: "rgba(213,94,0,0.08)"}), stroke: new ol.style.Stroke({color: "#D55E00", width: 2.4})}));
-  searchLayer = new ol.layer.Vector({source: new ol.source.Vector({features: [highlighted]}), zIndex: 30});
+  highlighted.setStyle(new ol.style.Style({ fill: new ol.style.Fill({ color: "rgba(213,94,0,0.08)" }), stroke: new ol.style.Stroke({ color: "#D55E00", width: 2.4 }) }));
+  searchLayer = new ol.layer.Vector({ source: new ol.source.Vector({ features: [highlighted] }), zIndex: 30 });
   map.addLayer(searchLayer);
 }
 function searchCountry() {
@@ -218,7 +220,7 @@ function searchCountry() {
     if (normalized.some(name => name === query)) score = 0;
     else if (normalized.some(name => name.startsWith(query))) score = 1;
     else if (normalized.some(name => name.includes(query))) score = 2;
-    return {feature, label: names[0] || "Country", score};
+    return { feature, label: names[0] || "Country", score };
   }).filter(item => item.score < 99).sort((a, b) => a.score - b.score || a.label.localeCompare(b.label));
   if (!matches.length) {
     if (searchResults) searchResults.textContent = "Country not found.";
@@ -241,7 +243,7 @@ function searchCountry() {
 async function initialise() {
   try {
     const [catalogResponse] = await Promise.all([
-      fetch(`catalog_png.json?v=${Date.now()}`, {cache: "no-store"}),
+      fetch(`catalog_png.json?v=${Date.now()}`, { cache: "no-store" }),
       loadCountryBoundaries()
     ]);
     if (!catalogResponse.ok) throw new Error(`catalog_png.json returned ${catalogResponse.status}`);

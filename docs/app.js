@@ -1,362 +1,268 @@
 "use strict";
 
-const statusBox = document.getElementById("status");
-const sspSelect = document.getElementById("ssp");
-const periodSelect = document.getElementById("period");
-const layerSelect = document.getElementById("layer");
-const opacityInput = document.getElementById("opacity");
-const legend = document.getElementById("legend");
-
-const PERIOD_LABELS = {
-  J1: "2041–2070",
-  J2: "2071–2100"
-};
-
-const SCENARIO_LABELS = {
+const PERIOD_LABELS = {J1: "2041–2070", J2: "2071–2100"};
+const SSP_LABELS = {
   "ssp126soc-adapt": "SSP1-2.6",
   "ssp370soc-adapt": "SSP3-7.0",
   "ssp585soc-adapt": "SSP5-8.5"
 };
-
-const palettes = {
-  viridis: [
-    [0.00, "#440154"],
-    [0.25, "#3b528b"],
-    [0.50, "#21918c"],
-    [0.75, "#5ec962"],
-    [1.00, "#fde725"]
-  ],
-  magma: [
-    [0.00, "#000004"],
-    [0.25, "#51127c"],
-    [0.50, "#b73779"],
-    [0.75, "#fc8961"],
-    [1.00, "#fcfdbf"]
-  ],
-  ylgn: [
-    [0.00, "#ffffe5"],
-    [0.50, "#78c679"],
-    [1.00, "#005a32"]
-  ]
+const MODEL_LABELS = {
+  combined: "IMAGE–MAgPIE combined",
+  image: "IMAGE",
+  magpie: "MAgPIE"
 };
+const WORLD_EXTENT = [-17243959.06, -8392927.60, 17243959.06, 8392927.60];
 
-let catalog = null;
-let currentLayer = null;
+function firstElement(ids, fallback = null) {
+  for (const id of ids) {
+    const element = document.getElementById(id);
+    if (element) return element;
+  }
+  return fallback;
+}
 
-function setStatus(message, state = "") {
+const selects = Array.from(document.querySelectorAll("select"));
+const statusBox = firstElement(["status", "viewer-status", "status-box"]);
+const scenarioSelect = firstElement(["scenario", "scenario-select", "ssp-select"], selects[0]);
+const periodSelect = firstElement(["period", "period-select", "jump-select"], selects[1]);
+const modelSelect = firstElement(["model", "model-select", "lum-select"], selects[2]);
+const layerSelect = firstElement(["layer", "layer-select", "variable-select"], selects[3]);
+const opacityInput = firstElement(["opacity", "opacity-slider"], document.querySelector('input[type="range"]'));
+const searchInput = firstElement(["search-input", "searchInput", "country-search"], document.querySelector('input[placeholder*="Mexico" i]'));
+const searchButton = firstElement(["search-button", "searchButton", "find-button"], Array.from(document.querySelectorAll("button")).find(b => b.textContent.trim().toLowerCase() === "find"));
+const searchResults = firstElement(["search-results", "searchResults", "country-results"]);
+const globalButton = firstElement(["global-view", "globalView", "global-view-button"], Array.from(document.querySelectorAll("button")).find(b => b.textContent.trim().toLowerCase() === "global view"));
+const legend = firstElement(["legend", "map-legend", "legend-container"]);
+const modelHelp = firstElement(["model-help", "modelHelp", "model-description"]);
+
+function setStatus(message, type = "ok") {
+  if (!statusBox) return;
   statusBox.textContent = message;
-  statusBox.className = `status ${state}`.trim();
+  statusBox.className = `status ${type}`;
 }
 
-function assertLibraries() {
-  const missing = [];
+proj4.defs("EPSG:8857", "+proj=eqearth +lon_0=0 +datum=WGS84 +units=m +no_defs +type=crs");
+ol.proj.proj4.register(proj4);
+const equalEarth = ol.proj.get("EPSG:8857");
+equalEarth.setExtent(WORLD_EXTENT);
+equalEarth.setWorldExtent([-180, -90, 180, 90]);
 
-  if (typeof L === "undefined") missing.push("Leaflet");
-  if (typeof parseGeoraster === "undefined") missing.push("GeoRaster");
-  if (typeof GeoRasterLayer === "undefined") missing.push("GeoRasterLayer");
-
-  if (missing.length) {
-    throw new Error(`Missing map libraries: ${missing.join(", ")}`);
-  }
-}
-
-assertLibraries();
-
-const map = L.map("map", {
-  worldCopyJump: true,
-  minZoom: 2
-}).setView([15, 0], 2);
-
-L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  attribution: "© OpenStreetMap contributors",
-  maxZoom: 19
-}).addTo(map);
-
-function addCountrySearch() {
-  if (!L.Control || !L.Control.geocoder) {
-    console.warn("Country search plugin did not load.");
-    return;
-  }
-
-  L.Control.geocoder({
-    defaultMarkGeocode: false,
-    placeholder: "Search country or place",
-    errorMessage: "Location not found",
-    collapsed: false,
-    position: "topright",
-    geocoder: L.Control.Geocoder.nominatim({
-      geocodingQueryParams: {
-        addressdetails: 1
-      }
-    })
-  })
-    .on("markgeocode", event => {
-      const result = event.geocode;
-
-      if (result.bbox) {
-        map.fitBounds(result.bbox, {
-          padding: [20, 20],
-          maxZoom: 6
-        });
-      } else if (result.center) {
-        map.setView(result.center, 5);
-      }
-    })
-    .addTo(map);
-}
-
-function addGlobalViewButton() {
-  const GlobalViewControl = L.Control.extend({
-    options: { position: "topright" },
-
-    onAdd() {
-      const container = L.DomUtil.create(
-        "div",
-        "leaflet-bar leaflet-control"
-      );
-
-      const button = L.DomUtil.create(
-        "a",
-        "global-view-button",
-        container
-      );
-
-      button.href = "#";
-      button.title = "Return to global view";
-      button.setAttribute("aria-label", "Return to global view");
-      button.textContent = "🌍";
-
-      L.DomEvent.disableClickPropagation(container);
-      L.DomEvent.on(button, "click", event => {
-        L.DomEvent.preventDefault(event);
-        map.setView([15, 0], 2);
-      });
-
-      return container;
-    }
-  });
-
-  map.addControl(new GlobalViewControl());
-}
-
-addCountrySearch();
-addGlobalViewButton();
-
-function interpolateColor(stops, value) {
-  let lower = stops[0];
-  let upper = stops[stops.length - 1];
-
-  for (let index = 1; index < stops.length; index += 1) {
-    if (value <= stops[index][0]) {
-      lower = stops[index - 1];
-      upper = stops[index];
-      break;
-    }
-  }
-
-  const fraction = (value - lower[0]) / (upper[0] - lower[0] || 1);
-  const parseHex = color => parseInt(color.slice(1), 16);
-  const lowerRgb = parseHex(lower[1]);
-  const upperRgb = parseHex(upper[1]);
-
-  return "#" + [16, 8, 0].map(shift => {
-    const start = (lowerRgb >> shift) & 255;
-    const end = (upperRgb >> shift) & 255;
-    return Math.round(start * (1 - fraction) + end * fraction)
-      .toString(16)
-      .padStart(2, "0");
-  }).join("");
-}
-
-function scenarioLabel(value) {
-  return SCENARIO_LABELS[value] || value;
-}
-
-function periodLabel(value) {
-  return PERIOD_LABELS[value] || value;
-}
-
-function populateSelectors() {
-  const scenarios = [...new Set(catalog.layers.map(item => item.ssp))];
-  const periods = [...new Set(catalog.layers.map(item => item.period))];
-
-  sspSelect.innerHTML = scenarios
-    .map(value => `<option value="${value}">${scenarioLabel(value)}</option>`)
-    .join("");
-
-  periodSelect.innerHTML = periods
-    .map(value => `<option value="${value}">${periodLabel(value)}</option>`)
-    .join("");
-
-  updateLayerOptions();
-}
-
-function selectedLayers() {
-  return catalog.layers.filter(item =>
-    item.ssp === sspSelect.value && item.period === periodSelect.value
-  );
-}
-
-function updateLayerOptions() {
-  const layers = selectedLayers();
-
-  layerSelect.innerHTML = layers
-    .map((item, index) => (
-      `<option value="${index}">${item.title}</option>`
-    ))
-    .join("");
-
-  if (!layers.length) {
-    legend.innerHTML = "<b>No layers match this scenario and period.</b>";
-    setStatus("No layers available for this selection.", "error");
-
-    if (currentLayer) {
-      map.removeLayer(currentLayer);
-      currentLayer = null;
-    }
-
-    return;
-  }
-
-  renderSelectedLayer();
-}
-
-async function loadGeoRaster(url) {
-  const response = await fetch(url);
-
-  if (!response.ok) {
-    throw new Error(
-      `Raster request failed: ${response.status} ${response.statusText} for ${url}`
-    );
-  }
-
-  const arrayBuffer = await response.arrayBuffer();
-  return parseGeoraster(arrayBuffer);
-}
-
-async function renderSelectedLayer() {
-  const layers = selectedLayers();
-  const metadata = layers[Number(layerSelect.value)];
-
-  if (!metadata) return;
-
-  if (currentLayer) {
-    map.removeLayer(currentLayer);
-    currentLayer = null;
-  }
-
-  setStatus(`Loading ${metadata.title}…`);
-
-  try {
-    const georaster = await loadGeoRaster(metadata.file);
-
-    currentLayer = new GeoRasterLayer({
-      georaster,
-      opacity: Number(opacityInput.value),
-      resolution: 256,
-      resampleMethod: metadata.kind === "categorical" ? "nearest" : "bilinear",
-      pixelValuesToColorFn: values => valueToColor(metadata, values[0])
-    });
-
-    currentLayer.addTo(map);
-    legend.innerHTML = legendHtml(metadata);
-
-    setStatus(
-      `${scenarioLabel(metadata.ssp)} | ${periodLabel(metadata.period)} | ${metadata.title}`,
-      "ready"
-    );
-  } catch (error) {
-    console.error("Could not render raster layer", metadata, error);
-    setStatus("Layer failed to load. See the message below.", "error");
-    legend.innerHTML = `
-      <b>Layer failed to load.</b>
-      <p>${error.message}</p>
-      <p>Confirm that <code>${metadata.file}</code> exists under <code>docs/</code>.</p>
-    `;
-  }
-}
-
-function valueToColor(metadata, value) {
-  if (
-    value === undefined ||
-    value === null ||
-    Number.isNaN(value) ||
-    value === 255 ||
-    value === -9999
-  ) {
-    return null;
-  }
-
-  if (metadata.kind === "categorical") {
-    return catalog.colors[String(Math.round(value))] || null;
-  }
-
-  const minimum = Number(metadata.min);
-  const maximum = Number(metadata.max);
-  const scaled = Math.max(
-    0,
-    Math.min(1, (value - minimum) / (maximum - minimum))
-  );
-
-  return interpolateColor(
-    palettes[metadata.palette] || palettes.viridis,
-    scaled
-  );
-}
-
-function legendHtml(metadata) {
-  if (metadata.kind === "categorical") {
-    return "<h3>Priority classes</h3>" + Object.entries(catalog.classes)
-      .map(([code, label]) => `
-        <div class="legend-row">
-          <span class="swatch" style="background:${catalog.colors[code]}"></span>
-          <span>${code}: ${label}</span>
-        </div>
-      `)
-      .join("");
-  }
-
-  const palette = palettes[metadata.palette] || palettes.viridis;
-
-  return `
-    <h3>${metadata.title}</h3>
-    <div>${metadata.min}<span style="float:right">${metadata.max}</span></div>
-    <div style="height:14px;background:linear-gradient(90deg,${palette.map(item => item[1]).join(",")})"></div>
-  `;
-}
-
-sspSelect.addEventListener("change", updateLayerOptions);
-periodSelect.addEventListener("change", updateLayerOptions);
-layerSelect.addEventListener("change", renderSelectedLayer);
-opacityInput.addEventListener("input", () => {
-  if (currentLayer) {
-    currentLayer.setOpacity(Number(opacityInput.value));
-  }
+const view = new ol.View({
+  projection: equalEarth,
+  center: [0, 0],
+  resolution: 52000,
+  maxResolution: 150000,
+  minResolution: 180,
+  extent: WORLD_EXTENT,
+  constrainOnlyCenter: true,
+  showFullExtent: true,
+  smoothExtentConstraint: false
 });
 
-fetch("catalog.json")
-  .then(response => {
-    if (!response.ok) {
-      throw new Error(
-        `catalog.json request failed: ${response.status} ${response.statusText}`
-      );
-    }
+const oceanLayer = new ol.layer.Vector({
+  source: new ol.source.Vector({features: [
+    new ol.Feature(new ol.geom.Polygon([[
+      [WORLD_EXTENT[0], WORLD_EXTENT[1]], [WORLD_EXTENT[2], WORLD_EXTENT[1]],
+      [WORLD_EXTENT[2], WORLD_EXTENT[3]], [WORLD_EXTENT[0], WORLD_EXTENT[3]],
+      [WORLD_EXTENT[0], WORLD_EXTENT[1]]
+    ]]))
+  ]}),
+  style: new ol.style.Style({fill: new ol.style.Fill({color: "#EAF1F4"})}),
+  zIndex: 0
+});
 
-    return response.json();
-  })
-  .then(data => {
-    catalog = data;
+const countrySource = new ol.source.Vector();
+const countriesLayer = new ol.layer.Vector({
+  source: countrySource,
+  style: new ol.style.Style({
+    fill: new ol.style.Fill({color: "rgba(255,255,255,0)"}),
+    stroke: new ol.style.Stroke({color: "#394842", width: 1.05})
+  }),
+  zIndex: 20
+});
 
-    if (!Array.isArray(catalog.layers) || catalog.layers.length === 0) {
-      throw new Error(
-        "catalog.json contains no layers. Run scripts/05_build_web_repository.py."
-      );
-    }
+const map = new ol.Map({target: "map", layers: [oceanLayer, countriesLayer], view});
+let catalog = null;
+let rasterLayer = null;
+let searchLayer = null;
+let boundariesReady = false;
 
-    populateSelectors();
-  })
-  .catch(error => {
-    console.error("Could not initialise viewer", error);
-    setStatus("Viewer initialisation failed.", "error");
-    legend.innerHTML = `<b>Viewer initialisation failed.</b><p>${error.message}</p>`;
+function globalView() {
+  if (searchLayer) {
+    map.removeLayer(searchLayer);
+    searchLayer = null;
+  }
+  map.updateSize();
+  view.fit(WORLD_EXTENT, {
+    size: map.getSize(),
+    padding: [25, 25, 25, 25],
+    duration: 350,
+    nearest: false
   });
+}
+
+async function loadCountryBoundaries() {
+  const url = `data_boundaries/ne_110m_admin_0_countries_8857.geojson?v=${Date.now()}`;
+  try {
+    const response = await fetch(url, {cache: "no-store"});
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const json = await response.json();
+    const features = new ol.format.GeoJSON().readFeatures(json, {
+      dataProjection: "EPSG:8857",
+      featureProjection: "EPSG:8857"
+    });
+    if (!features.length) throw new Error("GeoJSON contains no features");
+    countrySource.clear(true);
+    countrySource.addFeatures(features);
+    boundariesReady = true;
+    countriesLayer.changed();
+    if (searchResults) searchResults.textContent = "Country search ready.";
+    console.log(`Loaded ${features.length} country boundaries`);
+  } catch (error) {
+    boundariesReady = false;
+    console.error("Country boundary loading failed:", error);
+    if (searchResults) searchResults.textContent = `Country boundaries failed: ${error.message}`;
+  }
+}
+
+function unique(values) { return [...new Set(values)]; }
+function addOptions(select, values, labels = {}) {
+  select.innerHTML = "";
+  values.forEach(value => {
+    const option = document.createElement("option");
+    option.value = value;
+    option.textContent = labels[value] || value;
+    select.appendChild(option);
+  });
+}
+function matchingLayers() {
+  return catalog.layers.filter(item => item.ssp === scenarioSelect.value && item.period === periodSelect.value && item.model === modelSelect.value);
+}
+function selectedMetadata() { return matchingLayers()[Number(layerSelect.value || 0)]; }
+
+function updateHelp() {
+  if (!modelHelp) return;
+  modelHelp.textContent = modelSelect.value === "combined"
+    ? "Consensus-adjusted IMAGE–MAgPIE score. An ineligible model contributes zero."
+    : `Normalized within-action percentile calculated from ${MODEL_LABELS[modelSelect.value]} outputs only.`;
+}
+function updateLegend(item) {
+  if (!legend || !item) return;
+  if (item.kind === "categorical") {
+    legend.innerHTML = `<strong>${item.title}</strong>` + Object.entries(catalog.classes).map(([code, label]) => `<div><span style="display:inline-block;width:16px;height:12px;margin-right:6px;background:${catalog.colors[code]};border:1px solid #555"></span>${code}: ${label}</div>`).join("");
+  } else {
+    const text = modelSelect.value === "combined" ? "Consensus-adjusted score" : `${MODEL_LABELS[modelSelect.value]} normalized within-action percentile`;
+    legend.innerHTML = `<strong>${item.title}</strong><div>${text}</div><div style="display:flex;justify-content:space-between"><span>${item.min}</span><span>${item.max}</span></div><div style="height:14px;background:linear-gradient(90deg,#440154,#31688e,#35b779,#fde725)"></div>`;
+  }
+}
+function loadSelectedLayer() {
+  const item = selectedMetadata();
+  if (!item) return;
+  if (rasterLayer) map.removeLayer(rasterLayer);
+  const source = new ol.source.ImageStatic({
+    url: `${item.file}?v=2`,
+    imageExtent: item.imageExtent,
+    projection: "EPSG:8857",
+    interpolate: item.kind !== "categorical",
+    crossOrigin: "anonymous"
+  });
+  rasterLayer = new ol.layer.Image({source, opacity: Number(opacityInput.value || 1), zIndex: 2});
+  map.addLayer(rasterLayer);
+  countriesLayer.setZIndex(20);
+  source.on("imageloaderror", () => setStatus(`Layer failed to load: ${item.file}`, "error"));
+  source.on("imageloadend", () => setStatus(`${SSP_LABELS[item.ssp]} | ${PERIOD_LABELS[item.period]} | ${MODEL_LABELS[item.model]} | ${item.title}`));
+  updateLegend(item);
+}
+function refreshLayerOptions() {
+  const layers = matchingLayers();
+  layerSelect.innerHTML = "";
+  layers.forEach((item, index) => {
+    const option = document.createElement("option");
+    option.value = String(index);
+    option.textContent = item.title;
+    layerSelect.appendChild(option);
+  });
+  updateHelp();
+  loadSelectedLayer();
+}
+
+function normalizeText(value) {
+  return value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim();
+}
+function countryNames(feature) {
+  const p = feature.getProperties();
+  return [p.ADMIN, p.NAME, p.NAME_EN, p.SOVEREIGNT, p.BRK_NAME, p.FORMAL_EN].filter(Boolean).map(String);
+}
+function fitCountry(feature) {
+  const extent = feature.getGeometry().getExtent();
+  if (!extent.every(Number.isFinite) || extent[0] >= extent[2] || extent[1] >= extent[3]) return;
+  map.updateSize();
+  view.fit(extent, {size: map.getSize(), padding: [55, 55, 55, 55], maxZoom: 6.5, duration: 400});
+  if (searchLayer) map.removeLayer(searchLayer);
+  const highlighted = feature.clone();
+  highlighted.setStyle(new ol.style.Style({fill: new ol.style.Fill({color: "rgba(213,94,0,0.08)"}), stroke: new ol.style.Stroke({color: "#D55E00", width: 2.4})}));
+  searchLayer = new ol.layer.Vector({source: new ol.source.Vector({features: [highlighted]}), zIndex: 30});
+  map.addLayer(searchLayer);
+}
+function searchCountry() {
+  const query = normalizeText(searchInput.value || "");
+  if (!query) return;
+  if (!boundariesReady) {
+    if (searchResults) searchResults.textContent = "Country boundaries are not ready. Reload the page if this persists.";
+    return;
+  }
+  const matches = countrySource.getFeatures().map(feature => {
+    const names = countryNames(feature);
+    const normalized = names.map(normalizeText);
+    let score = 99;
+    if (normalized.some(name => name === query)) score = 0;
+    else if (normalized.some(name => name.startsWith(query))) score = 1;
+    else if (normalized.some(name => name.includes(query))) score = 2;
+    return {feature, label: names[0] || "Country", score};
+  }).filter(item => item.score < 99).sort((a, b) => a.score - b.score || a.label.localeCompare(b.label));
+  if (!matches.length) {
+    if (searchResults) searchResults.textContent = "Country not found.";
+    return;
+  }
+  fitCountry(matches[0].feature);
+  if (searchResults) {
+    searchResults.innerHTML = "";
+    matches.slice(0, 5).forEach((item, index) => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "search-result";
+      button.textContent = `${index === 0 ? "Best match: " : ""}${item.label}`;
+      button.addEventListener("click", () => { fitCountry(item.feature); searchResults.innerHTML = ""; });
+      searchResults.appendChild(button);
+    });
+  }
+}
+
+async function initialise() {
+  try {
+    const [catalogResponse] = await Promise.all([
+      fetch(`catalog_png.json?v=${Date.now()}`, {cache: "no-store"}),
+      loadCountryBoundaries()
+    ]);
+    if (!catalogResponse.ok) throw new Error(`catalog_png.json returned ${catalogResponse.status}`);
+    catalog = await catalogResponse.json();
+    addOptions(scenarioSelect, unique(catalog.layers.map(item => item.ssp)), SSP_LABELS);
+    addOptions(periodSelect, unique(catalog.layers.map(item => item.period)), PERIOD_LABELS);
+    addOptions(modelSelect, unique(catalog.layers.map(item => item.model)), MODEL_LABELS);
+    scenarioSelect.addEventListener("change", refreshLayerOptions);
+    periodSelect.addEventListener("change", refreshLayerOptions);
+    modelSelect.addEventListener("change", refreshLayerOptions);
+    layerSelect.addEventListener("change", loadSelectedLayer);
+    opacityInput.addEventListener("input", () => { if (rasterLayer) rasterLayer.setOpacity(Number(opacityInput.value)); });
+    searchButton.addEventListener("click", searchCountry);
+    searchInput.addEventListener("keydown", event => { if (event.key === "Enter") searchCountry(); });
+    globalButton.addEventListener("click", globalView);
+    refreshLayerOptions();
+    setTimeout(globalView, 100);
+  } catch (error) {
+    console.error(error);
+    setStatus(`Viewer initialisation failed: ${error.message}`, "error");
+  }
+}
+
+initialise();

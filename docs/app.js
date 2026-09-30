@@ -150,12 +150,75 @@ function updateHelp() {
 }
 function updateLegend(item) {
   if (!legend || !item) return;
+
   if (item.kind === "categorical") {
-    legend.innerHTML = `<strong>${item.title}</strong>` + Object.entries(catalog.classes).map(([code, label]) => `<div><span style="display:inline-block;width:16px;height:12px;margin-right:6px;background:${catalog.colors[code]};border:1px solid #555"></span>${label}</div>`).join("");
-  } else {
-    const text = modelSelect.value === "combined" ? "Consensus-adjusted score" : `${MODEL_LABELS[modelSelect.value]} normalized within-action percentile`;
-    legend.innerHTML = `<strong>${item.title}</strong><div>${text}</div><div style="display:flex;justify-content:space-between"><span>${item.min}</span><span>${item.max}</span></div><div style="height:14px;background:linear-gradient(90deg,#440154,#31688e,#35b779,#fde725)"></div>`;
+    legend.innerHTML = (
+      `<strong>${item.title}</strong>`
+      + Object.entries(catalog.classes)
+        .map(([code, label]) => (
+          `<div>`
+          + `<span style="display:inline-block;width:16px;height:12px;`
+          + `margin-right:6px;background:${catalog.colors[code]};`
+          + `border:1px solid #555"></span>`
+          + `${label}`
+          + `</div>`
+        ))
+        .join("")
+    );
+    return;
   }
+
+  const paletteGradients = {
+    cividis: (
+      "linear-gradient(90deg,"
+      + "#00204C 0%,"
+      + "#424086 25%,"
+      + "#7C6F64 50%,"
+      + "#BCA84A 75%,"
+      + "#FFEA46 100%)"
+    ),
+    inferno: (
+      "linear-gradient(90deg,"
+      + "#000004 0%,"
+      + "#420A68 25%,"
+      + "#932667 50%,"
+      + "#DD513A 75%,"
+      + "#FCFFA4 100%)"
+    ),
+    ylgn: (
+      "linear-gradient(90deg,"
+      + "#FFFFE5 0%,"
+      + "#D9F0A3 25%,"
+      + "#78C679 50%,"
+      + "#238443 75%,"
+      + "#004529 100%)"
+    )
+  };
+
+  const paletteName = String(item.palette || "cividis").toLowerCase();
+  const gradient = paletteGradients[paletteName] || paletteGradients.cividis;
+
+  let description;
+  if (item.title === "Winning score margin") {
+    description = "Difference between winning and runner-up scores";
+  } else if (modelSelect.value === "combined") {
+    description = "Consensus-adjusted score";
+  } else {
+    description = (
+      `${MODEL_LABELS[modelSelect.value]} `
+      + "normalised within-action percentile"
+    );
+  }
+
+  legend.innerHTML = (
+    `<strong>${item.title}</strong>`
+    + `<div>${description}</div>`
+    + `<div style="display:flex;justify-content:space-between">`
+    + `<span>${item.min}</span>`
+    + `<span>${item.max}</span>`
+    + `</div>`
+    + `<div style="height:14px;margin-top:3px;background:${gradient}"></div>`
+  );
 }
 function loadSelectedLayer() {
   const item = selectedMetadata();

@@ -41,7 +41,8 @@
         17215665.891875707,
         8392927.598466454
       ],
-      "projection": "EPSG:8857"
+      "projection": "EPSG:8857",
+      "palette": "categorical"
     },
     {
       "file": "data_png/winning_ssp126soc-adapt_J1.png",
@@ -52,7 +53,7 @@
       "model": "combined",
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -70,7 +71,7 @@
       "model": "combined",
       "min": 0,
       "max": 1,
-      "palette": "magma",
+      "palette": "inferno",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -89,7 +90,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -108,7 +109,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -127,7 +128,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -146,7 +147,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -165,7 +166,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -184,7 +185,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -203,7 +204,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -222,7 +223,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -241,7 +242,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -260,7 +261,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -279,7 +280,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -298,7 +299,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -317,7 +318,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -336,7 +337,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -355,7 +356,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -374,7 +375,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -393,7 +394,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -412,7 +413,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -431,7 +432,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -450,7 +451,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -469,7 +470,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -488,7 +489,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -507,7 +508,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -526,7 +527,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -548,7 +549,8 @@
         17215665.891875707,
         8392927.598466454
       ],
-      "projection": "EPSG:8857"
+      "projection": "EPSG:8857",
+      "palette": "categorical"
     },
     {
       "file": "data_png/winning_ssp126soc-adapt_J2.png",
@@ -559,7 +561,7 @@
       "model": "combined",
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -577,7 +579,7 @@
       "model": "combined",
       "min": 0,
       "max": 1,
-      "palette": "magma",
+      "palette": "inferno",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -596,7 +598,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -615,7 +617,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -634,7 +636,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -653,7 +655,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -672,7 +674,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -691,7 +693,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -710,7 +712,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -729,7 +731,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -748,7 +750,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -767,7 +769,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -786,7 +788,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -805,7 +807,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -824,7 +826,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -843,7 +845,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -862,7 +864,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -881,7 +883,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -900,7 +902,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -919,7 +921,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -938,7 +940,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -957,7 +959,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -976,7 +978,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -995,7 +997,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1014,7 +1016,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1033,7 +1035,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1055,7 +1057,8 @@
         17215665.891875707,
         8392927.598466454
       ],
-      "projection": "EPSG:8857"
+      "projection": "EPSG:8857",
+      "palette": "categorical"
     },
     {
       "file": "data_png/winning_ssp370soc-adapt_J1.png",
@@ -1066,7 +1069,7 @@
       "model": "combined",
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1084,7 +1087,7 @@
       "model": "combined",
       "min": 0,
       "max": 1,
-      "palette": "magma",
+      "palette": "inferno",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1103,7 +1106,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1122,7 +1125,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1141,7 +1144,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1160,7 +1163,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1179,7 +1182,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1198,7 +1201,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1217,7 +1220,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1236,7 +1239,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1255,7 +1258,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1274,7 +1277,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1293,7 +1296,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1312,7 +1315,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1331,7 +1334,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1350,7 +1353,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1369,7 +1372,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1388,7 +1391,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1407,7 +1410,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1426,7 +1429,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1445,7 +1448,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1464,7 +1467,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1483,7 +1486,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1502,7 +1505,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1521,7 +1524,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1540,7 +1543,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1562,7 +1565,8 @@
         17215665.891875707,
         8392927.598466454
       ],
-      "projection": "EPSG:8857"
+      "projection": "EPSG:8857",
+      "palette": "categorical"
     },
     {
       "file": "data_png/winning_ssp370soc-adapt_J2.png",
@@ -1573,7 +1577,7 @@
       "model": "combined",
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1591,7 +1595,7 @@
       "model": "combined",
       "min": 0,
       "max": 1,
-      "palette": "magma",
+      "palette": "inferno",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1610,7 +1614,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1629,7 +1633,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1648,7 +1652,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1667,7 +1671,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1686,7 +1690,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1705,7 +1709,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1724,7 +1728,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1743,7 +1747,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1762,7 +1766,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1781,7 +1785,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1800,7 +1804,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1819,7 +1823,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1838,7 +1842,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1857,7 +1861,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1876,7 +1880,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1895,7 +1899,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1914,7 +1918,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1933,7 +1937,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1952,7 +1956,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1971,7 +1975,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1990,7 +1994,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2009,7 +2013,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2028,7 +2032,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2047,7 +2051,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2069,7 +2073,8 @@
         17215665.891875707,
         8392927.598466454
       ],
-      "projection": "EPSG:8857"
+      "projection": "EPSG:8857",
+      "palette": "categorical"
     },
     {
       "file": "data_png/winning_ssp585soc-adapt_J1.png",
@@ -2080,7 +2085,7 @@
       "model": "combined",
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2098,7 +2103,7 @@
       "model": "combined",
       "min": 0,
       "max": 1,
-      "palette": "magma",
+      "palette": "inferno",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2117,7 +2122,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2136,7 +2141,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2155,7 +2160,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2174,7 +2179,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2193,7 +2198,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2212,7 +2217,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2231,7 +2236,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2250,7 +2255,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2269,7 +2274,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2288,7 +2293,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2307,7 +2312,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2326,7 +2331,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2345,7 +2350,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2364,7 +2369,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2383,7 +2388,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2402,7 +2407,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2421,7 +2426,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2440,7 +2445,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2459,7 +2464,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2478,7 +2483,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2497,7 +2502,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2516,7 +2521,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2535,7 +2540,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2554,7 +2559,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2576,7 +2581,8 @@
         17215665.891875707,
         8392927.598466454
       ],
-      "projection": "EPSG:8857"
+      "projection": "EPSG:8857",
+      "palette": "categorical"
     },
     {
       "file": "data_png/winning_ssp585soc-adapt_J2.png",
@@ -2587,7 +2593,7 @@
       "model": "combined",
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2605,7 +2611,7 @@
       "model": "combined",
       "min": 0,
       "max": 1,
-      "palette": "magma",
+      "palette": "inferno",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2624,7 +2630,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2643,7 +2649,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2662,7 +2668,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2681,7 +2687,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2700,7 +2706,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2719,7 +2725,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2738,7 +2744,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2757,7 +2763,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2776,7 +2782,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2795,7 +2801,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2814,7 +2820,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2833,7 +2839,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2852,7 +2858,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2871,7 +2877,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2890,7 +2896,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2909,7 +2915,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2928,7 +2934,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2947,7 +2953,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2966,7 +2972,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2985,7 +2991,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -3004,7 +3010,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -3023,7 +3029,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -3042,7 +3048,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -3061,7 +3067,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis",
+      "palette": "cividis",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,

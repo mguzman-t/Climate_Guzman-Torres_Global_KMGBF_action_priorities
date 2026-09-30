@@ -45,7 +45,7 @@
       "model": "combined",
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/margin_ssp126soc-adapt_J1.tif",
@@ -56,7 +56,7 @@
       "model": "combined",
       "min": 0,
       "max": 1,
-      "palette": "magma"
+      "palette": "inferno"
     },
     {
       "file": "data/action_1_combined_ssp126soc-adapt_J1.tif",
@@ -68,7 +68,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_2_combined_ssp126soc-adapt_J1.tif",
@@ -80,7 +80,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_8_combined_ssp126soc-adapt_J1.tif",
@@ -92,7 +92,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_10_combined_ssp126soc-adapt_J1.tif",
@@ -104,7 +104,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_31_combined_ssp126soc-adapt_J1.tif",
@@ -116,7 +116,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_32_combined_ssp126soc-adapt_J1.tif",
@@ -128,7 +128,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_34_combined_ssp126soc-adapt_J1.tif",
@@ -140,7 +140,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_33_combined_ssp126soc-adapt_J1.tif",
@@ -152,7 +152,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_1_image_ssp126soc-adapt_J1.tif",
@@ -164,7 +164,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_2_image_ssp126soc-adapt_J1.tif",
@@ -176,7 +176,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_8_image_ssp126soc-adapt_J1.tif",
@@ -188,7 +188,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_10_image_ssp126soc-adapt_J1.tif",
@@ -200,7 +200,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_31_image_ssp126soc-adapt_J1.tif",
@@ -212,7 +212,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_32_image_ssp126soc-adapt_J1.tif",
@@ -224,7 +224,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_34_image_ssp126soc-adapt_J1.tif",
@@ -236,7 +236,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_33_image_ssp126soc-adapt_J1.tif",
@@ -248,7 +248,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_1_magpie_ssp126soc-adapt_J1.tif",
@@ -260,7 +260,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_2_magpie_ssp126soc-adapt_J1.tif",
@@ -272,7 +272,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_8_magpie_ssp126soc-adapt_J1.tif",
@@ -284,7 +284,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_10_magpie_ssp126soc-adapt_J1.tif",
@@ -296,7 +296,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_31_magpie_ssp126soc-adapt_J1.tif",
@@ -308,7 +308,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_32_magpie_ssp126soc-adapt_J1.tif",
@@ -320,7 +320,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_34_magpie_ssp126soc-adapt_J1.tif",
@@ -332,7 +332,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_33_magpie_ssp126soc-adapt_J1.tif",
@@ -344,7 +344,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/primary_ssp126soc-adapt_J2.tif",
@@ -363,7 +363,7 @@
       "model": "combined",
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/margin_ssp126soc-adapt_J2.tif",
@@ -374,7 +374,7 @@
       "model": "combined",
       "min": 0,
       "max": 1,
-      "palette": "magma"
+      "palette": "inferno"
     },
     {
       "file": "data/action_1_combined_ssp126soc-adapt_J2.tif",
@@ -386,7 +386,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_2_combined_ssp126soc-adapt_J2.tif",
@@ -398,7 +398,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_8_combined_ssp126soc-adapt_J2.tif",
@@ -410,7 +410,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_10_combined_ssp126soc-adapt_J2.tif",
@@ -422,7 +422,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_31_combined_ssp126soc-adapt_J2.tif",
@@ -434,7 +434,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_32_combined_ssp126soc-adapt_J2.tif",
@@ -446,7 +446,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_34_combined_ssp126soc-adapt_J2.tif",
@@ -458,7 +458,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_33_combined_ssp126soc-adapt_J2.tif",
@@ -470,7 +470,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_1_image_ssp126soc-adapt_J2.tif",
@@ -482,7 +482,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_2_image_ssp126soc-adapt_J2.tif",
@@ -494,7 +494,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_8_image_ssp126soc-adapt_J2.tif",
@@ -506,7 +506,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_10_image_ssp126soc-adapt_J2.tif",
@@ -518,7 +518,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_31_image_ssp126soc-adapt_J2.tif",
@@ -530,7 +530,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_32_image_ssp126soc-adapt_J2.tif",
@@ -542,7 +542,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_34_image_ssp126soc-adapt_J2.tif",
@@ -554,7 +554,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_33_image_ssp126soc-adapt_J2.tif",
@@ -566,7 +566,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_1_magpie_ssp126soc-adapt_J2.tif",
@@ -578,7 +578,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_2_magpie_ssp126soc-adapt_J2.tif",
@@ -590,7 +590,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_8_magpie_ssp126soc-adapt_J2.tif",
@@ -602,7 +602,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_10_magpie_ssp126soc-adapt_J2.tif",
@@ -614,7 +614,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_31_magpie_ssp126soc-adapt_J2.tif",
@@ -626,7 +626,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_32_magpie_ssp126soc-adapt_J2.tif",
@@ -638,7 +638,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_34_magpie_ssp126soc-adapt_J2.tif",
@@ -650,7 +650,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_33_magpie_ssp126soc-adapt_J2.tif",
@@ -662,7 +662,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/primary_ssp370soc-adapt_J1.tif",
@@ -681,7 +681,7 @@
       "model": "combined",
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/margin_ssp370soc-adapt_J1.tif",
@@ -692,7 +692,7 @@
       "model": "combined",
       "min": 0,
       "max": 1,
-      "palette": "magma"
+      "palette": "inferno"
     },
     {
       "file": "data/action_1_combined_ssp370soc-adapt_J1.tif",
@@ -704,7 +704,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_2_combined_ssp370soc-adapt_J1.tif",
@@ -716,7 +716,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_8_combined_ssp370soc-adapt_J1.tif",
@@ -728,7 +728,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_10_combined_ssp370soc-adapt_J1.tif",
@@ -740,7 +740,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_31_combined_ssp370soc-adapt_J1.tif",
@@ -752,7 +752,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_32_combined_ssp370soc-adapt_J1.tif",
@@ -764,7 +764,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_34_combined_ssp370soc-adapt_J1.tif",
@@ -776,7 +776,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_33_combined_ssp370soc-adapt_J1.tif",
@@ -788,7 +788,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_1_image_ssp370soc-adapt_J1.tif",
@@ -800,7 +800,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_2_image_ssp370soc-adapt_J1.tif",
@@ -812,7 +812,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_8_image_ssp370soc-adapt_J1.tif",
@@ -824,7 +824,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_10_image_ssp370soc-adapt_J1.tif",
@@ -836,7 +836,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_31_image_ssp370soc-adapt_J1.tif",
@@ -848,7 +848,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_32_image_ssp370soc-adapt_J1.tif",
@@ -860,7 +860,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_34_image_ssp370soc-adapt_J1.tif",
@@ -872,7 +872,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_33_image_ssp370soc-adapt_J1.tif",
@@ -884,7 +884,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_1_magpie_ssp370soc-adapt_J1.tif",
@@ -896,7 +896,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_2_magpie_ssp370soc-adapt_J1.tif",
@@ -908,7 +908,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_8_magpie_ssp370soc-adapt_J1.tif",
@@ -920,7 +920,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_10_magpie_ssp370soc-adapt_J1.tif",
@@ -932,7 +932,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_31_magpie_ssp370soc-adapt_J1.tif",
@@ -944,7 +944,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_32_magpie_ssp370soc-adapt_J1.tif",
@@ -956,7 +956,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_34_magpie_ssp370soc-adapt_J1.tif",
@@ -968,7 +968,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_33_magpie_ssp370soc-adapt_J1.tif",
@@ -980,7 +980,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/primary_ssp370soc-adapt_J2.tif",
@@ -999,7 +999,7 @@
       "model": "combined",
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/margin_ssp370soc-adapt_J2.tif",
@@ -1010,7 +1010,7 @@
       "model": "combined",
       "min": 0,
       "max": 1,
-      "palette": "magma"
+      "palette": "inferno"
     },
     {
       "file": "data/action_1_combined_ssp370soc-adapt_J2.tif",
@@ -1022,7 +1022,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_2_combined_ssp370soc-adapt_J2.tif",
@@ -1034,7 +1034,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_8_combined_ssp370soc-adapt_J2.tif",
@@ -1046,7 +1046,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_10_combined_ssp370soc-adapt_J2.tif",
@@ -1058,7 +1058,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_31_combined_ssp370soc-adapt_J2.tif",
@@ -1070,7 +1070,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_32_combined_ssp370soc-adapt_J2.tif",
@@ -1082,7 +1082,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_34_combined_ssp370soc-adapt_J2.tif",
@@ -1094,7 +1094,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_33_combined_ssp370soc-adapt_J2.tif",
@@ -1106,7 +1106,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_1_image_ssp370soc-adapt_J2.tif",
@@ -1118,7 +1118,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_2_image_ssp370soc-adapt_J2.tif",
@@ -1130,7 +1130,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_8_image_ssp370soc-adapt_J2.tif",
@@ -1142,7 +1142,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_10_image_ssp370soc-adapt_J2.tif",
@@ -1154,7 +1154,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_31_image_ssp370soc-adapt_J2.tif",
@@ -1166,7 +1166,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_32_image_ssp370soc-adapt_J2.tif",
@@ -1178,7 +1178,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_34_image_ssp370soc-adapt_J2.tif",
@@ -1190,7 +1190,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_33_image_ssp370soc-adapt_J2.tif",
@@ -1202,7 +1202,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_1_magpie_ssp370soc-adapt_J2.tif",
@@ -1214,7 +1214,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_2_magpie_ssp370soc-adapt_J2.tif",
@@ -1226,7 +1226,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_8_magpie_ssp370soc-adapt_J2.tif",
@@ -1238,7 +1238,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_10_magpie_ssp370soc-adapt_J2.tif",
@@ -1250,7 +1250,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_31_magpie_ssp370soc-adapt_J2.tif",
@@ -1262,7 +1262,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_32_magpie_ssp370soc-adapt_J2.tif",
@@ -1274,7 +1274,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_34_magpie_ssp370soc-adapt_J2.tif",
@@ -1286,7 +1286,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_33_magpie_ssp370soc-adapt_J2.tif",
@@ -1298,7 +1298,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/primary_ssp585soc-adapt_J1.tif",
@@ -1317,7 +1317,7 @@
       "model": "combined",
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/margin_ssp585soc-adapt_J1.tif",
@@ -1328,7 +1328,7 @@
       "model": "combined",
       "min": 0,
       "max": 1,
-      "palette": "magma"
+      "palette": "inferno"
     },
     {
       "file": "data/action_1_combined_ssp585soc-adapt_J1.tif",
@@ -1340,7 +1340,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_2_combined_ssp585soc-adapt_J1.tif",
@@ -1352,7 +1352,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_8_combined_ssp585soc-adapt_J1.tif",
@@ -1364,7 +1364,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_10_combined_ssp585soc-adapt_J1.tif",
@@ -1376,7 +1376,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_31_combined_ssp585soc-adapt_J1.tif",
@@ -1388,7 +1388,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_32_combined_ssp585soc-adapt_J1.tif",
@@ -1400,7 +1400,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_34_combined_ssp585soc-adapt_J1.tif",
@@ -1412,7 +1412,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_33_combined_ssp585soc-adapt_J1.tif",
@@ -1424,7 +1424,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_1_image_ssp585soc-adapt_J1.tif",
@@ -1436,7 +1436,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_2_image_ssp585soc-adapt_J1.tif",
@@ -1448,7 +1448,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_8_image_ssp585soc-adapt_J1.tif",
@@ -1460,7 +1460,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_10_image_ssp585soc-adapt_J1.tif",
@@ -1472,7 +1472,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_31_image_ssp585soc-adapt_J1.tif",
@@ -1484,7 +1484,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_32_image_ssp585soc-adapt_J1.tif",
@@ -1496,7 +1496,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_34_image_ssp585soc-adapt_J1.tif",
@@ -1508,7 +1508,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_33_image_ssp585soc-adapt_J1.tif",
@@ -1520,7 +1520,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_1_magpie_ssp585soc-adapt_J1.tif",
@@ -1532,7 +1532,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_2_magpie_ssp585soc-adapt_J1.tif",
@@ -1544,7 +1544,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_8_magpie_ssp585soc-adapt_J1.tif",
@@ -1556,7 +1556,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_10_magpie_ssp585soc-adapt_J1.tif",
@@ -1568,7 +1568,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_31_magpie_ssp585soc-adapt_J1.tif",
@@ -1580,7 +1580,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_32_magpie_ssp585soc-adapt_J1.tif",
@@ -1592,7 +1592,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_34_magpie_ssp585soc-adapt_J1.tif",
@@ -1604,7 +1604,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_33_magpie_ssp585soc-adapt_J1.tif",
@@ -1616,7 +1616,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/primary_ssp585soc-adapt_J2.tif",
@@ -1635,7 +1635,7 @@
       "model": "combined",
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/margin_ssp585soc-adapt_J2.tif",
@@ -1646,7 +1646,7 @@
       "model": "combined",
       "min": 0,
       "max": 1,
-      "palette": "magma"
+      "palette": "inferno"
     },
     {
       "file": "data/action_1_combined_ssp585soc-adapt_J2.tif",
@@ -1658,7 +1658,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_2_combined_ssp585soc-adapt_J2.tif",
@@ -1670,7 +1670,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_8_combined_ssp585soc-adapt_J2.tif",
@@ -1682,7 +1682,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_10_combined_ssp585soc-adapt_J2.tif",
@@ -1694,7 +1694,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_31_combined_ssp585soc-adapt_J2.tif",
@@ -1706,7 +1706,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_32_combined_ssp585soc-adapt_J2.tif",
@@ -1718,7 +1718,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_34_combined_ssp585soc-adapt_J2.tif",
@@ -1730,7 +1730,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_33_combined_ssp585soc-adapt_J2.tif",
@@ -1742,7 +1742,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_1_image_ssp585soc-adapt_J2.tif",
@@ -1754,7 +1754,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_2_image_ssp585soc-adapt_J2.tif",
@@ -1766,7 +1766,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_8_image_ssp585soc-adapt_J2.tif",
@@ -1778,7 +1778,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_10_image_ssp585soc-adapt_J2.tif",
@@ -1790,7 +1790,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_31_image_ssp585soc-adapt_J2.tif",
@@ -1802,7 +1802,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_32_image_ssp585soc-adapt_J2.tif",
@@ -1814,7 +1814,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_34_image_ssp585soc-adapt_J2.tif",
@@ -1826,7 +1826,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_33_image_ssp585soc-adapt_J2.tif",
@@ -1838,7 +1838,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_1_magpie_ssp585soc-adapt_J2.tif",
@@ -1850,7 +1850,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_2_magpie_ssp585soc-adapt_J2.tif",
@@ -1862,7 +1862,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_8_magpie_ssp585soc-adapt_J2.tif",
@@ -1874,7 +1874,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_10_magpie_ssp585soc-adapt_J2.tif",
@@ -1886,7 +1886,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_31_magpie_ssp585soc-adapt_J2.tif",
@@ -1898,7 +1898,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_32_magpie_ssp585soc-adapt_J2.tif",
@@ -1910,7 +1910,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_34_magpie_ssp585soc-adapt_J2.tif",
@@ -1922,7 +1922,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     },
     {
       "file": "data/action_33_magpie_ssp585soc-adapt_J2.tif",
@@ -1934,7 +1934,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "viridis"
+      "palette": "cividis"
     }
   ]
 }

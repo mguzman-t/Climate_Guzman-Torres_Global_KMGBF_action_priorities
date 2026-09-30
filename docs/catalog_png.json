@@ -53,7 +53,7 @@
       "model": "combined",
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -90,7 +90,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -109,7 +109,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -128,7 +128,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -147,7 +147,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -166,7 +166,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -185,7 +185,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -204,7 +204,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -223,7 +223,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -242,7 +242,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -261,7 +261,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -280,7 +280,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -299,7 +299,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -318,7 +318,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -337,7 +337,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -356,7 +356,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -375,7 +375,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -394,7 +394,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -413,7 +413,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -432,7 +432,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -451,7 +451,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -470,7 +470,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -489,7 +489,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -508,7 +508,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -527,7 +527,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -561,7 +561,7 @@
       "model": "combined",
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -598,7 +598,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -617,7 +617,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -636,7 +636,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -655,7 +655,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -674,7 +674,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -693,7 +693,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -712,7 +712,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -731,7 +731,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -750,7 +750,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -769,7 +769,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -788,7 +788,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -807,7 +807,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -826,7 +826,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -845,7 +845,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -864,7 +864,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -883,7 +883,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -902,7 +902,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -921,7 +921,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -940,7 +940,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -959,7 +959,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -978,7 +978,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -997,7 +997,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1016,7 +1016,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1035,7 +1035,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1069,7 +1069,7 @@
       "model": "combined",
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1106,7 +1106,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1125,7 +1125,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1144,7 +1144,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1163,7 +1163,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1182,7 +1182,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1201,7 +1201,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1220,7 +1220,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1239,7 +1239,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1258,7 +1258,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1277,7 +1277,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1296,7 +1296,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1315,7 +1315,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1334,7 +1334,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1353,7 +1353,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1372,7 +1372,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1391,7 +1391,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1410,7 +1410,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1429,7 +1429,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1448,7 +1448,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1467,7 +1467,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1486,7 +1486,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1505,7 +1505,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1524,7 +1524,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1543,7 +1543,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1577,7 +1577,7 @@
       "model": "combined",
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1614,7 +1614,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1633,7 +1633,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1652,7 +1652,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1671,7 +1671,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1690,7 +1690,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1709,7 +1709,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1728,7 +1728,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1747,7 +1747,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1766,7 +1766,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1785,7 +1785,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1804,7 +1804,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1823,7 +1823,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1842,7 +1842,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1861,7 +1861,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1880,7 +1880,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1899,7 +1899,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1918,7 +1918,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1937,7 +1937,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1956,7 +1956,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1975,7 +1975,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -1994,7 +1994,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2013,7 +2013,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2032,7 +2032,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2051,7 +2051,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2085,7 +2085,7 @@
       "model": "combined",
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2122,7 +2122,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2141,7 +2141,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2160,7 +2160,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2179,7 +2179,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2198,7 +2198,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2217,7 +2217,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2236,7 +2236,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2255,7 +2255,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2274,7 +2274,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2293,7 +2293,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2312,7 +2312,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2331,7 +2331,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2350,7 +2350,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2369,7 +2369,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2388,7 +2388,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2407,7 +2407,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2426,7 +2426,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2445,7 +2445,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2464,7 +2464,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2483,7 +2483,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2502,7 +2502,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2521,7 +2521,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2540,7 +2540,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2559,7 +2559,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2593,7 +2593,7 @@
       "model": "combined",
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2630,7 +2630,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2649,7 +2649,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2668,7 +2668,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2687,7 +2687,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2706,7 +2706,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2725,7 +2725,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2744,7 +2744,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2763,7 +2763,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2782,7 +2782,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2801,7 +2801,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2820,7 +2820,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2839,7 +2839,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2858,7 +2858,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2877,7 +2877,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2896,7 +2896,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2915,7 +2915,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2934,7 +2934,7 @@
       "action": 1,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2953,7 +2953,7 @@
       "action": 2,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2972,7 +2972,7 @@
       "action": 8,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -2991,7 +2991,7 @@
       "action": 10,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -3010,7 +3010,7 @@
       "action": 31,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -3029,7 +3029,7 @@
       "action": 32,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -3048,7 +3048,7 @@
       "action": 34,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -3067,7 +3067,7 @@
       "action": 33,
       "min": 0,
       "max": 1,
-      "palette": "cividis",
+      "palette": "plasma",
       "imageExtent": [
         -17243959.062216945,
         -8393410.20090566,
@@ -3077,5 +3077,10 @@
       "projection": "EPSG:8857"
     }
   ],
-  "rendering": "transparent_rgba_png"
+  "rendering": "transparent_rgba_png",
+  "continuous_palettes": {
+    "priority_scores": "plasma",
+    "winning_score_margin": "inferno",
+    "restoration_count": "ylgn"
+  }
 }

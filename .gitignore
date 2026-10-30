@@ -34,3 +34,14 @@ web_server.log
 
 # Temporary web builds
 docs/data/*.aux.xml
+
+# Intermediate web COGs/TIFFs.
+# The deployed viewer uses docs/data_png instead.
+kmgbf_web_v2/docs/data/
+
+# Local web-server log
+kmgbf_web_v2/webserver.log
+
+# Python cache
+__pycache__/
+*.pyc

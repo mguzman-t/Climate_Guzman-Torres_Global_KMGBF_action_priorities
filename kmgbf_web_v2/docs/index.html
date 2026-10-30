@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Global KM-GBF strategic action priorities</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v10.6.1/ol.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <div>
+      <h1>Global KM-GBF strategic action priorities</h1>
+      <p>Member-wise continuous prioritisation on a 50-km Equal Earth grid</p>
+    </div><span class="projection-badge">Equal Earth · EPSG:8857</span>
+  </header>
+  <main>
+    <aside>
+      <div id="status" class="status">Loading viewer...</div>
+      <section class="search-panel" aria-labelledby="search-title"><label id="search-title" for="place-search">Find
+          country</label>
+        <div class="search-row"><input id="place-search" type="search" placeholder="e.g. Mexico"
+            autocomplete="off"><button id="search-button" type="button">Find</button></div>
+        <div id="search-results" class="search-results" aria-live="polite"></div>
+      </section>
+      <label for="ssp">Scenario</label><select id="ssp"></select>
+      <label for="radius">Connectivity radius</label><select id="radius"></select>
+      <label for="group">Map theme</label><select id="group"></select>
+      <label for="layer">Layer</label><select id="layer"></select>
+      <label for="opacity">Layer opacity</label><input id="opacity" type="range" min="0" max="1" step="0.05" value="1">
+      <div class="button-row"><button id="global-view" type="button">Global view</button></div>
+      <section id="legend" class="legend"></section>
+      <section class="note interpretation"><b>How to interpret the maps</b>
+        <p>Agreement maps (%) show how consistently the modelling ensemble, per SSP-RCP scenario and radious, supports a
+          result in each grid
+          cell. Ech factorial ensemble comprises 90 members: 3 SDMs × 5 GCMs × 2 land-use models × 3 resistance
+          responses.
+          Agreement therefore measures robustness across projections.</p>
+      </section>
+    </aside>
+    <section class="map-panel">
+      <div id="map" class="map" aria-label="Global KM-GBF priority map"></div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/ol@v10.6.1/dist/ol.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/proj4@2.19.10/dist/proj4.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

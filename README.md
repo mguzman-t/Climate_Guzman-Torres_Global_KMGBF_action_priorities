@@ -1,42 +1,22 @@
-# Global KM-GBF quantitative priorities
+# KM-GBF continuous member-wise viewer
 
-This repository contains a reproducible workflow and an interactive viewer for
-global, scenario-based prioritisation of KM-GBF-related conservation actions.
+Viewer/export layer for the 50-km Equal Earth KM-GBF prioritisation outputs.
 
-#* Interactive viewer
+## Pipeline
 
-The viewer presents:
+```bash
+cd scripts
+python validate_outputs.py
+python build_web_catalog.py
+python render_png_layers.py
+```
 
-- the quantitatively prioritised action;
-- the winning consensus-adjusted score;
-- the margin over the next-best action;
-- projected-restoration context;
-- action-specific normalized priority scores.
+Serve `docs/` locally before publishing:
 
-*Results are available for three SSP-RCP pathways and two future periods*:
-2041–2070 and 2071–2100.
+```bash
+python3 -m http.server 8000 --directory docs
+```
 
-## Interpretation
+Then open `http://localhost:8000`.
 
-Eligible grid cells ar* ranked within each action using action-specific
-ecological indicator*. IMAGE and MAgPIE normalized scores are combined to
-identify the str*ngest quantitative action signal in each grid cell.
-
-The selected action does not imply that other eligible actions are irrelevant.
-The viewer retains action-specific scores and the margin over the runner-up.
-*Projected restoration is presented as land-use-model context and does not
-compete as an independent action*
-
-OECM layers are ecological screening products and do not establish site-level
-eligibility or designation.
-
-## Repository structure
-
-- `scripts/`: scoring, model aggregation, plotting, and web-build scripts*- `docs/`: GitHub Pages viewer
-- `docs/data/`: web-optimized derived rasters
-
-## Data and licensing
-
-The *repository contains derived analytical* products. Users *should consult the
-original data providers* and apilicable licences *before reusing or redistributing
-underlying datasets*
+The analytical results are not recomputed here. This repository consumes the finalized SSP x radius outputs from `kmgbf_memberwise_continuous`.

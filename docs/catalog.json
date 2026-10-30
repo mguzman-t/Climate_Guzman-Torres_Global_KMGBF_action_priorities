@@ -71,7 +71,7 @@
     },
     {
       "file": "data/score_code1_ssp126_rad6.tif",
-      "title": "T1: spatial planning under co-exposure — mean normalized priority score",
+      "title": "T1: spatial planning under co-exposure — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp126",
@@ -97,7 +97,7 @@
     },
     {
       "file": "data/score_code21_ssp126_rad6.tif",
-      "title": "T2: ecosystem/connectivity restoration — mean normalized priority score",
+      "title": "T2: ecosystem/connectivity restoration — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp126",
@@ -123,7 +123,7 @@
     },
     {
       "file": "data/score_code8_ssp126_rad6.tif",
-      "title": "T8: climate-adaptation conservation priority — mean normalized priority score",
+      "title": "T8: climate-adaptation conservation priority — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp126",
@@ -149,7 +149,7 @@
     },
     {
       "file": "data/score_code10_ssp126_rad6.tif",
-      "title": "T10: biodiversity-sensitive production landscapes — mean normalized priority score",
+      "title": "T10: biodiversity-sensitive production landscapes — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp126",
@@ -175,7 +175,7 @@
     },
     {
       "file": "data/score_code31_ssp126_rad6.tif",
-      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — mean normalized priority score",
+      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp126",
@@ -201,7 +201,7 @@
     },
     {
       "file": "data/score_code32_ssp126_rad6.tif",
-      "title": "T3: safeguard concentrated connectivity — mean normalized priority score",
+      "title": "T3: safeguard concentrated connectivity — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp126",
@@ -227,7 +227,7 @@
     },
     {
       "file": "data/score_code33_ssp126_rad6.tif",
-      "title": "T3: support existing PA/OECM under climate vulnerability — mean normalized priority score",
+      "title": "T3: support existing PA/OECM under climate vulnerability — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp126",
@@ -253,7 +253,7 @@
     },
     {
       "file": "data/score_code34_ssp126_rad6.tif",
-      "title": "T3: safeguard existing PA/OECM under land-use pressure — mean normalized priority score",
+      "title": "T3: safeguard existing PA/OECM under land-use pressure — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp126",
@@ -395,7 +395,7 @@
     },
     {
       "file": "data/score_code1_ssp126_rad14.tif",
-      "title": "T1: spatial planning under co-exposure — mean normalized priority score",
+      "title": "T1: spatial planning under co-exposure — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp126",
@@ -421,7 +421,7 @@
     },
     {
       "file": "data/score_code21_ssp126_rad14.tif",
-      "title": "T2: ecosystem/connectivity restoration — mean normalized priority score",
+      "title": "T2: ecosystem/connectivity restoration — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp126",
@@ -447,7 +447,7 @@
     },
     {
       "file": "data/score_code8_ssp126_rad14.tif",
-      "title": "T8: climate-adaptation conservation priority — mean normalized priority score",
+      "title": "T8: climate-adaptation conservation priority — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp126",
@@ -473,7 +473,7 @@
     },
     {
       "file": "data/score_code10_ssp126_rad14.tif",
-      "title": "T10: biodiversity-sensitive production landscapes — mean normalized priority score",
+      "title": "T10: biodiversity-sensitive production landscapes — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp126",
@@ -499,7 +499,7 @@
     },
     {
       "file": "data/score_code31_ssp126_rad14.tif",
-      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — mean normalized priority score",
+      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp126",
@@ -525,7 +525,7 @@
     },
     {
       "file": "data/score_code32_ssp126_rad14.tif",
-      "title": "T3: safeguard concentrated connectivity — mean normalized priority score",
+      "title": "T3: safeguard concentrated connectivity — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp126",
@@ -551,7 +551,7 @@
     },
     {
       "file": "data/score_code33_ssp126_rad14.tif",
-      "title": "T3: support existing PA/OECM under climate vulnerability — mean normalized priority score",
+      "title": "T3: support existing PA/OECM under climate vulnerability — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp126",
@@ -577,7 +577,7 @@
     },
     {
       "file": "data/score_code34_ssp126_rad14.tif",
-      "title": "T3: safeguard existing PA/OECM under land-use pressure — mean normalized priority score",
+      "title": "T3: safeguard existing PA/OECM under land-use pressure — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp126",
@@ -719,7 +719,7 @@
     },
     {
       "file": "data/score_code1_ssp126_rad20.tif",
-      "title": "T1: spatial planning under co-exposure — mean normalized priority score",
+      "title": "T1: spatial planning under co-exposure — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp126",
@@ -745,7 +745,7 @@
     },
     {
       "file": "data/score_code21_ssp126_rad20.tif",
-      "title": "T2: ecosystem/connectivity restoration — mean normalized priority score",
+      "title": "T2: ecosystem/connectivity restoration — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp126",
@@ -771,7 +771,7 @@
     },
     {
       "file": "data/score_code8_ssp126_rad20.tif",
-      "title": "T8: climate-adaptation conservation priority — mean normalized priority score",
+      "title": "T8: climate-adaptation conservation priority — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp126",
@@ -797,7 +797,7 @@
     },
     {
       "file": "data/score_code10_ssp126_rad20.tif",
-      "title": "T10: biodiversity-sensitive production landscapes — mean normalized priority score",
+      "title": "T10: biodiversity-sensitive production landscapes — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp126",
@@ -823,7 +823,7 @@
     },
     {
       "file": "data/score_code31_ssp126_rad20.tif",
-      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — mean normalized priority score",
+      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp126",
@@ -849,7 +849,7 @@
     },
     {
       "file": "data/score_code32_ssp126_rad20.tif",
-      "title": "T3: safeguard concentrated connectivity — mean normalized priority score",
+      "title": "T3: safeguard concentrated connectivity — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp126",
@@ -875,7 +875,7 @@
     },
     {
       "file": "data/score_code33_ssp126_rad20.tif",
-      "title": "T3: support existing PA/OECM under climate vulnerability — mean normalized priority score",
+      "title": "T3: support existing PA/OECM under climate vulnerability — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp126",
@@ -901,7 +901,7 @@
     },
     {
       "file": "data/score_code34_ssp126_rad20.tif",
-      "title": "T3: safeguard existing PA/OECM under land-use pressure — mean normalized priority score",
+      "title": "T3: safeguard existing PA/OECM under land-use pressure — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp126",
@@ -1043,7 +1043,7 @@
     },
     {
       "file": "data/score_code1_ssp370_rad6.tif",
-      "title": "T1: spatial planning under co-exposure — mean normalized priority score",
+      "title": "T1: spatial planning under co-exposure — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp370",
@@ -1069,7 +1069,7 @@
     },
     {
       "file": "data/score_code21_ssp370_rad6.tif",
-      "title": "T2: ecosystem/connectivity restoration — mean normalized priority score",
+      "title": "T2: ecosystem/connectivity restoration — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp370",
@@ -1095,7 +1095,7 @@
     },
     {
       "file": "data/score_code8_ssp370_rad6.tif",
-      "title": "T8: climate-adaptation conservation priority — mean normalized priority score",
+      "title": "T8: climate-adaptation conservation priority — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp370",
@@ -1121,7 +1121,7 @@
     },
     {
       "file": "data/score_code10_ssp370_rad6.tif",
-      "title": "T10: biodiversity-sensitive production landscapes — mean normalized priority score",
+      "title": "T10: biodiversity-sensitive production landscapes — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp370",
@@ -1147,7 +1147,7 @@
     },
     {
       "file": "data/score_code31_ssp370_rad6.tif",
-      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — mean normalized priority score",
+      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp370",
@@ -1173,7 +1173,7 @@
     },
     {
       "file": "data/score_code32_ssp370_rad6.tif",
-      "title": "T3: safeguard concentrated connectivity — mean normalized priority score",
+      "title": "T3: safeguard concentrated connectivity — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp370",
@@ -1199,7 +1199,7 @@
     },
     {
       "file": "data/score_code33_ssp370_rad6.tif",
-      "title": "T3: support existing PA/OECM under climate vulnerability — mean normalized priority score",
+      "title": "T3: support existing PA/OECM under climate vulnerability — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp370",
@@ -1225,7 +1225,7 @@
     },
     {
       "file": "data/score_code34_ssp370_rad6.tif",
-      "title": "T3: safeguard existing PA/OECM under land-use pressure — mean normalized priority score",
+      "title": "T3: safeguard existing PA/OECM under land-use pressure — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp370",
@@ -1367,7 +1367,7 @@
     },
     {
       "file": "data/score_code1_ssp370_rad14.tif",
-      "title": "T1: spatial planning under co-exposure — mean normalized priority score",
+      "title": "T1: spatial planning under co-exposure — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp370",
@@ -1393,7 +1393,7 @@
     },
     {
       "file": "data/score_code21_ssp370_rad14.tif",
-      "title": "T2: ecosystem/connectivity restoration — mean normalized priority score",
+      "title": "T2: ecosystem/connectivity restoration — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp370",
@@ -1419,7 +1419,7 @@
     },
     {
       "file": "data/score_code8_ssp370_rad14.tif",
-      "title": "T8: climate-adaptation conservation priority — mean normalized priority score",
+      "title": "T8: climate-adaptation conservation priority — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp370",
@@ -1445,7 +1445,7 @@
     },
     {
       "file": "data/score_code10_ssp370_rad14.tif",
-      "title": "T10: biodiversity-sensitive production landscapes — mean normalized priority score",
+      "title": "T10: biodiversity-sensitive production landscapes — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp370",
@@ -1471,7 +1471,7 @@
     },
     {
       "file": "data/score_code31_ssp370_rad14.tif",
-      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — mean normalized priority score",
+      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp370",
@@ -1497,7 +1497,7 @@
     },
     {
       "file": "data/score_code32_ssp370_rad14.tif",
-      "title": "T3: safeguard concentrated connectivity — mean normalized priority score",
+      "title": "T3: safeguard concentrated connectivity — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp370",
@@ -1523,7 +1523,7 @@
     },
     {
       "file": "data/score_code33_ssp370_rad14.tif",
-      "title": "T3: support existing PA/OECM under climate vulnerability — mean normalized priority score",
+      "title": "T3: support existing PA/OECM under climate vulnerability — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp370",
@@ -1549,7 +1549,7 @@
     },
     {
       "file": "data/score_code34_ssp370_rad14.tif",
-      "title": "T3: safeguard existing PA/OECM under land-use pressure — mean normalized priority score",
+      "title": "T3: safeguard existing PA/OECM under land-use pressure — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp370",
@@ -1691,7 +1691,7 @@
     },
     {
       "file": "data/score_code1_ssp370_rad20.tif",
-      "title": "T1: spatial planning under co-exposure — mean normalized priority score",
+      "title": "T1: spatial planning under co-exposure — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp370",
@@ -1717,7 +1717,7 @@
     },
     {
       "file": "data/score_code21_ssp370_rad20.tif",
-      "title": "T2: ecosystem/connectivity restoration — mean normalized priority score",
+      "title": "T2: ecosystem/connectivity restoration — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp370",
@@ -1743,7 +1743,7 @@
     },
     {
       "file": "data/score_code8_ssp370_rad20.tif",
-      "title": "T8: climate-adaptation conservation priority — mean normalized priority score",
+      "title": "T8: climate-adaptation conservation priority — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp370",
@@ -1769,7 +1769,7 @@
     },
     {
       "file": "data/score_code10_ssp370_rad20.tif",
-      "title": "T10: biodiversity-sensitive production landscapes — mean normalized priority score",
+      "title": "T10: biodiversity-sensitive production landscapes — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp370",
@@ -1795,7 +1795,7 @@
     },
     {
       "file": "data/score_code31_ssp370_rad20.tif",
-      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — mean normalized priority score",
+      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp370",
@@ -1821,7 +1821,7 @@
     },
     {
       "file": "data/score_code32_ssp370_rad20.tif",
-      "title": "T3: safeguard concentrated connectivity — mean normalized priority score",
+      "title": "T3: safeguard concentrated connectivity — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp370",
@@ -1847,7 +1847,7 @@
     },
     {
       "file": "data/score_code33_ssp370_rad20.tif",
-      "title": "T3: support existing PA/OECM under climate vulnerability — mean normalized priority score",
+      "title": "T3: support existing PA/OECM under climate vulnerability — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp370",
@@ -1873,7 +1873,7 @@
     },
     {
       "file": "data/score_code34_ssp370_rad20.tif",
-      "title": "T3: safeguard existing PA/OECM under land-use pressure — mean normalized priority score",
+      "title": "T3: safeguard existing PA/OECM under land-use pressure — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp370",
@@ -2015,7 +2015,7 @@
     },
     {
       "file": "data/score_code1_ssp585_rad6.tif",
-      "title": "T1: spatial planning under co-exposure — mean normalized priority score",
+      "title": "T1: spatial planning under co-exposure — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp585",
@@ -2041,7 +2041,7 @@
     },
     {
       "file": "data/score_code21_ssp585_rad6.tif",
-      "title": "T2: ecosystem/connectivity restoration — mean normalized priority score",
+      "title": "T2: ecosystem/connectivity restoration — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp585",
@@ -2067,7 +2067,7 @@
     },
     {
       "file": "data/score_code8_ssp585_rad6.tif",
-      "title": "T8: climate-adaptation conservation priority — mean normalized priority score",
+      "title": "T8: climate-adaptation conservation priority — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp585",
@@ -2093,7 +2093,7 @@
     },
     {
       "file": "data/score_code10_ssp585_rad6.tif",
-      "title": "T10: biodiversity-sensitive production landscapes — mean normalized priority score",
+      "title": "T10: biodiversity-sensitive production landscapes — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp585",
@@ -2119,7 +2119,7 @@
     },
     {
       "file": "data/score_code31_ssp585_rad6.tif",
-      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — mean normalized priority score",
+      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp585",
@@ -2145,7 +2145,7 @@
     },
     {
       "file": "data/score_code32_ssp585_rad6.tif",
-      "title": "T3: safeguard concentrated connectivity — mean normalized priority score",
+      "title": "T3: safeguard concentrated connectivity — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp585",
@@ -2171,7 +2171,7 @@
     },
     {
       "file": "data/score_code33_ssp585_rad6.tif",
-      "title": "T3: support existing PA/OECM under climate vulnerability — mean normalized priority score",
+      "title": "T3: support existing PA/OECM under climate vulnerability — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp585",
@@ -2197,7 +2197,7 @@
     },
     {
       "file": "data/score_code34_ssp585_rad6.tif",
-      "title": "T3: safeguard existing PA/OECM under land-use pressure — mean normalized priority score",
+      "title": "T3: safeguard existing PA/OECM under land-use pressure — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp585",
@@ -2339,7 +2339,7 @@
     },
     {
       "file": "data/score_code1_ssp585_rad14.tif",
-      "title": "T1: spatial planning under co-exposure — mean normalized priority score",
+      "title": "T1: spatial planning under co-exposure — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp585",
@@ -2365,7 +2365,7 @@
     },
     {
       "file": "data/score_code21_ssp585_rad14.tif",
-      "title": "T2: ecosystem/connectivity restoration — mean normalized priority score",
+      "title": "T2: ecosystem/connectivity restoration — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp585",
@@ -2391,7 +2391,7 @@
     },
     {
       "file": "data/score_code8_ssp585_rad14.tif",
-      "title": "T8: climate-adaptation conservation priority — mean normalized priority score",
+      "title": "T8: climate-adaptation conservation priority — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp585",
@@ -2417,7 +2417,7 @@
     },
     {
       "file": "data/score_code10_ssp585_rad14.tif",
-      "title": "T10: biodiversity-sensitive production landscapes — mean normalized priority score",
+      "title": "T10: biodiversity-sensitive production landscapes — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp585",
@@ -2443,7 +2443,7 @@
     },
     {
       "file": "data/score_code31_ssp585_rad14.tif",
-      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — mean normalized priority score",
+      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp585",
@@ -2469,7 +2469,7 @@
     },
     {
       "file": "data/score_code32_ssp585_rad14.tif",
-      "title": "T3: safeguard concentrated connectivity — mean normalized priority score",
+      "title": "T3: safeguard concentrated connectivity — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp585",
@@ -2495,7 +2495,7 @@
     },
     {
       "file": "data/score_code33_ssp585_rad14.tif",
-      "title": "T3: support existing PA/OECM under climate vulnerability — mean normalized priority score",
+      "title": "T3: support existing PA/OECM under climate vulnerability — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp585",
@@ -2521,7 +2521,7 @@
     },
     {
       "file": "data/score_code34_ssp585_rad14.tif",
-      "title": "T3: safeguard existing PA/OECM under land-use pressure — mean normalized priority score",
+      "title": "T3: safeguard existing PA/OECM under land-use pressure — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp585",
@@ -2663,7 +2663,7 @@
     },
     {
       "file": "data/score_code1_ssp585_rad20.tif",
-      "title": "T1: spatial planning under co-exposure — mean normalized priority score",
+      "title": "T1: spatial planning under co-exposure — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp585",
@@ -2689,7 +2689,7 @@
     },
     {
       "file": "data/score_code21_ssp585_rad20.tif",
-      "title": "T2: ecosystem/connectivity restoration — mean normalized priority score",
+      "title": "T2: ecosystem/connectivity restoration — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp585",
@@ -2715,7 +2715,7 @@
     },
     {
       "file": "data/score_code8_ssp585_rad20.tif",
-      "title": "T8: climate-adaptation conservation priority — mean normalized priority score",
+      "title": "T8: climate-adaptation conservation priority — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp585",
@@ -2741,7 +2741,7 @@
     },
     {
       "file": "data/score_code10_ssp585_rad20.tif",
-      "title": "T10: biodiversity-sensitive production landscapes — mean normalized priority score",
+      "title": "T10: biodiversity-sensitive production landscapes — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp585",
@@ -2767,7 +2767,7 @@
     },
     {
       "file": "data/score_code31_ssp585_rad20.tif",
-      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — mean normalized priority score",
+      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp585",
@@ -2793,7 +2793,7 @@
     },
     {
       "file": "data/score_code32_ssp585_rad20.tif",
-      "title": "T3: safeguard concentrated connectivity — mean normalized priority score",
+      "title": "T3: safeguard concentrated connectivity — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp585",
@@ -2819,7 +2819,7 @@
     },
     {
       "file": "data/score_code33_ssp585_rad20.tif",
-      "title": "T3: support existing PA/OECM under climate vulnerability — mean normalized priority score",
+      "title": "T3: support existing PA/OECM under climate vulnerability — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp585",
@@ -2845,7 +2845,7 @@
     },
     {
       "file": "data/score_code34_ssp585_rad20.tif",
-      "title": "T3: safeguard existing PA/OECM under land-use pressure — mean normalized priority score",
+      "title": "T3: safeguard existing PA/OECM under land-use pressure — mean normalised priority score",
       "kind": "continuous",
       "group": "target_scores",
       "ssp": "ssp585",

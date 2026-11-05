@@ -9,7 +9,7 @@
     "32": "T3: safeguard concentrated connectivity",
     "33": "T3: support existing PA/OECM under climate vulnerability",
     "34": "T3: safeguard existing PA/OECM under land-use pressure",
-    "97": "Unresolved score tie"
+    "97": "Unresolved tie"
   },
   "colors": {
     "0": "#D9D9D9",
@@ -34,7 +34,12 @@
     "20": "1,000 km"
   },
   "projection": "EPSG:8857",
-  "ensembleSize": 90,
+  "ensembleSize": 180,
+  "ensembleDesign": "connectivity taxon x SDM x GCM x LUM x resistance curve",
+  "connectivityTaxa": [
+    "bird",
+    "mammal"
+  ],
   "layers": [
     {
       "file": "data/priority_ssp126_rad6.tif",

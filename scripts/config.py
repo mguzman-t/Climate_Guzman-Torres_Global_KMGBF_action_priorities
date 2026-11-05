@@ -1,10 +1,14 @@
 from pathlib import Path
 
-# Final analytical outputs produced by kmgbf_prioritisation_continuous.py
+# Final analytical outputs produced by kmgbf_prioritisation_continuous_180.py
 ANALYSIS_ROOT = Path(
     "/capacity/occr_davin/mguzman/P1/Connectivity/approach2/"
-    "kmgbf_memberwise_continuous"
+    "kmgbf_memberwise_continuous_180"
 )
+
+# Expected ensemble size per SSP x radius:
+# 2 connectivity taxa x 3 SDMs x 5 GCMs x 2 LUMs x 3 resistance curves
+EXPECTED_MEMBER_COUNT = 180
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 
@@ -82,8 +86,10 @@ ACTION_LABELS = {
     34:
         "T3: safeguard existing PA/OECM under land-use pressure",
 
+    # In the modal map, 97 marks either exact score ties within members
+    # or cells where two or more actions share the highest ensemble count.
     97:
-        "Unresolved score tie",
+        "Unresolved tie",
 }
 
 
@@ -115,7 +121,7 @@ ACTION_COLORS = {
     # T34 existing PA/OECM + land-use pressure
     34: "#8C564B",   # brown
 
-    # Exact tie
+    # Tie
     97: "#202020",
 }
 

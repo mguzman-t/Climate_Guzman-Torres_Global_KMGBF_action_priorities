@@ -1,7 +1,7 @@
 "use strict";
 
 const WORLD_EXTENT = [-17250000, -8400000, 17250000, 8400000];
-const ENSEMBLE_SIZE = 90;
+const ENSEMBLE_SIZE = 180;
 
 const GROUP_LABELS = {
   priority: "Prioritised strategic actions",

@@ -72,17 +72,53 @@ The calibrated scores are used for member-level comparison among strategic actio
 │   ├── catalog_png.json
 │   ├── data_png/
 │   └── data_boundaries/
+│
 ├── scripts/
-│   ├── config.py
-│   ├── 01_validate_outputs.py
-│   ├── 02_build_web_catalog.py
-│   └── 03_render_png_layers.py
+│   ├── postprocessing/
+│   │   ├── 01_classify_connectivity_member_sd.py
+│   │   ├── 02_score_kmgbf_ensemble_members.py
+│   │   └── 03_kmgbf_target_calibration.py
+│   │
+│   ├── web_viewer/
+│   │   ├── 01_validate_outputs.py
+│   │   ├── 02_build_web_catalog.py
+│   │   └── 03_render_png_layers.py
+│   │
+│   └── config.py
+│
 └── README.md
 ```
 
 `docs/` contains the files required by the web viewer.
 
 `docs/catalog.json` and the intermediate GeoTIFF copies in `docs/data/` are generated during the build process but are not needed to deploy the PNG-based viewer.
+
+## Processing workflow
+
+The scripts are organised into two stages: analytical post-processing and preparation of outputs for the interactive web viewer.
+
+### Analytical post-processing
+
+The scripts under `scripts/postprocessing/` implement the final steps of the KM-GBF prioritisation workflow:
+
+1. `01_classify_connectivity_member_sd.py` classifies member-level connectivity patterns.
+2. `02_score_kmgbf_ensemble_members.py` calculates member-level scores for the strategic actions.
+3. `03_kmgbf_target_calibration.py` calibrates the strategic-action scores and derives the final ensemble-based priorities.
+
+For each strategic action, positive eligible scores are converted to empirical percentiles based on all positive scores for that action across SSPs, connectivity radii, ensemble members and grid cells. The same pooled calibration is then applied across all SSP and connectivity-radius combinations. Eligible scores of zero remain zero and are excluded from the empirical percentile distribution.
+
+The calibrated scores are used to select the highest-scoring strategic action for each ensemble member. Member-level results are subsequently summarised as action-selection percentages, modal strategic actions and modal ensemble agreement.
+
+### Web-viewer preparation
+
+The scripts under `scripts/web_viewer/` validate the final analytical outputs and prepare them for the interactive viewer:
+
+1. `01_validate_outputs.py` checks the consistency and completeness of the calibrated outputs.
+2. `02_build_web_catalog.py` selects the raster products used by the web viewer and builds the intermediate web catalogue.
+3. `03_render_png_layers.py` renders the selected raster products as PNG layers and generates `docs/catalog_png.json`.
+
+Shared configuration settings are defined in `scripts/config.py`.
+
 
 ## Requirements
 
@@ -97,52 +133,54 @@ matplotlib
 
 GDAL is optional. If `gdal_translate` is available, intermediate web GeoTIFFs are written as Cloud Optimised GeoTIFFs (COGs). Otherwise, the input GeoTIFFs are copied directly.
 
+
 ## Data availability
 
-The processed PNG layers required for the interactive web viewer are included
-in this repository.
+The processed PNG layers required for the interactive web viewer are included in this repository.
 
-The original analytical outputs underlying the KM-GBF prioritisation are not
-included because of their size and are available from the authors upon
-reasonable request.
+The original analytical outputs underlying the KM-GBF prioritisation are not included because of their size and are available from the authors upon reasonable request.
 
-## Validate the analytical outputs
 
-Before rebuilding the viewer, validate the calibrated results:
+## Rebuilding the web viewer
+
+Users with access to the original analytical outputs can rebuild the web-viewer products using the scripts under `scripts/web_viewer/`.
+
+First, validate the calibrated analytical outputs:
 
 ```bash
-python scripts/01_validate_outputs.py
+python scripts/web_viewer/01_validate_outputs.py
 ```
 
-The validation checks include the expected ensemble size, calibration metadata, raster grids and ranges, policy-selection percentages, modal priorities, agreement values, and consistency with member-level calibrated outputs.
+The validation checks the ensemble size, calibration metadata, raster grids and value ranges, action-selection percentages, modal priorities, ensemble agreement, and consistency with the member-level calibrated outputs.
 
-## Build the viewer data
-
-After validation, generate the web catalogue:
+After successful validation, build the web catalogue:
 
 ```bash
-python scripts/02_build_web_catalog.py
+python scripts/web_viewer/02_build_web_catalog.py
 ```
 
 Then render the PNG layers and final web catalogue:
 
 ```bash
-python scripts/03_render_png_layers.py
+python scripts/web_viewer/03_render_png_layers.py
 ```
 
-The web application reads:
+The interactive web application reads:
 
 ```text
 docs/catalog_png.json
 ```
 
-and the corresponding images under:
+and displays the corresponding PNG layers stored under:
 
 ```text
 docs/data_png/
 ```
 
-## Run the viewer locally
+
+## Running the viewer locally
+
+The web viewer can be run without access to the original analytical outputs because the required processed PNG layers are included in the repository.
 
 From the repository root:
 

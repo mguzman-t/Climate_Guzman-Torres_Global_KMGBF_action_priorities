@@ -1,15 +1,15 @@
 {
   "classes": {
     "0": "No positive policy score",
-    "1": "T1: spatial planning under co-exposure",
+    "1": "T1: spatial planning under biodiversity and intact ecosystems loss",
     "21": "T2: ecosystem/connectivity restoration",
     "8": "T8: climate-adaptation conservation priority",
     "10": "T10: biodiversity-sensitive production landscapes",
-    "31": "T3: maintain climate-persistent diffuse/permeable landscapes",
-    "32": "T3: safeguard concentrated connectivity",
-    "33": "T3: support existing PA/OECM under climate vulnerability",
-    "34": "T3: safeguard existing PA/OECM under land-use pressure",
-    "97": "Unresolved tie"
+    "31": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes",
+    "32": "T3.2: protect concentrated connectivity",
+    "33": "T3.3: support existing PA/OECM under climate vulnerability",
+    "34": "T3.4: safeguard existing PA/OECM under land-use pressure",
+    "97": "Tie"
   },
   "colors": {
     "0": "#D9D9D9",
@@ -35,11 +35,24 @@
   },
   "projection": "EPSG:8857",
   "ensembleSize": 180,
-  "ensembleDesign": "connectivity taxon x SDM x GCM x LUM x resistance curve",
-  "connectivityTaxa": [
-    "bird",
-    "mammal"
-  ],
+  "calibrationVersion": 2,
+  "calibrationMethod": "exact positive-only pooled target-specific empirical mid-rank ECDF",
+  "groupMemberCounts": {
+    "ssp126_rad6": 180,
+    "ssp126_rad14": 180,
+    "ssp126_rad20": 180,
+    "ssp370_rad6": 180,
+    "ssp370_rad14": 180,
+    "ssp370_rad20": 180,
+    "ssp585_rad6": 180,
+    "ssp585_rad14": 180,
+    "ssp585_rad20": 180
+  },
+  "scoreInterpretation": {
+    "raw": "Raw common-range ecological magnitude on a 0-100 scale. Raw scores are retained as ecological evidence and are not directly used for cross-target winner selection.",
+    "calibrated": "Fixed positive-only pooled target-specific empirical percentile. These calibrated scores are used for member-level winner selection.",
+    "selection": "Percentage of available ensemble members for which the action is the selected member-level outcome."
+  },
   "layers": [
     {
       "file": "data/priority_ssp126_rad6.tif",
@@ -47,7 +60,8 @@
       "kind": "categorical",
       "group": "priority",
       "ssp": "ssp126",
-      "radius": 6
+      "radius": 6,
+      "metric": "modal_priority"
     },
     {
       "file": "data/modal_agreement_ssp126_rad6.tif",
@@ -59,11 +73,25 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "modal_agreement"
+      "metric": "modal_agreement",
+      "units": "percent"
+    },
+    {
+      "file": "data/winning_margin_ssp126_rad6.tif",
+      "title": "Mean calibrated winning margin",
+      "kind": "continuous",
+      "group": "priority_diagnostics",
+      "ssp": "ssp126",
+      "radius": 6,
+      "min": 0,
+      "max": 100,
+      "palette": "plasma",
+      "metric": "winning_margin",
+      "units": "percentile points"
     },
     {
       "file": "data/selection_code1_ssp126_rad6.tif",
-      "title": "T1: spatial planning under co-exposure — ensemble agreement (%)",
+      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -72,24 +100,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_1",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code1_ssp126_rad6.tif",
-      "title": "T1: spatial planning under co-exposure — mean normalised priority score",
+      "file": "data/calibrated_score_code1_ssp126_rad6.tif",
+      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp126",
       "radius": 6,
       "action": 1,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code21_ssp126_rad6.tif",
-      "title": "T2: ecosystem/connectivity restoration — ensemble agreement (%)",
+      "title": "T2: ecosystem/connectivity restoration - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -98,24 +130,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_21",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code21_ssp126_rad6.tif",
-      "title": "T2: ecosystem/connectivity restoration — mean normalised priority score",
+      "file": "data/calibrated_score_code21_ssp126_rad6.tif",
+      "title": "T2: ecosystem/connectivity restoration - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp126",
       "radius": 6,
       "action": 21,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code8_ssp126_rad6.tif",
-      "title": "T8: climate-adaptation conservation priority — ensemble agreement (%)",
+      "title": "T8: climate-adaptation conservation priority - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -124,24 +160,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_8",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code8_ssp126_rad6.tif",
-      "title": "T8: climate-adaptation conservation priority — mean normalised priority score",
+      "file": "data/calibrated_score_code8_ssp126_rad6.tif",
+      "title": "T8: climate-adaptation conservation priority - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp126",
       "radius": 6,
       "action": 8,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code10_ssp126_rad6.tif",
-      "title": "T10: biodiversity-sensitive production landscapes — ensemble agreement (%)",
+      "title": "T10: biodiversity-sensitive production landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -150,24 +190,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_10",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code10_ssp126_rad6.tif",
-      "title": "T10: biodiversity-sensitive production landscapes — mean normalised priority score",
+      "file": "data/calibrated_score_code10_ssp126_rad6.tif",
+      "title": "T10: biodiversity-sensitive production landscapes - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp126",
       "radius": 6,
       "action": 10,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code31_ssp126_rad6.tif",
-      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — ensemble agreement (%)",
+      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -176,24 +220,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_31",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code31_ssp126_rad6.tif",
-      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — mean normalised priority score",
+      "file": "data/calibrated_score_code31_ssp126_rad6.tif",
+      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp126",
       "radius": 6,
       "action": 31,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code32_ssp126_rad6.tif",
-      "title": "T3: safeguard concentrated connectivity — ensemble agreement (%)",
+      "title": "T3.2: protect concentrated connectivity - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -202,24 +250,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_32",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code32_ssp126_rad6.tif",
-      "title": "T3: safeguard concentrated connectivity — mean normalised priority score",
+      "file": "data/calibrated_score_code32_ssp126_rad6.tif",
+      "title": "T3.2: protect concentrated connectivity - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp126",
       "radius": 6,
       "action": 32,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code33_ssp126_rad6.tif",
-      "title": "T3: support existing PA/OECM under climate vulnerability — ensemble agreement (%)",
+      "title": "T3.3: support existing PA/OECM under climate vulnerability - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -228,24 +280,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_33",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code33_ssp126_rad6.tif",
-      "title": "T3: support existing PA/OECM under climate vulnerability — mean normalised priority score",
+      "file": "data/calibrated_score_code33_ssp126_rad6.tif",
+      "title": "T3.3: support existing PA/OECM under climate vulnerability - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp126",
       "radius": 6,
       "action": 33,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code34_ssp126_rad6.tif",
-      "title": "T3: safeguard existing PA/OECM under land-use pressure — ensemble agreement (%)",
+      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -254,24 +310,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_34",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code34_ssp126_rad6.tif",
-      "title": "T3: safeguard existing PA/OECM under land-use pressure — mean normalised priority score",
+      "file": "data/calibrated_score_code34_ssp126_rad6.tif",
+      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp126",
       "radius": 6,
       "action": 34,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/connectivity_impeded_ssp126_rad6.tif",
-      "title": "Impeded connectivity — ensemble agreement (%)",
+      "title": "Impeded connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp126",
@@ -279,11 +339,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_diffuse_ssp126_rad6.tif",
-      "title": "Diffuse connectivity — ensemble agreement (%)",
+      "title": "Diffuse connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp126",
@@ -291,11 +352,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_channelized_ssp126_rad6.tif",
-      "title": "Channelized connectivity — ensemble agreement (%)",
+      "title": "Channelised connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp126",
@@ -303,11 +365,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_intensified_ssp126_rad6.tif",
-      "title": "Intensified connectivity — ensemble agreement (%)",
+      "title": "Intensified connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp126",
@@ -315,11 +378,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_concentrated_ssp126_rad6.tif",
-      "title": "Concentrated connectivity — ensemble agreement (%)",
+      "title": "Concentrated connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp126",
@@ -327,11 +391,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/t2_recovery_ssp126_rad6.tif",
-      "title": "Projected secondary-land recovery score (0–1)",
+      "title": "Projected secondary-land recovery score (0-1)",
       "kind": "continuous",
       "group": "target2",
       "ssp": "ssp126",
@@ -339,11 +404,12 @@
       "min": 0,
       "max": 1,
       "palette": "ylgn",
-      "metric": "recovery_score"
+      "metric": "recovery_score",
+      "units": "index"
     },
     {
       "file": "data/t2_alignment_ssp126_rad6.tif",
-      "title": "Restoration priority–recovery alignment",
+      "title": "Restoration priority-recovery alignment",
       "kind": "continuous",
       "group": "target2",
       "ssp": "ssp126",
@@ -351,7 +417,8 @@
       "min": 0,
       "max": 100,
       "palette": "ylgn",
-      "metric": "recovery_alignment"
+      "metric": "recovery_alignment",
+      "units": "index"
     },
     {
       "file": "data/t2_gap_ssp126_rad6.tif",
@@ -363,7 +430,8 @@
       "min": 0,
       "max": 100,
       "palette": "magma",
-      "metric": "restoration_gap"
+      "metric": "restoration_gap",
+      "units": "index"
     },
     {
       "file": "data/priority_ssp126_rad14.tif",
@@ -371,7 +439,8 @@
       "kind": "categorical",
       "group": "priority",
       "ssp": "ssp126",
-      "radius": 14
+      "radius": 14,
+      "metric": "modal_priority"
     },
     {
       "file": "data/modal_agreement_ssp126_rad14.tif",
@@ -383,11 +452,25 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "modal_agreement"
+      "metric": "modal_agreement",
+      "units": "percent"
+    },
+    {
+      "file": "data/winning_margin_ssp126_rad14.tif",
+      "title": "Mean calibrated winning margin",
+      "kind": "continuous",
+      "group": "priority_diagnostics",
+      "ssp": "ssp126",
+      "radius": 14,
+      "min": 0,
+      "max": 100,
+      "palette": "plasma",
+      "metric": "winning_margin",
+      "units": "percentile points"
     },
     {
       "file": "data/selection_code1_ssp126_rad14.tif",
-      "title": "T1: spatial planning under co-exposure — ensemble agreement (%)",
+      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -396,24 +479,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_1",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code1_ssp126_rad14.tif",
-      "title": "T1: spatial planning under co-exposure — mean normalised priority score",
+      "file": "data/calibrated_score_code1_ssp126_rad14.tif",
+      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp126",
       "radius": 14,
       "action": 1,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code21_ssp126_rad14.tif",
-      "title": "T2: ecosystem/connectivity restoration — ensemble agreement (%)",
+      "title": "T2: ecosystem/connectivity restoration - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -422,24 +509,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_21",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code21_ssp126_rad14.tif",
-      "title": "T2: ecosystem/connectivity restoration — mean normalised priority score",
+      "file": "data/calibrated_score_code21_ssp126_rad14.tif",
+      "title": "T2: ecosystem/connectivity restoration - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp126",
       "radius": 14,
       "action": 21,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code8_ssp126_rad14.tif",
-      "title": "T8: climate-adaptation conservation priority — ensemble agreement (%)",
+      "title": "T8: climate-adaptation conservation priority - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -448,24 +539,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_8",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code8_ssp126_rad14.tif",
-      "title": "T8: climate-adaptation conservation priority — mean normalised priority score",
+      "file": "data/calibrated_score_code8_ssp126_rad14.tif",
+      "title": "T8: climate-adaptation conservation priority - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp126",
       "radius": 14,
       "action": 8,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code10_ssp126_rad14.tif",
-      "title": "T10: biodiversity-sensitive production landscapes — ensemble agreement (%)",
+      "title": "T10: biodiversity-sensitive production landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -474,24 +569,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_10",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code10_ssp126_rad14.tif",
-      "title": "T10: biodiversity-sensitive production landscapes — mean normalised priority score",
+      "file": "data/calibrated_score_code10_ssp126_rad14.tif",
+      "title": "T10: biodiversity-sensitive production landscapes - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp126",
       "radius": 14,
       "action": 10,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code31_ssp126_rad14.tif",
-      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — ensemble agreement (%)",
+      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -500,24 +599,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_31",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code31_ssp126_rad14.tif",
-      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — mean normalised priority score",
+      "file": "data/calibrated_score_code31_ssp126_rad14.tif",
+      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp126",
       "radius": 14,
       "action": 31,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code32_ssp126_rad14.tif",
-      "title": "T3: safeguard concentrated connectivity — ensemble agreement (%)",
+      "title": "T3.2: protect concentrated connectivity - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -526,24 +629,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_32",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code32_ssp126_rad14.tif",
-      "title": "T3: safeguard concentrated connectivity — mean normalised priority score",
+      "file": "data/calibrated_score_code32_ssp126_rad14.tif",
+      "title": "T3.2: protect concentrated connectivity - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp126",
       "radius": 14,
       "action": 32,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code33_ssp126_rad14.tif",
-      "title": "T3: support existing PA/OECM under climate vulnerability — ensemble agreement (%)",
+      "title": "T3.3: support existing PA/OECM under climate vulnerability - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -552,24 +659,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_33",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code33_ssp126_rad14.tif",
-      "title": "T3: support existing PA/OECM under climate vulnerability — mean normalised priority score",
+      "file": "data/calibrated_score_code33_ssp126_rad14.tif",
+      "title": "T3.3: support existing PA/OECM under climate vulnerability - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp126",
       "radius": 14,
       "action": 33,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code34_ssp126_rad14.tif",
-      "title": "T3: safeguard existing PA/OECM under land-use pressure — ensemble agreement (%)",
+      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -578,24 +689,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_34",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code34_ssp126_rad14.tif",
-      "title": "T3: safeguard existing PA/OECM under land-use pressure — mean normalised priority score",
+      "file": "data/calibrated_score_code34_ssp126_rad14.tif",
+      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp126",
       "radius": 14,
       "action": 34,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/connectivity_impeded_ssp126_rad14.tif",
-      "title": "Impeded connectivity — ensemble agreement (%)",
+      "title": "Impeded connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp126",
@@ -603,11 +718,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_diffuse_ssp126_rad14.tif",
-      "title": "Diffuse connectivity — ensemble agreement (%)",
+      "title": "Diffuse connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp126",
@@ -615,11 +731,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_channelized_ssp126_rad14.tif",
-      "title": "Channelized connectivity — ensemble agreement (%)",
+      "title": "Channelised connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp126",
@@ -627,11 +744,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_intensified_ssp126_rad14.tif",
-      "title": "Intensified connectivity — ensemble agreement (%)",
+      "title": "Intensified connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp126",
@@ -639,11 +757,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_concentrated_ssp126_rad14.tif",
-      "title": "Concentrated connectivity — ensemble agreement (%)",
+      "title": "Concentrated connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp126",
@@ -651,11 +770,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/t2_recovery_ssp126_rad14.tif",
-      "title": "Projected secondary-land recovery score (0–1)",
+      "title": "Projected secondary-land recovery score (0-1)",
       "kind": "continuous",
       "group": "target2",
       "ssp": "ssp126",
@@ -663,11 +783,12 @@
       "min": 0,
       "max": 1,
       "palette": "ylgn",
-      "metric": "recovery_score"
+      "metric": "recovery_score",
+      "units": "index"
     },
     {
       "file": "data/t2_alignment_ssp126_rad14.tif",
-      "title": "Restoration priority–recovery alignment",
+      "title": "Restoration priority-recovery alignment",
       "kind": "continuous",
       "group": "target2",
       "ssp": "ssp126",
@@ -675,7 +796,8 @@
       "min": 0,
       "max": 100,
       "palette": "ylgn",
-      "metric": "recovery_alignment"
+      "metric": "recovery_alignment",
+      "units": "index"
     },
     {
       "file": "data/t2_gap_ssp126_rad14.tif",
@@ -687,7 +809,8 @@
       "min": 0,
       "max": 100,
       "palette": "magma",
-      "metric": "restoration_gap"
+      "metric": "restoration_gap",
+      "units": "index"
     },
     {
       "file": "data/priority_ssp126_rad20.tif",
@@ -695,7 +818,8 @@
       "kind": "categorical",
       "group": "priority",
       "ssp": "ssp126",
-      "radius": 20
+      "radius": 20,
+      "metric": "modal_priority"
     },
     {
       "file": "data/modal_agreement_ssp126_rad20.tif",
@@ -707,11 +831,25 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "modal_agreement"
+      "metric": "modal_agreement",
+      "units": "percent"
+    },
+    {
+      "file": "data/winning_margin_ssp126_rad20.tif",
+      "title": "Mean calibrated winning margin",
+      "kind": "continuous",
+      "group": "priority_diagnostics",
+      "ssp": "ssp126",
+      "radius": 20,
+      "min": 0,
+      "max": 100,
+      "palette": "plasma",
+      "metric": "winning_margin",
+      "units": "percentile points"
     },
     {
       "file": "data/selection_code1_ssp126_rad20.tif",
-      "title": "T1: spatial planning under co-exposure — ensemble agreement (%)",
+      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -720,24 +858,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_1",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code1_ssp126_rad20.tif",
-      "title": "T1: spatial planning under co-exposure — mean normalised priority score",
+      "file": "data/calibrated_score_code1_ssp126_rad20.tif",
+      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp126",
       "radius": 20,
       "action": 1,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code21_ssp126_rad20.tif",
-      "title": "T2: ecosystem/connectivity restoration — ensemble agreement (%)",
+      "title": "T2: ecosystem/connectivity restoration - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -746,24 +888,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_21",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code21_ssp126_rad20.tif",
-      "title": "T2: ecosystem/connectivity restoration — mean normalised priority score",
+      "file": "data/calibrated_score_code21_ssp126_rad20.tif",
+      "title": "T2: ecosystem/connectivity restoration - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp126",
       "radius": 20,
       "action": 21,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code8_ssp126_rad20.tif",
-      "title": "T8: climate-adaptation conservation priority — ensemble agreement (%)",
+      "title": "T8: climate-adaptation conservation priority - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -772,24 +918,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_8",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code8_ssp126_rad20.tif",
-      "title": "T8: climate-adaptation conservation priority — mean normalised priority score",
+      "file": "data/calibrated_score_code8_ssp126_rad20.tif",
+      "title": "T8: climate-adaptation conservation priority - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp126",
       "radius": 20,
       "action": 8,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code10_ssp126_rad20.tif",
-      "title": "T10: biodiversity-sensitive production landscapes — ensemble agreement (%)",
+      "title": "T10: biodiversity-sensitive production landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -798,24 +948,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_10",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code10_ssp126_rad20.tif",
-      "title": "T10: biodiversity-sensitive production landscapes — mean normalised priority score",
+      "file": "data/calibrated_score_code10_ssp126_rad20.tif",
+      "title": "T10: biodiversity-sensitive production landscapes - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp126",
       "radius": 20,
       "action": 10,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code31_ssp126_rad20.tif",
-      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — ensemble agreement (%)",
+      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -824,24 +978,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_31",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code31_ssp126_rad20.tif",
-      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — mean normalised priority score",
+      "file": "data/calibrated_score_code31_ssp126_rad20.tif",
+      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp126",
       "radius": 20,
       "action": 31,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code32_ssp126_rad20.tif",
-      "title": "T3: safeguard concentrated connectivity — ensemble agreement (%)",
+      "title": "T3.2: protect concentrated connectivity - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -850,24 +1008,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_32",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code32_ssp126_rad20.tif",
-      "title": "T3: safeguard concentrated connectivity — mean normalised priority score",
+      "file": "data/calibrated_score_code32_ssp126_rad20.tif",
+      "title": "T3.2: protect concentrated connectivity - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp126",
       "radius": 20,
       "action": 32,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code33_ssp126_rad20.tif",
-      "title": "T3: support existing PA/OECM under climate vulnerability — ensemble agreement (%)",
+      "title": "T3.3: support existing PA/OECM under climate vulnerability - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -876,24 +1038,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_33",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code33_ssp126_rad20.tif",
-      "title": "T3: support existing PA/OECM under climate vulnerability — mean normalised priority score",
+      "file": "data/calibrated_score_code33_ssp126_rad20.tif",
+      "title": "T3.3: support existing PA/OECM under climate vulnerability - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp126",
       "radius": 20,
       "action": 33,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code34_ssp126_rad20.tif",
-      "title": "T3: safeguard existing PA/OECM under land-use pressure — ensemble agreement (%)",
+      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -902,24 +1068,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_34",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code34_ssp126_rad20.tif",
-      "title": "T3: safeguard existing PA/OECM under land-use pressure — mean normalised priority score",
+      "file": "data/calibrated_score_code34_ssp126_rad20.tif",
+      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp126",
       "radius": 20,
       "action": 34,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/connectivity_impeded_ssp126_rad20.tif",
-      "title": "Impeded connectivity — ensemble agreement (%)",
+      "title": "Impeded connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp126",
@@ -927,11 +1097,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_diffuse_ssp126_rad20.tif",
-      "title": "Diffuse connectivity — ensemble agreement (%)",
+      "title": "Diffuse connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp126",
@@ -939,11 +1110,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_channelized_ssp126_rad20.tif",
-      "title": "Channelized connectivity — ensemble agreement (%)",
+      "title": "Channelised connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp126",
@@ -951,11 +1123,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_intensified_ssp126_rad20.tif",
-      "title": "Intensified connectivity — ensemble agreement (%)",
+      "title": "Intensified connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp126",
@@ -963,11 +1136,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_concentrated_ssp126_rad20.tif",
-      "title": "Concentrated connectivity — ensemble agreement (%)",
+      "title": "Concentrated connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp126",
@@ -975,11 +1149,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/t2_recovery_ssp126_rad20.tif",
-      "title": "Projected secondary-land recovery score (0–1)",
+      "title": "Projected secondary-land recovery score (0-1)",
       "kind": "continuous",
       "group": "target2",
       "ssp": "ssp126",
@@ -987,11 +1162,12 @@
       "min": 0,
       "max": 1,
       "palette": "ylgn",
-      "metric": "recovery_score"
+      "metric": "recovery_score",
+      "units": "index"
     },
     {
       "file": "data/t2_alignment_ssp126_rad20.tif",
-      "title": "Restoration priority–recovery alignment",
+      "title": "Restoration priority-recovery alignment",
       "kind": "continuous",
       "group": "target2",
       "ssp": "ssp126",
@@ -999,7 +1175,8 @@
       "min": 0,
       "max": 100,
       "palette": "ylgn",
-      "metric": "recovery_alignment"
+      "metric": "recovery_alignment",
+      "units": "index"
     },
     {
       "file": "data/t2_gap_ssp126_rad20.tif",
@@ -1011,7 +1188,8 @@
       "min": 0,
       "max": 100,
       "palette": "magma",
-      "metric": "restoration_gap"
+      "metric": "restoration_gap",
+      "units": "index"
     },
     {
       "file": "data/priority_ssp370_rad6.tif",
@@ -1019,7 +1197,8 @@
       "kind": "categorical",
       "group": "priority",
       "ssp": "ssp370",
-      "radius": 6
+      "radius": 6,
+      "metric": "modal_priority"
     },
     {
       "file": "data/modal_agreement_ssp370_rad6.tif",
@@ -1031,11 +1210,25 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "modal_agreement"
+      "metric": "modal_agreement",
+      "units": "percent"
+    },
+    {
+      "file": "data/winning_margin_ssp370_rad6.tif",
+      "title": "Mean calibrated winning margin",
+      "kind": "continuous",
+      "group": "priority_diagnostics",
+      "ssp": "ssp370",
+      "radius": 6,
+      "min": 0,
+      "max": 100,
+      "palette": "plasma",
+      "metric": "winning_margin",
+      "units": "percentile points"
     },
     {
       "file": "data/selection_code1_ssp370_rad6.tif",
-      "title": "T1: spatial planning under co-exposure — ensemble agreement (%)",
+      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -1044,24 +1237,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_1",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code1_ssp370_rad6.tif",
-      "title": "T1: spatial planning under co-exposure — mean normalised priority score",
+      "file": "data/calibrated_score_code1_ssp370_rad6.tif",
+      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp370",
       "radius": 6,
       "action": 1,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code21_ssp370_rad6.tif",
-      "title": "T2: ecosystem/connectivity restoration — ensemble agreement (%)",
+      "title": "T2: ecosystem/connectivity restoration - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -1070,24 +1267,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_21",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code21_ssp370_rad6.tif",
-      "title": "T2: ecosystem/connectivity restoration — mean normalised priority score",
+      "file": "data/calibrated_score_code21_ssp370_rad6.tif",
+      "title": "T2: ecosystem/connectivity restoration - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp370",
       "radius": 6,
       "action": 21,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code8_ssp370_rad6.tif",
-      "title": "T8: climate-adaptation conservation priority — ensemble agreement (%)",
+      "title": "T8: climate-adaptation conservation priority - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -1096,24 +1297,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_8",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code8_ssp370_rad6.tif",
-      "title": "T8: climate-adaptation conservation priority — mean normalised priority score",
+      "file": "data/calibrated_score_code8_ssp370_rad6.tif",
+      "title": "T8: climate-adaptation conservation priority - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp370",
       "radius": 6,
       "action": 8,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code10_ssp370_rad6.tif",
-      "title": "T10: biodiversity-sensitive production landscapes — ensemble agreement (%)",
+      "title": "T10: biodiversity-sensitive production landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -1122,24 +1327,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_10",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code10_ssp370_rad6.tif",
-      "title": "T10: biodiversity-sensitive production landscapes — mean normalised priority score",
+      "file": "data/calibrated_score_code10_ssp370_rad6.tif",
+      "title": "T10: biodiversity-sensitive production landscapes - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp370",
       "radius": 6,
       "action": 10,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code31_ssp370_rad6.tif",
-      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — ensemble agreement (%)",
+      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -1148,24 +1357,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_31",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code31_ssp370_rad6.tif",
-      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — mean normalised priority score",
+      "file": "data/calibrated_score_code31_ssp370_rad6.tif",
+      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp370",
       "radius": 6,
       "action": 31,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code32_ssp370_rad6.tif",
-      "title": "T3: safeguard concentrated connectivity — ensemble agreement (%)",
+      "title": "T3.2: protect concentrated connectivity - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -1174,24 +1387,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_32",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code32_ssp370_rad6.tif",
-      "title": "T3: safeguard concentrated connectivity — mean normalised priority score",
+      "file": "data/calibrated_score_code32_ssp370_rad6.tif",
+      "title": "T3.2: protect concentrated connectivity - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp370",
       "radius": 6,
       "action": 32,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code33_ssp370_rad6.tif",
-      "title": "T3: support existing PA/OECM under climate vulnerability — ensemble agreement (%)",
+      "title": "T3.3: support existing PA/OECM under climate vulnerability - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -1200,24 +1417,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_33",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code33_ssp370_rad6.tif",
-      "title": "T3: support existing PA/OECM under climate vulnerability — mean normalised priority score",
+      "file": "data/calibrated_score_code33_ssp370_rad6.tif",
+      "title": "T3.3: support existing PA/OECM under climate vulnerability - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp370",
       "radius": 6,
       "action": 33,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code34_ssp370_rad6.tif",
-      "title": "T3: safeguard existing PA/OECM under land-use pressure — ensemble agreement (%)",
+      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -1226,24 +1447,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_34",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code34_ssp370_rad6.tif",
-      "title": "T3: safeguard existing PA/OECM under land-use pressure — mean normalised priority score",
+      "file": "data/calibrated_score_code34_ssp370_rad6.tif",
+      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp370",
       "radius": 6,
       "action": 34,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/connectivity_impeded_ssp370_rad6.tif",
-      "title": "Impeded connectivity — ensemble agreement (%)",
+      "title": "Impeded connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp370",
@@ -1251,11 +1476,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_diffuse_ssp370_rad6.tif",
-      "title": "Diffuse connectivity — ensemble agreement (%)",
+      "title": "Diffuse connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp370",
@@ -1263,11 +1489,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_channelized_ssp370_rad6.tif",
-      "title": "Channelized connectivity — ensemble agreement (%)",
+      "title": "Channelised connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp370",
@@ -1275,11 +1502,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_intensified_ssp370_rad6.tif",
-      "title": "Intensified connectivity — ensemble agreement (%)",
+      "title": "Intensified connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp370",
@@ -1287,11 +1515,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_concentrated_ssp370_rad6.tif",
-      "title": "Concentrated connectivity — ensemble agreement (%)",
+      "title": "Concentrated connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp370",
@@ -1299,11 +1528,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/t2_recovery_ssp370_rad6.tif",
-      "title": "Projected secondary-land recovery score (0–1)",
+      "title": "Projected secondary-land recovery score (0-1)",
       "kind": "continuous",
       "group": "target2",
       "ssp": "ssp370",
@@ -1311,11 +1541,12 @@
       "min": 0,
       "max": 1,
       "palette": "ylgn",
-      "metric": "recovery_score"
+      "metric": "recovery_score",
+      "units": "index"
     },
     {
       "file": "data/t2_alignment_ssp370_rad6.tif",
-      "title": "Restoration priority–recovery alignment",
+      "title": "Restoration priority-recovery alignment",
       "kind": "continuous",
       "group": "target2",
       "ssp": "ssp370",
@@ -1323,7 +1554,8 @@
       "min": 0,
       "max": 100,
       "palette": "ylgn",
-      "metric": "recovery_alignment"
+      "metric": "recovery_alignment",
+      "units": "index"
     },
     {
       "file": "data/t2_gap_ssp370_rad6.tif",
@@ -1335,7 +1567,8 @@
       "min": 0,
       "max": 100,
       "palette": "magma",
-      "metric": "restoration_gap"
+      "metric": "restoration_gap",
+      "units": "index"
     },
     {
       "file": "data/priority_ssp370_rad14.tif",
@@ -1343,7 +1576,8 @@
       "kind": "categorical",
       "group": "priority",
       "ssp": "ssp370",
-      "radius": 14
+      "radius": 14,
+      "metric": "modal_priority"
     },
     {
       "file": "data/modal_agreement_ssp370_rad14.tif",
@@ -1355,11 +1589,25 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "modal_agreement"
+      "metric": "modal_agreement",
+      "units": "percent"
+    },
+    {
+      "file": "data/winning_margin_ssp370_rad14.tif",
+      "title": "Mean calibrated winning margin",
+      "kind": "continuous",
+      "group": "priority_diagnostics",
+      "ssp": "ssp370",
+      "radius": 14,
+      "min": 0,
+      "max": 100,
+      "palette": "plasma",
+      "metric": "winning_margin",
+      "units": "percentile points"
     },
     {
       "file": "data/selection_code1_ssp370_rad14.tif",
-      "title": "T1: spatial planning under co-exposure — ensemble agreement (%)",
+      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -1368,24 +1616,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_1",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code1_ssp370_rad14.tif",
-      "title": "T1: spatial planning under co-exposure — mean normalised priority score",
+      "file": "data/calibrated_score_code1_ssp370_rad14.tif",
+      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp370",
       "radius": 14,
       "action": 1,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code21_ssp370_rad14.tif",
-      "title": "T2: ecosystem/connectivity restoration — ensemble agreement (%)",
+      "title": "T2: ecosystem/connectivity restoration - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -1394,24 +1646,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_21",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code21_ssp370_rad14.tif",
-      "title": "T2: ecosystem/connectivity restoration — mean normalised priority score",
+      "file": "data/calibrated_score_code21_ssp370_rad14.tif",
+      "title": "T2: ecosystem/connectivity restoration - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp370",
       "radius": 14,
       "action": 21,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code8_ssp370_rad14.tif",
-      "title": "T8: climate-adaptation conservation priority — ensemble agreement (%)",
+      "title": "T8: climate-adaptation conservation priority - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -1420,24 +1676,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_8",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code8_ssp370_rad14.tif",
-      "title": "T8: climate-adaptation conservation priority — mean normalised priority score",
+      "file": "data/calibrated_score_code8_ssp370_rad14.tif",
+      "title": "T8: climate-adaptation conservation priority - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp370",
       "radius": 14,
       "action": 8,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code10_ssp370_rad14.tif",
-      "title": "T10: biodiversity-sensitive production landscapes — ensemble agreement (%)",
+      "title": "T10: biodiversity-sensitive production landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -1446,24 +1706,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_10",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code10_ssp370_rad14.tif",
-      "title": "T10: biodiversity-sensitive production landscapes — mean normalised priority score",
+      "file": "data/calibrated_score_code10_ssp370_rad14.tif",
+      "title": "T10: biodiversity-sensitive production landscapes - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp370",
       "radius": 14,
       "action": 10,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code31_ssp370_rad14.tif",
-      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — ensemble agreement (%)",
+      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -1472,24 +1736,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_31",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code31_ssp370_rad14.tif",
-      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — mean normalised priority score",
+      "file": "data/calibrated_score_code31_ssp370_rad14.tif",
+      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp370",
       "radius": 14,
       "action": 31,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code32_ssp370_rad14.tif",
-      "title": "T3: safeguard concentrated connectivity — ensemble agreement (%)",
+      "title": "T3.2: protect concentrated connectivity - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -1498,24 +1766,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_32",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code32_ssp370_rad14.tif",
-      "title": "T3: safeguard concentrated connectivity — mean normalised priority score",
+      "file": "data/calibrated_score_code32_ssp370_rad14.tif",
+      "title": "T3.2: protect concentrated connectivity - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp370",
       "radius": 14,
       "action": 32,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code33_ssp370_rad14.tif",
-      "title": "T3: support existing PA/OECM under climate vulnerability — ensemble agreement (%)",
+      "title": "T3.3: support existing PA/OECM under climate vulnerability - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -1524,24 +1796,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_33",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code33_ssp370_rad14.tif",
-      "title": "T3: support existing PA/OECM under climate vulnerability — mean normalised priority score",
+      "file": "data/calibrated_score_code33_ssp370_rad14.tif",
+      "title": "T3.3: support existing PA/OECM under climate vulnerability - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp370",
       "radius": 14,
       "action": 33,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code34_ssp370_rad14.tif",
-      "title": "T3: safeguard existing PA/OECM under land-use pressure — ensemble agreement (%)",
+      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -1550,24 +1826,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_34",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code34_ssp370_rad14.tif",
-      "title": "T3: safeguard existing PA/OECM under land-use pressure — mean normalised priority score",
+      "file": "data/calibrated_score_code34_ssp370_rad14.tif",
+      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp370",
       "radius": 14,
       "action": 34,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/connectivity_impeded_ssp370_rad14.tif",
-      "title": "Impeded connectivity — ensemble agreement (%)",
+      "title": "Impeded connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp370",
@@ -1575,11 +1855,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_diffuse_ssp370_rad14.tif",
-      "title": "Diffuse connectivity — ensemble agreement (%)",
+      "title": "Diffuse connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp370",
@@ -1587,11 +1868,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_channelized_ssp370_rad14.tif",
-      "title": "Channelized connectivity — ensemble agreement (%)",
+      "title": "Channelised connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp370",
@@ -1599,11 +1881,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_intensified_ssp370_rad14.tif",
-      "title": "Intensified connectivity — ensemble agreement (%)",
+      "title": "Intensified connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp370",
@@ -1611,11 +1894,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_concentrated_ssp370_rad14.tif",
-      "title": "Concentrated connectivity — ensemble agreement (%)",
+      "title": "Concentrated connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp370",
@@ -1623,11 +1907,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/t2_recovery_ssp370_rad14.tif",
-      "title": "Projected secondary-land recovery score (0–1)",
+      "title": "Projected secondary-land recovery score (0-1)",
       "kind": "continuous",
       "group": "target2",
       "ssp": "ssp370",
@@ -1635,11 +1920,12 @@
       "min": 0,
       "max": 1,
       "palette": "ylgn",
-      "metric": "recovery_score"
+      "metric": "recovery_score",
+      "units": "index"
     },
     {
       "file": "data/t2_alignment_ssp370_rad14.tif",
-      "title": "Restoration priority–recovery alignment",
+      "title": "Restoration priority-recovery alignment",
       "kind": "continuous",
       "group": "target2",
       "ssp": "ssp370",
@@ -1647,7 +1933,8 @@
       "min": 0,
       "max": 100,
       "palette": "ylgn",
-      "metric": "recovery_alignment"
+      "metric": "recovery_alignment",
+      "units": "index"
     },
     {
       "file": "data/t2_gap_ssp370_rad14.tif",
@@ -1659,7 +1946,8 @@
       "min": 0,
       "max": 100,
       "palette": "magma",
-      "metric": "restoration_gap"
+      "metric": "restoration_gap",
+      "units": "index"
     },
     {
       "file": "data/priority_ssp370_rad20.tif",
@@ -1667,7 +1955,8 @@
       "kind": "categorical",
       "group": "priority",
       "ssp": "ssp370",
-      "radius": 20
+      "radius": 20,
+      "metric": "modal_priority"
     },
     {
       "file": "data/modal_agreement_ssp370_rad20.tif",
@@ -1679,11 +1968,25 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "modal_agreement"
+      "metric": "modal_agreement",
+      "units": "percent"
+    },
+    {
+      "file": "data/winning_margin_ssp370_rad20.tif",
+      "title": "Mean calibrated winning margin",
+      "kind": "continuous",
+      "group": "priority_diagnostics",
+      "ssp": "ssp370",
+      "radius": 20,
+      "min": 0,
+      "max": 100,
+      "palette": "plasma",
+      "metric": "winning_margin",
+      "units": "percentile points"
     },
     {
       "file": "data/selection_code1_ssp370_rad20.tif",
-      "title": "T1: spatial planning under co-exposure — ensemble agreement (%)",
+      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -1692,24 +1995,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_1",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code1_ssp370_rad20.tif",
-      "title": "T1: spatial planning under co-exposure — mean normalised priority score",
+      "file": "data/calibrated_score_code1_ssp370_rad20.tif",
+      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp370",
       "radius": 20,
       "action": 1,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code21_ssp370_rad20.tif",
-      "title": "T2: ecosystem/connectivity restoration — ensemble agreement (%)",
+      "title": "T2: ecosystem/connectivity restoration - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -1718,24 +2025,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_21",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code21_ssp370_rad20.tif",
-      "title": "T2: ecosystem/connectivity restoration — mean normalised priority score",
+      "file": "data/calibrated_score_code21_ssp370_rad20.tif",
+      "title": "T2: ecosystem/connectivity restoration - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp370",
       "radius": 20,
       "action": 21,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code8_ssp370_rad20.tif",
-      "title": "T8: climate-adaptation conservation priority — ensemble agreement (%)",
+      "title": "T8: climate-adaptation conservation priority - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -1744,24 +2055,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_8",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code8_ssp370_rad20.tif",
-      "title": "T8: climate-adaptation conservation priority — mean normalised priority score",
+      "file": "data/calibrated_score_code8_ssp370_rad20.tif",
+      "title": "T8: climate-adaptation conservation priority - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp370",
       "radius": 20,
       "action": 8,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code10_ssp370_rad20.tif",
-      "title": "T10: biodiversity-sensitive production landscapes — ensemble agreement (%)",
+      "title": "T10: biodiversity-sensitive production landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -1770,24 +2085,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_10",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code10_ssp370_rad20.tif",
-      "title": "T10: biodiversity-sensitive production landscapes — mean normalised priority score",
+      "file": "data/calibrated_score_code10_ssp370_rad20.tif",
+      "title": "T10: biodiversity-sensitive production landscapes - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp370",
       "radius": 20,
       "action": 10,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code31_ssp370_rad20.tif",
-      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — ensemble agreement (%)",
+      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -1796,24 +2115,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_31",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code31_ssp370_rad20.tif",
-      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — mean normalised priority score",
+      "file": "data/calibrated_score_code31_ssp370_rad20.tif",
+      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp370",
       "radius": 20,
       "action": 31,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code32_ssp370_rad20.tif",
-      "title": "T3: safeguard concentrated connectivity — ensemble agreement (%)",
+      "title": "T3.2: protect concentrated connectivity - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -1822,24 +2145,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_32",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code32_ssp370_rad20.tif",
-      "title": "T3: safeguard concentrated connectivity — mean normalised priority score",
+      "file": "data/calibrated_score_code32_ssp370_rad20.tif",
+      "title": "T3.2: protect concentrated connectivity - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp370",
       "radius": 20,
       "action": 32,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code33_ssp370_rad20.tif",
-      "title": "T3: support existing PA/OECM under climate vulnerability — ensemble agreement (%)",
+      "title": "T3.3: support existing PA/OECM under climate vulnerability - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -1848,24 +2175,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_33",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code33_ssp370_rad20.tif",
-      "title": "T3: support existing PA/OECM under climate vulnerability — mean normalised priority score",
+      "file": "data/calibrated_score_code33_ssp370_rad20.tif",
+      "title": "T3.3: support existing PA/OECM under climate vulnerability - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp370",
       "radius": 20,
       "action": 33,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code34_ssp370_rad20.tif",
-      "title": "T3: safeguard existing PA/OECM under land-use pressure — ensemble agreement (%)",
+      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -1874,24 +2205,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_34",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code34_ssp370_rad20.tif",
-      "title": "T3: safeguard existing PA/OECM under land-use pressure — mean normalised priority score",
+      "file": "data/calibrated_score_code34_ssp370_rad20.tif",
+      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp370",
       "radius": 20,
       "action": 34,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/connectivity_impeded_ssp370_rad20.tif",
-      "title": "Impeded connectivity — ensemble agreement (%)",
+      "title": "Impeded connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp370",
@@ -1899,11 +2234,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_diffuse_ssp370_rad20.tif",
-      "title": "Diffuse connectivity — ensemble agreement (%)",
+      "title": "Diffuse connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp370",
@@ -1911,11 +2247,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_channelized_ssp370_rad20.tif",
-      "title": "Channelized connectivity — ensemble agreement (%)",
+      "title": "Channelised connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp370",
@@ -1923,11 +2260,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_intensified_ssp370_rad20.tif",
-      "title": "Intensified connectivity — ensemble agreement (%)",
+      "title": "Intensified connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp370",
@@ -1935,11 +2273,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_concentrated_ssp370_rad20.tif",
-      "title": "Concentrated connectivity — ensemble agreement (%)",
+      "title": "Concentrated connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp370",
@@ -1947,11 +2286,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/t2_recovery_ssp370_rad20.tif",
-      "title": "Projected secondary-land recovery score (0–1)",
+      "title": "Projected secondary-land recovery score (0-1)",
       "kind": "continuous",
       "group": "target2",
       "ssp": "ssp370",
@@ -1959,11 +2299,12 @@
       "min": 0,
       "max": 1,
       "palette": "ylgn",
-      "metric": "recovery_score"
+      "metric": "recovery_score",
+      "units": "index"
     },
     {
       "file": "data/t2_alignment_ssp370_rad20.tif",
-      "title": "Restoration priority–recovery alignment",
+      "title": "Restoration priority-recovery alignment",
       "kind": "continuous",
       "group": "target2",
       "ssp": "ssp370",
@@ -1971,7 +2312,8 @@
       "min": 0,
       "max": 100,
       "palette": "ylgn",
-      "metric": "recovery_alignment"
+      "metric": "recovery_alignment",
+      "units": "index"
     },
     {
       "file": "data/t2_gap_ssp370_rad20.tif",
@@ -1983,7 +2325,8 @@
       "min": 0,
       "max": 100,
       "palette": "magma",
-      "metric": "restoration_gap"
+      "metric": "restoration_gap",
+      "units": "index"
     },
     {
       "file": "data/priority_ssp585_rad6.tif",
@@ -1991,7 +2334,8 @@
       "kind": "categorical",
       "group": "priority",
       "ssp": "ssp585",
-      "radius": 6
+      "radius": 6,
+      "metric": "modal_priority"
     },
     {
       "file": "data/modal_agreement_ssp585_rad6.tif",
@@ -2003,11 +2347,25 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "modal_agreement"
+      "metric": "modal_agreement",
+      "units": "percent"
+    },
+    {
+      "file": "data/winning_margin_ssp585_rad6.tif",
+      "title": "Mean calibrated winning margin",
+      "kind": "continuous",
+      "group": "priority_diagnostics",
+      "ssp": "ssp585",
+      "radius": 6,
+      "min": 0,
+      "max": 100,
+      "palette": "plasma",
+      "metric": "winning_margin",
+      "units": "percentile points"
     },
     {
       "file": "data/selection_code1_ssp585_rad6.tif",
-      "title": "T1: spatial planning under co-exposure — ensemble agreement (%)",
+      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -2016,24 +2374,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_1",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code1_ssp585_rad6.tif",
-      "title": "T1: spatial planning under co-exposure — mean normalised priority score",
+      "file": "data/calibrated_score_code1_ssp585_rad6.tif",
+      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp585",
       "radius": 6,
       "action": 1,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code21_ssp585_rad6.tif",
-      "title": "T2: ecosystem/connectivity restoration — ensemble agreement (%)",
+      "title": "T2: ecosystem/connectivity restoration - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -2042,24 +2404,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_21",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code21_ssp585_rad6.tif",
-      "title": "T2: ecosystem/connectivity restoration — mean normalised priority score",
+      "file": "data/calibrated_score_code21_ssp585_rad6.tif",
+      "title": "T2: ecosystem/connectivity restoration - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp585",
       "radius": 6,
       "action": 21,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code8_ssp585_rad6.tif",
-      "title": "T8: climate-adaptation conservation priority — ensemble agreement (%)",
+      "title": "T8: climate-adaptation conservation priority - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -2068,24 +2434,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_8",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code8_ssp585_rad6.tif",
-      "title": "T8: climate-adaptation conservation priority — mean normalised priority score",
+      "file": "data/calibrated_score_code8_ssp585_rad6.tif",
+      "title": "T8: climate-adaptation conservation priority - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp585",
       "radius": 6,
       "action": 8,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code10_ssp585_rad6.tif",
-      "title": "T10: biodiversity-sensitive production landscapes — ensemble agreement (%)",
+      "title": "T10: biodiversity-sensitive production landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -2094,24 +2464,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_10",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code10_ssp585_rad6.tif",
-      "title": "T10: biodiversity-sensitive production landscapes — mean normalised priority score",
+      "file": "data/calibrated_score_code10_ssp585_rad6.tif",
+      "title": "T10: biodiversity-sensitive production landscapes - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp585",
       "radius": 6,
       "action": 10,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code31_ssp585_rad6.tif",
-      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — ensemble agreement (%)",
+      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -2120,24 +2494,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_31",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code31_ssp585_rad6.tif",
-      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — mean normalised priority score",
+      "file": "data/calibrated_score_code31_ssp585_rad6.tif",
+      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp585",
       "radius": 6,
       "action": 31,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code32_ssp585_rad6.tif",
-      "title": "T3: safeguard concentrated connectivity — ensemble agreement (%)",
+      "title": "T3.2: protect concentrated connectivity - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -2146,24 +2524,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_32",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code32_ssp585_rad6.tif",
-      "title": "T3: safeguard concentrated connectivity — mean normalised priority score",
+      "file": "data/calibrated_score_code32_ssp585_rad6.tif",
+      "title": "T3.2: protect concentrated connectivity - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp585",
       "radius": 6,
       "action": 32,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code33_ssp585_rad6.tif",
-      "title": "T3: support existing PA/OECM under climate vulnerability — ensemble agreement (%)",
+      "title": "T3.3: support existing PA/OECM under climate vulnerability - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -2172,24 +2554,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_33",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code33_ssp585_rad6.tif",
-      "title": "T3: support existing PA/OECM under climate vulnerability — mean normalised priority score",
+      "file": "data/calibrated_score_code33_ssp585_rad6.tif",
+      "title": "T3.3: support existing PA/OECM under climate vulnerability - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp585",
       "radius": 6,
       "action": 33,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code34_ssp585_rad6.tif",
-      "title": "T3: safeguard existing PA/OECM under land-use pressure — ensemble agreement (%)",
+      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -2198,24 +2584,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_34",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code34_ssp585_rad6.tif",
-      "title": "T3: safeguard existing PA/OECM under land-use pressure — mean normalised priority score",
+      "file": "data/calibrated_score_code34_ssp585_rad6.tif",
+      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp585",
       "radius": 6,
       "action": 34,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/connectivity_impeded_ssp585_rad6.tif",
-      "title": "Impeded connectivity — ensemble agreement (%)",
+      "title": "Impeded connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp585",
@@ -2223,11 +2613,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_diffuse_ssp585_rad6.tif",
-      "title": "Diffuse connectivity — ensemble agreement (%)",
+      "title": "Diffuse connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp585",
@@ -2235,11 +2626,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_channelized_ssp585_rad6.tif",
-      "title": "Channelized connectivity — ensemble agreement (%)",
+      "title": "Channelised connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp585",
@@ -2247,11 +2639,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_intensified_ssp585_rad6.tif",
-      "title": "Intensified connectivity — ensemble agreement (%)",
+      "title": "Intensified connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp585",
@@ -2259,11 +2652,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_concentrated_ssp585_rad6.tif",
-      "title": "Concentrated connectivity — ensemble agreement (%)",
+      "title": "Concentrated connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp585",
@@ -2271,11 +2665,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/t2_recovery_ssp585_rad6.tif",
-      "title": "Projected secondary-land recovery score (0–1)",
+      "title": "Projected secondary-land recovery score (0-1)",
       "kind": "continuous",
       "group": "target2",
       "ssp": "ssp585",
@@ -2283,11 +2678,12 @@
       "min": 0,
       "max": 1,
       "palette": "ylgn",
-      "metric": "recovery_score"
+      "metric": "recovery_score",
+      "units": "index"
     },
     {
       "file": "data/t2_alignment_ssp585_rad6.tif",
-      "title": "Restoration priority–recovery alignment",
+      "title": "Restoration priority-recovery alignment",
       "kind": "continuous",
       "group": "target2",
       "ssp": "ssp585",
@@ -2295,7 +2691,8 @@
       "min": 0,
       "max": 100,
       "palette": "ylgn",
-      "metric": "recovery_alignment"
+      "metric": "recovery_alignment",
+      "units": "index"
     },
     {
       "file": "data/t2_gap_ssp585_rad6.tif",
@@ -2307,7 +2704,8 @@
       "min": 0,
       "max": 100,
       "palette": "magma",
-      "metric": "restoration_gap"
+      "metric": "restoration_gap",
+      "units": "index"
     },
     {
       "file": "data/priority_ssp585_rad14.tif",
@@ -2315,7 +2713,8 @@
       "kind": "categorical",
       "group": "priority",
       "ssp": "ssp585",
-      "radius": 14
+      "radius": 14,
+      "metric": "modal_priority"
     },
     {
       "file": "data/modal_agreement_ssp585_rad14.tif",
@@ -2327,11 +2726,25 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "modal_agreement"
+      "metric": "modal_agreement",
+      "units": "percent"
+    },
+    {
+      "file": "data/winning_margin_ssp585_rad14.tif",
+      "title": "Mean calibrated winning margin",
+      "kind": "continuous",
+      "group": "priority_diagnostics",
+      "ssp": "ssp585",
+      "radius": 14,
+      "min": 0,
+      "max": 100,
+      "palette": "plasma",
+      "metric": "winning_margin",
+      "units": "percentile points"
     },
     {
       "file": "data/selection_code1_ssp585_rad14.tif",
-      "title": "T1: spatial planning under co-exposure — ensemble agreement (%)",
+      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -2340,24 +2753,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_1",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code1_ssp585_rad14.tif",
-      "title": "T1: spatial planning under co-exposure — mean normalised priority score",
+      "file": "data/calibrated_score_code1_ssp585_rad14.tif",
+      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp585",
       "radius": 14,
       "action": 1,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code21_ssp585_rad14.tif",
-      "title": "T2: ecosystem/connectivity restoration — ensemble agreement (%)",
+      "title": "T2: ecosystem/connectivity restoration - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -2366,24 +2783,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_21",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code21_ssp585_rad14.tif",
-      "title": "T2: ecosystem/connectivity restoration — mean normalised priority score",
+      "file": "data/calibrated_score_code21_ssp585_rad14.tif",
+      "title": "T2: ecosystem/connectivity restoration - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp585",
       "radius": 14,
       "action": 21,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code8_ssp585_rad14.tif",
-      "title": "T8: climate-adaptation conservation priority — ensemble agreement (%)",
+      "title": "T8: climate-adaptation conservation priority - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -2392,24 +2813,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_8",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code8_ssp585_rad14.tif",
-      "title": "T8: climate-adaptation conservation priority — mean normalised priority score",
+      "file": "data/calibrated_score_code8_ssp585_rad14.tif",
+      "title": "T8: climate-adaptation conservation priority - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp585",
       "radius": 14,
       "action": 8,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code10_ssp585_rad14.tif",
-      "title": "T10: biodiversity-sensitive production landscapes — ensemble agreement (%)",
+      "title": "T10: biodiversity-sensitive production landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -2418,24 +2843,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_10",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code10_ssp585_rad14.tif",
-      "title": "T10: biodiversity-sensitive production landscapes — mean normalised priority score",
+      "file": "data/calibrated_score_code10_ssp585_rad14.tif",
+      "title": "T10: biodiversity-sensitive production landscapes - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp585",
       "radius": 14,
       "action": 10,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code31_ssp585_rad14.tif",
-      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — ensemble agreement (%)",
+      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -2444,24 +2873,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_31",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code31_ssp585_rad14.tif",
-      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — mean normalised priority score",
+      "file": "data/calibrated_score_code31_ssp585_rad14.tif",
+      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp585",
       "radius": 14,
       "action": 31,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code32_ssp585_rad14.tif",
-      "title": "T3: safeguard concentrated connectivity — ensemble agreement (%)",
+      "title": "T3.2: protect concentrated connectivity - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -2470,24 +2903,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_32",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code32_ssp585_rad14.tif",
-      "title": "T3: safeguard concentrated connectivity — mean normalised priority score",
+      "file": "data/calibrated_score_code32_ssp585_rad14.tif",
+      "title": "T3.2: protect concentrated connectivity - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp585",
       "radius": 14,
       "action": 32,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code33_ssp585_rad14.tif",
-      "title": "T3: support existing PA/OECM under climate vulnerability — ensemble agreement (%)",
+      "title": "T3.3: support existing PA/OECM under climate vulnerability - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -2496,24 +2933,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_33",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code33_ssp585_rad14.tif",
-      "title": "T3: support existing PA/OECM under climate vulnerability — mean normalised priority score",
+      "file": "data/calibrated_score_code33_ssp585_rad14.tif",
+      "title": "T3.3: support existing PA/OECM under climate vulnerability - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp585",
       "radius": 14,
       "action": 33,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code34_ssp585_rad14.tif",
-      "title": "T3: safeguard existing PA/OECM under land-use pressure — ensemble agreement (%)",
+      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -2522,24 +2963,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_34",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code34_ssp585_rad14.tif",
-      "title": "T3: safeguard existing PA/OECM under land-use pressure — mean normalised priority score",
+      "file": "data/calibrated_score_code34_ssp585_rad14.tif",
+      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp585",
       "radius": 14,
       "action": 34,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/connectivity_impeded_ssp585_rad14.tif",
-      "title": "Impeded connectivity — ensemble agreement (%)",
+      "title": "Impeded connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp585",
@@ -2547,11 +2992,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_diffuse_ssp585_rad14.tif",
-      "title": "Diffuse connectivity — ensemble agreement (%)",
+      "title": "Diffuse connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp585",
@@ -2559,11 +3005,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_channelized_ssp585_rad14.tif",
-      "title": "Channelized connectivity — ensemble agreement (%)",
+      "title": "Channelised connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp585",
@@ -2571,11 +3018,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_intensified_ssp585_rad14.tif",
-      "title": "Intensified connectivity — ensemble agreement (%)",
+      "title": "Intensified connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp585",
@@ -2583,11 +3031,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_concentrated_ssp585_rad14.tif",
-      "title": "Concentrated connectivity — ensemble agreement (%)",
+      "title": "Concentrated connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp585",
@@ -2595,11 +3044,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/t2_recovery_ssp585_rad14.tif",
-      "title": "Projected secondary-land recovery score (0–1)",
+      "title": "Projected secondary-land recovery score (0-1)",
       "kind": "continuous",
       "group": "target2",
       "ssp": "ssp585",
@@ -2607,11 +3057,12 @@
       "min": 0,
       "max": 1,
       "palette": "ylgn",
-      "metric": "recovery_score"
+      "metric": "recovery_score",
+      "units": "index"
     },
     {
       "file": "data/t2_alignment_ssp585_rad14.tif",
-      "title": "Restoration priority–recovery alignment",
+      "title": "Restoration priority-recovery alignment",
       "kind": "continuous",
       "group": "target2",
       "ssp": "ssp585",
@@ -2619,7 +3070,8 @@
       "min": 0,
       "max": 100,
       "palette": "ylgn",
-      "metric": "recovery_alignment"
+      "metric": "recovery_alignment",
+      "units": "index"
     },
     {
       "file": "data/t2_gap_ssp585_rad14.tif",
@@ -2631,7 +3083,8 @@
       "min": 0,
       "max": 100,
       "palette": "magma",
-      "metric": "restoration_gap"
+      "metric": "restoration_gap",
+      "units": "index"
     },
     {
       "file": "data/priority_ssp585_rad20.tif",
@@ -2639,7 +3092,8 @@
       "kind": "categorical",
       "group": "priority",
       "ssp": "ssp585",
-      "radius": 20
+      "radius": 20,
+      "metric": "modal_priority"
     },
     {
       "file": "data/modal_agreement_ssp585_rad20.tif",
@@ -2651,11 +3105,25 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "modal_agreement"
+      "metric": "modal_agreement",
+      "units": "percent"
+    },
+    {
+      "file": "data/winning_margin_ssp585_rad20.tif",
+      "title": "Mean calibrated winning margin",
+      "kind": "continuous",
+      "group": "priority_diagnostics",
+      "ssp": "ssp585",
+      "radius": 20,
+      "min": 0,
+      "max": 100,
+      "palette": "plasma",
+      "metric": "winning_margin",
+      "units": "percentile points"
     },
     {
       "file": "data/selection_code1_ssp585_rad20.tif",
-      "title": "T1: spatial planning under co-exposure — ensemble agreement (%)",
+      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -2664,24 +3132,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_1",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code1_ssp585_rad20.tif",
-      "title": "T1: spatial planning under co-exposure — mean normalised priority score",
+      "file": "data/calibrated_score_code1_ssp585_rad20.tif",
+      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp585",
       "radius": 20,
       "action": 1,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code21_ssp585_rad20.tif",
-      "title": "T2: ecosystem/connectivity restoration — ensemble agreement (%)",
+      "title": "T2: ecosystem/connectivity restoration - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -2690,24 +3162,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_21",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code21_ssp585_rad20.tif",
-      "title": "T2: ecosystem/connectivity restoration — mean normalised priority score",
+      "file": "data/calibrated_score_code21_ssp585_rad20.tif",
+      "title": "T2: ecosystem/connectivity restoration - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp585",
       "radius": 20,
       "action": 21,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code8_ssp585_rad20.tif",
-      "title": "T8: climate-adaptation conservation priority — ensemble agreement (%)",
+      "title": "T8: climate-adaptation conservation priority - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -2716,24 +3192,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_8",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code8_ssp585_rad20.tif",
-      "title": "T8: climate-adaptation conservation priority — mean normalised priority score",
+      "file": "data/calibrated_score_code8_ssp585_rad20.tif",
+      "title": "T8: climate-adaptation conservation priority - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp585",
       "radius": 20,
       "action": 8,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code10_ssp585_rad20.tif",
-      "title": "T10: biodiversity-sensitive production landscapes — ensemble agreement (%)",
+      "title": "T10: biodiversity-sensitive production landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -2742,24 +3222,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_10",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code10_ssp585_rad20.tif",
-      "title": "T10: biodiversity-sensitive production landscapes — mean normalised priority score",
+      "file": "data/calibrated_score_code10_ssp585_rad20.tif",
+      "title": "T10: biodiversity-sensitive production landscapes - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp585",
       "radius": 20,
       "action": 10,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code31_ssp585_rad20.tif",
-      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — ensemble agreement (%)",
+      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -2768,24 +3252,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_31",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code31_ssp585_rad20.tif",
-      "title": "T3: maintain climate-persistent diffuse/permeable landscapes — mean normalised priority score",
+      "file": "data/calibrated_score_code31_ssp585_rad20.tif",
+      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp585",
       "radius": 20,
       "action": 31,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code32_ssp585_rad20.tif",
-      "title": "T3: safeguard concentrated connectivity — ensemble agreement (%)",
+      "title": "T3.2: protect concentrated connectivity - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -2794,24 +3282,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_32",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code32_ssp585_rad20.tif",
-      "title": "T3: safeguard concentrated connectivity — mean normalised priority score",
+      "file": "data/calibrated_score_code32_ssp585_rad20.tif",
+      "title": "T3.2: protect concentrated connectivity - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp585",
       "radius": 20,
       "action": 32,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code33_ssp585_rad20.tif",
-      "title": "T3: support existing PA/OECM under climate vulnerability — ensemble agreement (%)",
+      "title": "T3.3: support existing PA/OECM under climate vulnerability - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -2820,24 +3312,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_33",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code33_ssp585_rad20.tif",
-      "title": "T3: support existing PA/OECM under climate vulnerability — mean normalised priority score",
+      "file": "data/calibrated_score_code33_ssp585_rad20.tif",
+      "title": "T3.3: support existing PA/OECM under climate vulnerability - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp585",
       "radius": 20,
       "action": 33,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/selection_code34_ssp585_rad20.tif",
-      "title": "T3: safeguard existing PA/OECM under land-use pressure — ensemble agreement (%)",
+      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -2846,24 +3342,28 @@
       "min": 0,
       "max": 100,
       "palette": "action_34",
-      "metric": "ensemble_agreement"
+      "metric": "ensemble_agreement",
+      "units": "percent",
+      "interpretation": "Percentage of available ensemble members selecting this action."
     },
     {
-      "file": "data/score_code34_ssp585_rad20.tif",
-      "title": "T3: safeguard existing PA/OECM under land-use pressure — mean normalised priority score",
+      "file": "data/calibrated_score_code34_ssp585_rad20.tif",
+      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - mean calibrated score",
       "kind": "continuous",
-      "group": "target_scores",
+      "group": "calibrated_target_scores",
       "ssp": "ssp585",
       "radius": 20,
       "action": 34,
       "min": 0,
       "max": 100,
       "palette": "plasma",
-      "metric": "mean_priority_score"
+      "metric": "mean_calibrated_score",
+      "units": "empirical percentile",
+      "interpretation": "Mean member-level score after fixed positive-only pooled target-specific empirical calibration."
     },
     {
       "file": "data/connectivity_impeded_ssp585_rad20.tif",
-      "title": "Impeded connectivity — ensemble agreement (%)",
+      "title": "Impeded connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp585",
@@ -2871,11 +3371,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_diffuse_ssp585_rad20.tif",
-      "title": "Diffuse connectivity — ensemble agreement (%)",
+      "title": "Diffuse connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp585",
@@ -2883,11 +3384,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_channelized_ssp585_rad20.tif",
-      "title": "Channelized connectivity — ensemble agreement (%)",
+      "title": "Channelised connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp585",
@@ -2895,11 +3397,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_intensified_ssp585_rad20.tif",
-      "title": "Intensified connectivity — ensemble agreement (%)",
+      "title": "Intensified connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp585",
@@ -2907,11 +3410,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/connectivity_concentrated_ssp585_rad20.tif",
-      "title": "Concentrated connectivity — ensemble agreement (%)",
+      "title": "Concentrated connectivity - ensemble agreement (%)",
       "kind": "continuous",
       "group": "connectivity",
       "ssp": "ssp585",
@@ -2919,11 +3423,12 @@
       "min": 0,
       "max": 100,
       "palette": "agreement",
-      "metric": "connectivity_agreement"
+      "metric": "connectivity_agreement",
+      "units": "percent"
     },
     {
       "file": "data/t2_recovery_ssp585_rad20.tif",
-      "title": "Projected secondary-land recovery score (0–1)",
+      "title": "Projected secondary-land recovery score (0-1)",
       "kind": "continuous",
       "group": "target2",
       "ssp": "ssp585",
@@ -2931,11 +3436,12 @@
       "min": 0,
       "max": 1,
       "palette": "ylgn",
-      "metric": "recovery_score"
+      "metric": "recovery_score",
+      "units": "index"
     },
     {
       "file": "data/t2_alignment_ssp585_rad20.tif",
-      "title": "Restoration priority–recovery alignment",
+      "title": "Restoration priority-recovery alignment",
       "kind": "continuous",
       "group": "target2",
       "ssp": "ssp585",
@@ -2943,7 +3449,8 @@
       "min": 0,
       "max": 100,
       "palette": "ylgn",
-      "metric": "recovery_alignment"
+      "metric": "recovery_alignment",
+      "units": "index"
     },
     {
       "file": "data/t2_gap_ssp585_rad20.tif",
@@ -2955,7 +3462,8 @@
       "min": 0,
       "max": 100,
       "palette": "magma",
-      "metric": "restoration_gap"
+      "metric": "restoration_gap",
+      "units": "index"
     }
   ]
 }

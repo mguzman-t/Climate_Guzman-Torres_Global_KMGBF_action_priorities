@@ -1,9 +1,11 @@
 from pathlib import Path
 
-# Final analytical outputs produced by kmgbf_prioritisation_continuous_180.py
+# Final KM-GBF prioritisation outputs after fixed positive-only pooled
+# target-specific calibration. Raw ecological scores and non-winner
+# diagnostics are retained alongside the calibrated decision products.
 ANALYSIS_ROOT = Path(
     "/capacity/occr_davin/mguzman/P1/Connectivity/approach2/"
-    "kmgbf_memberwise_continuous_180"
+    "kmgbf_memberwise_t_calibration_positive_180"
 )
 
 # Expected ensemble size per SSP x radius:
@@ -63,7 +65,7 @@ ACTION_LABELS = {
         "No positive policy score",
 
     1:
-        "T1: spatial planning under co-exposure",
+        "T1: spatial planning under biodiversity and intact ecosystems loss",
 
     21:
         "T2: ecosystem/connectivity restoration",
@@ -75,21 +77,21 @@ ACTION_LABELS = {
         "T10: biodiversity-sensitive production landscapes",
 
     31:
-        "T3: maintain climate-persistent diffuse/permeable landscapes",
+        "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes",
 
     32:
-        "T3: safeguard concentrated connectivity",
+        "T3.2: protect concentrated connectivity",
 
     33:
-        "T3: support existing PA/OECM under climate vulnerability",
+        "T3.3: support existing PA/OECM under climate vulnerability",
 
     34:
-        "T3: safeguard existing PA/OECM under land-use pressure",
+        "T3.4: safeguard existing PA/OECM under land-use pressure",
 
     # In the modal map, 97 marks either exact score ties within members
     # or cells where two or more actions share the highest ensemble count.
     97:
-        "Unresolved tie",
+        "Tie",
 }
 
 

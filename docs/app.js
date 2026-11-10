@@ -6,7 +6,8 @@ const ENSEMBLE_SIZE = 180;
 const GROUP_LABELS = {
   priority: "Prioritised strategic actions",
   targets: "Strategic-action ensemble agreement",
-  target_scores: "Strategic-action priority strength",
+  calibrated_target_scores: "Calibrated strategic-action scores",
+  priority_diagnostics: "Priority diagnostics",
   connectivity: "Connectivity-class agreement",
   target2: "Restoration need and recovery"
 };
@@ -49,14 +50,79 @@ function isAgreementLayer(item) { return item.metric === "ensemble_agreement" ||
 function actionAgreementGradient(item) { if (item.action === undefined || item.metric !== "ensemble_agreement") return null; const color = catalog.colors[String(item.action)]; return color ? `linear-gradient(90deg,#FFFFFF 0%,${color} 100%)` : null; }
 
 function layerDescription(item) {
-  if (item.kind === "categorical") return "Strategic action selected most frequently across the available ensemble members in each grid cell.";
-  if (item.file.includes("selection_percent") || item.metric === "ensemble_agreement") return `Percentage of available ensemble members in which this strategic action was selected as the highest-priority action.`;
-  if (item.file.includes("modal_priority_agreement")) return `Percentage of available ensemble members supporting the modal strategic action in each grid cell.`;
-  if (item.group === "connectivity") return `Percentage of available connectivity members assigning the grid cell to this connectivity class.`;
-  if (item.file.includes("mean_normalized_score") || item.metric === "mean_priority_score") return "Mean within-action normalised priority score across available ensemble members. Higher values indicate stronger support for this strategic action.";
-  if (item.metric === "recovery_score") return "Mean normalised projected secondary-land recovery score across available ensemble members. Higher values indicate stronger projected secondary-land recovery relative to other grid cells.";
-  if (item.metric === "recovery_alignment") return "Higher values identify places where strong Target 2 restoration priority score coincides with relatively strong projected secondary-land recovery.";
-  if (item.metric === "restoration_gap") return "Higher values identify places with strong Target 2 restoration priority score but comparatively weak projected secondary-land recovery.";
+  if (item.kind === "categorical") {
+    return (
+      "Strategic action selected most frequently across the available " +
+      "ensemble members in each grid cell."
+    );
+  }
+
+  if (item.metric === "modal_agreement") {
+    return (
+      "Percentage of available ensemble members supporting the modal " +
+      "strategic action in each grid cell. Higher values indicate greater " +
+      "agreement about the most frequently selected action."
+    );
+  }
+
+  if (item.metric === "ensemble_agreement") {
+    return (
+      "Percentage of available ensemble members selecting this specific " +
+      "strategic action in each grid cell, whether or not it is the modal action."
+    );
+  }
+
+  if (item.metric === "mean_calibrated_score") {
+    return (
+      "Mean calibrated score across available ensemble members. For each " +
+      "strategic action, positive scores are expressed as empirical percentiles " +
+      "relative to all positive scores for that action across SSPs, connectivity " +
+      "radii and ensemble members. Higher values indicate relatively high " +
+      "scores for that action."
+    );
+  }
+
+
+  if (item.metric === "winning_margin") {
+    return (
+      "Mean difference between the highest and second-highest calibrated " +
+      "scores across available ensemble members. Higher values indicate a " +
+      "larger difference between the selected action and the next-ranked action."
+    );
+  }
+
+
+  if (item.metric === "connectivity_agreement") {
+    return (
+      "Percentage of available connectivity ensemble members assigning " +
+      "the grid cell to this connectivity class."
+    );
+  }
+
+  if (item.metric === "recovery_score") {
+    return (
+      "Mean projected secondary-land recovery score across available ensemble " +
+      "members. Values range from 0 to 1, with higher values indicating greater " +
+      "projected recovery of secondary land."
+    );
+  }
+
+  if (item.metric === "recovery_alignment") {
+    return (
+      "Indicates the spatial correspondence between Target 2 restoration " +
+      "priority and projected secondary-land recovery. Higher values occur " +
+      "where high restoration priority coincides with high projected recovery."
+    );
+  }
+
+  if (item.metric === "restoration_gap") {
+    return (
+      "Indicates where Target 2 restoration priority exceeds projected " +
+      "secondary-land recovery. Higher values occur where restoration priority " +
+      "is high but projected recovery is low."
+    );
+  }
+
   return "Continuous ensemble summary.";
 }
 
@@ -66,7 +132,7 @@ function updateLegend(item) {
   if (!item) { legend.innerHTML = ""; return; }
   let html = `<h3>${item.title}</h3><p class="legend-description">${layerDescription(item)}</p>`;
   if (item.kind === "categorical") {
-    Object.entries(catalog.classes).forEach(([code, label]) => { const color = catalog.colors[code]; if (color) html += `<div class="legend-row"><span class="swatch" style="background:${color}"></span><span><b>${code}</b> ${label}</span></div>`; });
+    Object.entries(catalog.classes).forEach(([code, label]) => { const color = catalog.colors[code]; if (color) html += `<div class="legend-row"><span class="swatch" style="background:${color}"></span><span> ${label}</span></div>`; });
   } else {
     const agreement = isAgreementLayer(item); const actionGradient = actionAgreementGradient(item); const palette = agreement ? "agreement" : String(item.palette || "plasma").toLowerCase(); const gradient = actionGradient || PALETTE_GRADIENTS[palette] || PALETTE_GRADIENTS.plasma; const labels = legendLabels(item); const zeroText = agreement ? "0% = no ensemble agreement" : "0 = no positive evidence";
     html += `<div class="continuous-legend"><div class="gradient-zero"><span class="zero-chip"></span><span>${zeroText}</span></div><div class="gradient-bar" style="background:${gradient}"></div><div class="gradient-labels">${labels.map(value => `<span>${value}</span>`).join("")}</div></div>`;

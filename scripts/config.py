@@ -1,12 +1,21 @@
+import os
 from pathlib import Path
 
+
 # Final KM-GBF prioritisation outputs after fixed positive-only pooled
-# target-specific calibration. Raw ecological scores and non-winner
-# diagnostics are retained alongside the calibrated decision products.
+# target-specific calibration.
+#
+# KMGBF_ANALYSIS_ROOT can be set externally when the analysis outputs are
+# stored elsewhere. The Ubelix path is retained as an example.
 ANALYSIS_ROOT = Path(
-    "/capacity/occr_davin/mguzman/P1/Connectivity/approach2/"
-    "kmgbf_memberwise_t_calibration_positive_180"
-)
+    os.environ.get(
+        "KMGBF_ANALYSIS_ROOT",
+        (
+            "/capacity/occr_davin/mguzman/P1/Connectivity/approach2/"
+            "kmgbf_memberwise_t_calibration_positive_180"
+        ),
+    )
+).expanduser().resolve()
 
 # Expected ensemble size per SSP x radius:
 # 2 connectivity taxa x 3 SDMs x 5 GCMs x 2 LUMs x 3 resistance curves

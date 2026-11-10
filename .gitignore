@@ -42,6 +42,9 @@ docs/data/
 # Local development web server
 webserver.log
 
+# Intermediate catalogue used to generate web PNG products
+docs/catalog.json
+
 # Python cache
 __pycache__/
 *.pyc

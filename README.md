@@ -99,10 +99,12 @@ GDAL is optional. If `gdal_translate` is available, intermediate web GeoTIFFs ar
 
 ## Data availability
 
+The processed PNG layers required for the interactive web viewer are included
+in this repository.
+
 The original analytical outputs underlying the KM-GBF prioritisation are not
-included in this repository because of their size. These outputs are available
-from the authors upon reasonable request. Processed layers required for the
-interactive web viewer are provided with the repository.
+included because of their size and are available from the authors upon
+reasonable request.
 
 ## Validate the analytical outputs
 

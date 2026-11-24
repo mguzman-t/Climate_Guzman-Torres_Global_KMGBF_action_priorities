@@ -105,35 +105,19 @@ ACTION_LABELS = {
 
 
 ACTION_COLORS = {
-    # No positive score
-    0:  "#D9D9D9",
+    0:  "#D9D9D9",  # No positive action
 
-    # T1 spatial planning
-    1:  "#D55E00",   # vermillion
+    1:  "#D55E00",  # T1  vermillion
+    21: "#009E73",  # T2  bluish green
+    8:  "#CC79A7",  # T8  reddish purple
+    10: "#E5C000",  # T10 golden yellow
 
-    # T2 restoration
-    21: "#009E73",   # bluish green
+    31: "#56B4E9",  # T3.1 sky blue
+    32: "#005AB5",  # T3.2 strong blue
+    33: "#6F4C9B",  # T3.3 violet
+    34: "#8C564B",  # T3.4 brown
 
-    # T8 climate adaptation
-    8:  "#CC79A7",   # reddish purple
-
-    # T10 production landscapes
-    10: "#E69F00",   # orange
-
-    # T31 diffuse/permeable conservation
-    31: "#56B4E9",   # sky blue
-
-    # T32 concentrated connectivity
-    32: "#0072B2",   # strong blue
-
-    # T33 existing PA/OECM + climate vulnerability
-    33: "#6A3D9A",   # dark purple
-
-    # T34 existing PA/OECM + land-use pressure
-    34: "#8C564B",   # brown
-
-    # Tie
-    97: "#202020",
+    97: "#202020",  # unresolved tie
 }
 
 

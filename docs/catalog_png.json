@@ -1,27 +1,27 @@
 {
   "classes": {
     "0": "No positive policy score",
-    "1": "T1: spatial planning under biodiversity and intact ecosystems loss",
-    "21": "T2: ecosystem/connectivity restoration",
-    "8": "T8: climate-adaptation conservation priority",
-    "10": "T10: biodiversity-sensitive production landscapes",
-    "31": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes",
-    "32": "T3.2: protect concentrated connectivity",
-    "33": "T3.3: support existing PA/OECM under climate vulnerability",
-    "34": "T3.4: safeguard existing PA/OECM under land-use pressure",
+    "1": "T1: Spatial planning in vulnerable landscapes",
+    "21": "T2: Restore vertebrates-relevant degraded landscapes",
+    "8": "T8: Promote climate-adaptation",
+    "10": "T10: Enhance sustainability in agricultural landscapes",
+    "31": "T3.1: Protect diverse, well-connected and climate-resilient landscapes",
+    "32": "T3.2: Protect landscapes important for connectivity",
+    "33": "T3.3: Support existing PA/OECM under climate vulnerability",
+    "34": "T3.4: Safeguard existing PA/OECM under land-use pressure",
     "97": "Tie"
   },
   "colors": {
-    "0": "#D9D9D9",
+    "0": "#B8B8B8",
     "1": "#D55E00",
     "21": "#009E73",
     "8": "#CC79A7",
-    "10": "#E69F00",
+    "10": "#E5C000",
     "31": "#56B4E9",
-    "32": "#0072B2",
-    "33": "#6A3D9A",
+    "32": "#006D77",
+    "33": "#6F4C9B",
     "34": "#8C564B",
-    "97": "#202020"
+    "97": "#4D4D4D"
   },
   "sspLabels": {
     "ssp126": "SSP1-2.6",
@@ -115,7 +115,7 @@
     },
     {
       "file": "data_png/selection_code1_ssp126_rad6.png",
-      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - ensemble selection (%)",
+      "title": "T1: Spatial planning in vulnerable landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -138,7 +138,7 @@
     },
     {
       "file": "data_png/calibrated_score_code1_ssp126_rad6.png",
-      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - mean calibrated score",
+      "title": "T1: Spatial planning in vulnerable landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp126",
@@ -161,7 +161,7 @@
     },
     {
       "file": "data_png/selection_code21_ssp126_rad6.png",
-      "title": "T2: ecosystem/connectivity restoration - ensemble selection (%)",
+      "title": "T2: Restore vertebrates-relevant degraded landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -184,7 +184,7 @@
     },
     {
       "file": "data_png/calibrated_score_code21_ssp126_rad6.png",
-      "title": "T2: ecosystem/connectivity restoration - mean calibrated score",
+      "title": "T2: Restore vertebrates-relevant degraded landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp126",
@@ -207,7 +207,7 @@
     },
     {
       "file": "data_png/selection_code8_ssp126_rad6.png",
-      "title": "T8: climate-adaptation conservation priority - ensemble selection (%)",
+      "title": "T8: Promote climate-adaptation - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -230,7 +230,7 @@
     },
     {
       "file": "data_png/calibrated_score_code8_ssp126_rad6.png",
-      "title": "T8: climate-adaptation conservation priority - mean calibrated score",
+      "title": "T8: Promote climate-adaptation - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp126",
@@ -253,7 +253,7 @@
     },
     {
       "file": "data_png/selection_code10_ssp126_rad6.png",
-      "title": "T10: biodiversity-sensitive production landscapes - ensemble selection (%)",
+      "title": "T10: Enhance sustainability in agricultural landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -276,7 +276,7 @@
     },
     {
       "file": "data_png/calibrated_score_code10_ssp126_rad6.png",
-      "title": "T10: biodiversity-sensitive production landscapes - mean calibrated score",
+      "title": "T10: Enhance sustainability in agricultural landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp126",
@@ -299,7 +299,7 @@
     },
     {
       "file": "data_png/selection_code31_ssp126_rad6.png",
-      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - ensemble selection (%)",
+      "title": "T3.1: Protect diverse, well-connected and climate-resilient landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -322,7 +322,7 @@
     },
     {
       "file": "data_png/calibrated_score_code31_ssp126_rad6.png",
-      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - mean calibrated score",
+      "title": "T3.1: Protect diverse, well-connected and climate-resilient landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp126",
@@ -345,7 +345,7 @@
     },
     {
       "file": "data_png/selection_code32_ssp126_rad6.png",
-      "title": "T3.2: protect concentrated connectivity - ensemble selection (%)",
+      "title": "T3.2: Protect landscapes important for connectivity - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -368,7 +368,7 @@
     },
     {
       "file": "data_png/calibrated_score_code32_ssp126_rad6.png",
-      "title": "T3.2: protect concentrated connectivity - mean calibrated score",
+      "title": "T3.2: Protect landscapes important for connectivity - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp126",
@@ -391,7 +391,7 @@
     },
     {
       "file": "data_png/selection_code33_ssp126_rad6.png",
-      "title": "T3.3: support existing PA/OECM under climate vulnerability - ensemble selection (%)",
+      "title": "T3.3: Support existing PA/OECM under climate vulnerability - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -414,7 +414,7 @@
     },
     {
       "file": "data_png/calibrated_score_code33_ssp126_rad6.png",
-      "title": "T3.3: support existing PA/OECM under climate vulnerability - mean calibrated score",
+      "title": "T3.3: Support existing PA/OECM under climate vulnerability - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp126",
@@ -437,7 +437,7 @@
     },
     {
       "file": "data_png/selection_code34_ssp126_rad6.png",
-      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - ensemble selection (%)",
+      "title": "T3.4: Safeguard existing PA/OECM under land-use pressure - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -460,7 +460,7 @@
     },
     {
       "file": "data_png/calibrated_score_code34_ssp126_rad6.png",
-      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - mean calibrated score",
+      "title": "T3.4: Safeguard existing PA/OECM under land-use pressure - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp126",
@@ -710,7 +710,7 @@
     },
     {
       "file": "data_png/selection_code1_ssp126_rad14.png",
-      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - ensemble selection (%)",
+      "title": "T1: Spatial planning in vulnerable landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -733,7 +733,7 @@
     },
     {
       "file": "data_png/calibrated_score_code1_ssp126_rad14.png",
-      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - mean calibrated score",
+      "title": "T1: Spatial planning in vulnerable landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp126",
@@ -756,7 +756,7 @@
     },
     {
       "file": "data_png/selection_code21_ssp126_rad14.png",
-      "title": "T2: ecosystem/connectivity restoration - ensemble selection (%)",
+      "title": "T2: Restore vertebrates-relevant degraded landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -779,7 +779,7 @@
     },
     {
       "file": "data_png/calibrated_score_code21_ssp126_rad14.png",
-      "title": "T2: ecosystem/connectivity restoration - mean calibrated score",
+      "title": "T2: Restore vertebrates-relevant degraded landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp126",
@@ -802,7 +802,7 @@
     },
     {
       "file": "data_png/selection_code8_ssp126_rad14.png",
-      "title": "T8: climate-adaptation conservation priority - ensemble selection (%)",
+      "title": "T8: Promote climate-adaptation - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -825,7 +825,7 @@
     },
     {
       "file": "data_png/calibrated_score_code8_ssp126_rad14.png",
-      "title": "T8: climate-adaptation conservation priority - mean calibrated score",
+      "title": "T8: Promote climate-adaptation - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp126",
@@ -848,7 +848,7 @@
     },
     {
       "file": "data_png/selection_code10_ssp126_rad14.png",
-      "title": "T10: biodiversity-sensitive production landscapes - ensemble selection (%)",
+      "title": "T10: Enhance sustainability in agricultural landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -871,7 +871,7 @@
     },
     {
       "file": "data_png/calibrated_score_code10_ssp126_rad14.png",
-      "title": "T10: biodiversity-sensitive production landscapes - mean calibrated score",
+      "title": "T10: Enhance sustainability in agricultural landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp126",
@@ -894,7 +894,7 @@
     },
     {
       "file": "data_png/selection_code31_ssp126_rad14.png",
-      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - ensemble selection (%)",
+      "title": "T3.1: Protect diverse, well-connected and climate-resilient landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -917,7 +917,7 @@
     },
     {
       "file": "data_png/calibrated_score_code31_ssp126_rad14.png",
-      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - mean calibrated score",
+      "title": "T3.1: Protect diverse, well-connected and climate-resilient landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp126",
@@ -940,7 +940,7 @@
     },
     {
       "file": "data_png/selection_code32_ssp126_rad14.png",
-      "title": "T3.2: protect concentrated connectivity - ensemble selection (%)",
+      "title": "T3.2: Protect landscapes important for connectivity - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -963,7 +963,7 @@
     },
     {
       "file": "data_png/calibrated_score_code32_ssp126_rad14.png",
-      "title": "T3.2: protect concentrated connectivity - mean calibrated score",
+      "title": "T3.2: Protect landscapes important for connectivity - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp126",
@@ -986,7 +986,7 @@
     },
     {
       "file": "data_png/selection_code33_ssp126_rad14.png",
-      "title": "T3.3: support existing PA/OECM under climate vulnerability - ensemble selection (%)",
+      "title": "T3.3: Support existing PA/OECM under climate vulnerability - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -1009,7 +1009,7 @@
     },
     {
       "file": "data_png/calibrated_score_code33_ssp126_rad14.png",
-      "title": "T3.3: support existing PA/OECM under climate vulnerability - mean calibrated score",
+      "title": "T3.3: Support existing PA/OECM under climate vulnerability - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp126",
@@ -1032,7 +1032,7 @@
     },
     {
       "file": "data_png/selection_code34_ssp126_rad14.png",
-      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - ensemble selection (%)",
+      "title": "T3.4: Safeguard existing PA/OECM under land-use pressure - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -1055,7 +1055,7 @@
     },
     {
       "file": "data_png/calibrated_score_code34_ssp126_rad14.png",
-      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - mean calibrated score",
+      "title": "T3.4: Safeguard existing PA/OECM under land-use pressure - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp126",
@@ -1305,7 +1305,7 @@
     },
     {
       "file": "data_png/selection_code1_ssp126_rad20.png",
-      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - ensemble selection (%)",
+      "title": "T1: Spatial planning in vulnerable landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -1328,7 +1328,7 @@
     },
     {
       "file": "data_png/calibrated_score_code1_ssp126_rad20.png",
-      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - mean calibrated score",
+      "title": "T1: Spatial planning in vulnerable landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp126",
@@ -1351,7 +1351,7 @@
     },
     {
       "file": "data_png/selection_code21_ssp126_rad20.png",
-      "title": "T2: ecosystem/connectivity restoration - ensemble selection (%)",
+      "title": "T2: Restore vertebrates-relevant degraded landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -1374,7 +1374,7 @@
     },
     {
       "file": "data_png/calibrated_score_code21_ssp126_rad20.png",
-      "title": "T2: ecosystem/connectivity restoration - mean calibrated score",
+      "title": "T2: Restore vertebrates-relevant degraded landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp126",
@@ -1397,7 +1397,7 @@
     },
     {
       "file": "data_png/selection_code8_ssp126_rad20.png",
-      "title": "T8: climate-adaptation conservation priority - ensemble selection (%)",
+      "title": "T8: Promote climate-adaptation - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -1420,7 +1420,7 @@
     },
     {
       "file": "data_png/calibrated_score_code8_ssp126_rad20.png",
-      "title": "T8: climate-adaptation conservation priority - mean calibrated score",
+      "title": "T8: Promote climate-adaptation - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp126",
@@ -1443,7 +1443,7 @@
     },
     {
       "file": "data_png/selection_code10_ssp126_rad20.png",
-      "title": "T10: biodiversity-sensitive production landscapes - ensemble selection (%)",
+      "title": "T10: Enhance sustainability in agricultural landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -1466,7 +1466,7 @@
     },
     {
       "file": "data_png/calibrated_score_code10_ssp126_rad20.png",
-      "title": "T10: biodiversity-sensitive production landscapes - mean calibrated score",
+      "title": "T10: Enhance sustainability in agricultural landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp126",
@@ -1489,7 +1489,7 @@
     },
     {
       "file": "data_png/selection_code31_ssp126_rad20.png",
-      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - ensemble selection (%)",
+      "title": "T3.1: Protect diverse, well-connected and climate-resilient landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -1512,7 +1512,7 @@
     },
     {
       "file": "data_png/calibrated_score_code31_ssp126_rad20.png",
-      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - mean calibrated score",
+      "title": "T3.1: Protect diverse, well-connected and climate-resilient landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp126",
@@ -1535,7 +1535,7 @@
     },
     {
       "file": "data_png/selection_code32_ssp126_rad20.png",
-      "title": "T3.2: protect concentrated connectivity - ensemble selection (%)",
+      "title": "T3.2: Protect landscapes important for connectivity - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -1558,7 +1558,7 @@
     },
     {
       "file": "data_png/calibrated_score_code32_ssp126_rad20.png",
-      "title": "T3.2: protect concentrated connectivity - mean calibrated score",
+      "title": "T3.2: Protect landscapes important for connectivity - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp126",
@@ -1581,7 +1581,7 @@
     },
     {
       "file": "data_png/selection_code33_ssp126_rad20.png",
-      "title": "T3.3: support existing PA/OECM under climate vulnerability - ensemble selection (%)",
+      "title": "T3.3: Support existing PA/OECM under climate vulnerability - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -1604,7 +1604,7 @@
     },
     {
       "file": "data_png/calibrated_score_code33_ssp126_rad20.png",
-      "title": "T3.3: support existing PA/OECM under climate vulnerability - mean calibrated score",
+      "title": "T3.3: Support existing PA/OECM under climate vulnerability - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp126",
@@ -1627,7 +1627,7 @@
     },
     {
       "file": "data_png/selection_code34_ssp126_rad20.png",
-      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - ensemble selection (%)",
+      "title": "T3.4: Safeguard existing PA/OECM under land-use pressure - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp126",
@@ -1650,7 +1650,7 @@
     },
     {
       "file": "data_png/calibrated_score_code34_ssp126_rad20.png",
-      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - mean calibrated score",
+      "title": "T3.4: Safeguard existing PA/OECM under land-use pressure - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp126",
@@ -1900,7 +1900,7 @@
     },
     {
       "file": "data_png/selection_code1_ssp370_rad6.png",
-      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - ensemble selection (%)",
+      "title": "T1: Spatial planning in vulnerable landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -1923,7 +1923,7 @@
     },
     {
       "file": "data_png/calibrated_score_code1_ssp370_rad6.png",
-      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - mean calibrated score",
+      "title": "T1: Spatial planning in vulnerable landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp370",
@@ -1946,7 +1946,7 @@
     },
     {
       "file": "data_png/selection_code21_ssp370_rad6.png",
-      "title": "T2: ecosystem/connectivity restoration - ensemble selection (%)",
+      "title": "T2: Restore vertebrates-relevant degraded landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -1969,7 +1969,7 @@
     },
     {
       "file": "data_png/calibrated_score_code21_ssp370_rad6.png",
-      "title": "T2: ecosystem/connectivity restoration - mean calibrated score",
+      "title": "T2: Restore vertebrates-relevant degraded landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp370",
@@ -1992,7 +1992,7 @@
     },
     {
       "file": "data_png/selection_code8_ssp370_rad6.png",
-      "title": "T8: climate-adaptation conservation priority - ensemble selection (%)",
+      "title": "T8: Promote climate-adaptation - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -2015,7 +2015,7 @@
     },
     {
       "file": "data_png/calibrated_score_code8_ssp370_rad6.png",
-      "title": "T8: climate-adaptation conservation priority - mean calibrated score",
+      "title": "T8: Promote climate-adaptation - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp370",
@@ -2038,7 +2038,7 @@
     },
     {
       "file": "data_png/selection_code10_ssp370_rad6.png",
-      "title": "T10: biodiversity-sensitive production landscapes - ensemble selection (%)",
+      "title": "T10: Enhance sustainability in agricultural landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -2061,7 +2061,7 @@
     },
     {
       "file": "data_png/calibrated_score_code10_ssp370_rad6.png",
-      "title": "T10: biodiversity-sensitive production landscapes - mean calibrated score",
+      "title": "T10: Enhance sustainability in agricultural landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp370",
@@ -2084,7 +2084,7 @@
     },
     {
       "file": "data_png/selection_code31_ssp370_rad6.png",
-      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - ensemble selection (%)",
+      "title": "T3.1: Protect diverse, well-connected and climate-resilient landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -2107,7 +2107,7 @@
     },
     {
       "file": "data_png/calibrated_score_code31_ssp370_rad6.png",
-      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - mean calibrated score",
+      "title": "T3.1: Protect diverse, well-connected and climate-resilient landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp370",
@@ -2130,7 +2130,7 @@
     },
     {
       "file": "data_png/selection_code32_ssp370_rad6.png",
-      "title": "T3.2: protect concentrated connectivity - ensemble selection (%)",
+      "title": "T3.2: Protect landscapes important for connectivity - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -2153,7 +2153,7 @@
     },
     {
       "file": "data_png/calibrated_score_code32_ssp370_rad6.png",
-      "title": "T3.2: protect concentrated connectivity - mean calibrated score",
+      "title": "T3.2: Protect landscapes important for connectivity - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp370",
@@ -2176,7 +2176,7 @@
     },
     {
       "file": "data_png/selection_code33_ssp370_rad6.png",
-      "title": "T3.3: support existing PA/OECM under climate vulnerability - ensemble selection (%)",
+      "title": "T3.3: Support existing PA/OECM under climate vulnerability - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -2199,7 +2199,7 @@
     },
     {
       "file": "data_png/calibrated_score_code33_ssp370_rad6.png",
-      "title": "T3.3: support existing PA/OECM under climate vulnerability - mean calibrated score",
+      "title": "T3.3: Support existing PA/OECM under climate vulnerability - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp370",
@@ -2222,7 +2222,7 @@
     },
     {
       "file": "data_png/selection_code34_ssp370_rad6.png",
-      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - ensemble selection (%)",
+      "title": "T3.4: Safeguard existing PA/OECM under land-use pressure - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -2245,7 +2245,7 @@
     },
     {
       "file": "data_png/calibrated_score_code34_ssp370_rad6.png",
-      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - mean calibrated score",
+      "title": "T3.4: Safeguard existing PA/OECM under land-use pressure - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp370",
@@ -2495,7 +2495,7 @@
     },
     {
       "file": "data_png/selection_code1_ssp370_rad14.png",
-      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - ensemble selection (%)",
+      "title": "T1: Spatial planning in vulnerable landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -2518,7 +2518,7 @@
     },
     {
       "file": "data_png/calibrated_score_code1_ssp370_rad14.png",
-      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - mean calibrated score",
+      "title": "T1: Spatial planning in vulnerable landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp370",
@@ -2541,7 +2541,7 @@
     },
     {
       "file": "data_png/selection_code21_ssp370_rad14.png",
-      "title": "T2: ecosystem/connectivity restoration - ensemble selection (%)",
+      "title": "T2: Restore vertebrates-relevant degraded landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -2564,7 +2564,7 @@
     },
     {
       "file": "data_png/calibrated_score_code21_ssp370_rad14.png",
-      "title": "T2: ecosystem/connectivity restoration - mean calibrated score",
+      "title": "T2: Restore vertebrates-relevant degraded landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp370",
@@ -2587,7 +2587,7 @@
     },
     {
       "file": "data_png/selection_code8_ssp370_rad14.png",
-      "title": "T8: climate-adaptation conservation priority - ensemble selection (%)",
+      "title": "T8: Promote climate-adaptation - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -2610,7 +2610,7 @@
     },
     {
       "file": "data_png/calibrated_score_code8_ssp370_rad14.png",
-      "title": "T8: climate-adaptation conservation priority - mean calibrated score",
+      "title": "T8: Promote climate-adaptation - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp370",
@@ -2633,7 +2633,7 @@
     },
     {
       "file": "data_png/selection_code10_ssp370_rad14.png",
-      "title": "T10: biodiversity-sensitive production landscapes - ensemble selection (%)",
+      "title": "T10: Enhance sustainability in agricultural landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -2656,7 +2656,7 @@
     },
     {
       "file": "data_png/calibrated_score_code10_ssp370_rad14.png",
-      "title": "T10: biodiversity-sensitive production landscapes - mean calibrated score",
+      "title": "T10: Enhance sustainability in agricultural landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp370",
@@ -2679,7 +2679,7 @@
     },
     {
       "file": "data_png/selection_code31_ssp370_rad14.png",
-      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - ensemble selection (%)",
+      "title": "T3.1: Protect diverse, well-connected and climate-resilient landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -2702,7 +2702,7 @@
     },
     {
       "file": "data_png/calibrated_score_code31_ssp370_rad14.png",
-      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - mean calibrated score",
+      "title": "T3.1: Protect diverse, well-connected and climate-resilient landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp370",
@@ -2725,7 +2725,7 @@
     },
     {
       "file": "data_png/selection_code32_ssp370_rad14.png",
-      "title": "T3.2: protect concentrated connectivity - ensemble selection (%)",
+      "title": "T3.2: Protect landscapes important for connectivity - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -2748,7 +2748,7 @@
     },
     {
       "file": "data_png/calibrated_score_code32_ssp370_rad14.png",
-      "title": "T3.2: protect concentrated connectivity - mean calibrated score",
+      "title": "T3.2: Protect landscapes important for connectivity - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp370",
@@ -2771,7 +2771,7 @@
     },
     {
       "file": "data_png/selection_code33_ssp370_rad14.png",
-      "title": "T3.3: support existing PA/OECM under climate vulnerability - ensemble selection (%)",
+      "title": "T3.3: Support existing PA/OECM under climate vulnerability - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -2794,7 +2794,7 @@
     },
     {
       "file": "data_png/calibrated_score_code33_ssp370_rad14.png",
-      "title": "T3.3: support existing PA/OECM under climate vulnerability - mean calibrated score",
+      "title": "T3.3: Support existing PA/OECM under climate vulnerability - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp370",
@@ -2817,7 +2817,7 @@
     },
     {
       "file": "data_png/selection_code34_ssp370_rad14.png",
-      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - ensemble selection (%)",
+      "title": "T3.4: Safeguard existing PA/OECM under land-use pressure - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -2840,7 +2840,7 @@
     },
     {
       "file": "data_png/calibrated_score_code34_ssp370_rad14.png",
-      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - mean calibrated score",
+      "title": "T3.4: Safeguard existing PA/OECM under land-use pressure - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp370",
@@ -3090,7 +3090,7 @@
     },
     {
       "file": "data_png/selection_code1_ssp370_rad20.png",
-      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - ensemble selection (%)",
+      "title": "T1: Spatial planning in vulnerable landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -3113,7 +3113,7 @@
     },
     {
       "file": "data_png/calibrated_score_code1_ssp370_rad20.png",
-      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - mean calibrated score",
+      "title": "T1: Spatial planning in vulnerable landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp370",
@@ -3136,7 +3136,7 @@
     },
     {
       "file": "data_png/selection_code21_ssp370_rad20.png",
-      "title": "T2: ecosystem/connectivity restoration - ensemble selection (%)",
+      "title": "T2: Restore vertebrates-relevant degraded landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -3159,7 +3159,7 @@
     },
     {
       "file": "data_png/calibrated_score_code21_ssp370_rad20.png",
-      "title": "T2: ecosystem/connectivity restoration - mean calibrated score",
+      "title": "T2: Restore vertebrates-relevant degraded landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp370",
@@ -3182,7 +3182,7 @@
     },
     {
       "file": "data_png/selection_code8_ssp370_rad20.png",
-      "title": "T8: climate-adaptation conservation priority - ensemble selection (%)",
+      "title": "T8: Promote climate-adaptation - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -3205,7 +3205,7 @@
     },
     {
       "file": "data_png/calibrated_score_code8_ssp370_rad20.png",
-      "title": "T8: climate-adaptation conservation priority - mean calibrated score",
+      "title": "T8: Promote climate-adaptation - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp370",
@@ -3228,7 +3228,7 @@
     },
     {
       "file": "data_png/selection_code10_ssp370_rad20.png",
-      "title": "T10: biodiversity-sensitive production landscapes - ensemble selection (%)",
+      "title": "T10: Enhance sustainability in agricultural landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -3251,7 +3251,7 @@
     },
     {
       "file": "data_png/calibrated_score_code10_ssp370_rad20.png",
-      "title": "T10: biodiversity-sensitive production landscapes - mean calibrated score",
+      "title": "T10: Enhance sustainability in agricultural landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp370",
@@ -3274,7 +3274,7 @@
     },
     {
       "file": "data_png/selection_code31_ssp370_rad20.png",
-      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - ensemble selection (%)",
+      "title": "T3.1: Protect diverse, well-connected and climate-resilient landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -3297,7 +3297,7 @@
     },
     {
       "file": "data_png/calibrated_score_code31_ssp370_rad20.png",
-      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - mean calibrated score",
+      "title": "T3.1: Protect diverse, well-connected and climate-resilient landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp370",
@@ -3320,7 +3320,7 @@
     },
     {
       "file": "data_png/selection_code32_ssp370_rad20.png",
-      "title": "T3.2: protect concentrated connectivity - ensemble selection (%)",
+      "title": "T3.2: Protect landscapes important for connectivity - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -3343,7 +3343,7 @@
     },
     {
       "file": "data_png/calibrated_score_code32_ssp370_rad20.png",
-      "title": "T3.2: protect concentrated connectivity - mean calibrated score",
+      "title": "T3.2: Protect landscapes important for connectivity - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp370",
@@ -3366,7 +3366,7 @@
     },
     {
       "file": "data_png/selection_code33_ssp370_rad20.png",
-      "title": "T3.3: support existing PA/OECM under climate vulnerability - ensemble selection (%)",
+      "title": "T3.3: Support existing PA/OECM under climate vulnerability - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -3389,7 +3389,7 @@
     },
     {
       "file": "data_png/calibrated_score_code33_ssp370_rad20.png",
-      "title": "T3.3: support existing PA/OECM under climate vulnerability - mean calibrated score",
+      "title": "T3.3: Support existing PA/OECM under climate vulnerability - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp370",
@@ -3412,7 +3412,7 @@
     },
     {
       "file": "data_png/selection_code34_ssp370_rad20.png",
-      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - ensemble selection (%)",
+      "title": "T3.4: Safeguard existing PA/OECM under land-use pressure - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp370",
@@ -3435,7 +3435,7 @@
     },
     {
       "file": "data_png/calibrated_score_code34_ssp370_rad20.png",
-      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - mean calibrated score",
+      "title": "T3.4: Safeguard existing PA/OECM under land-use pressure - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp370",
@@ -3685,7 +3685,7 @@
     },
     {
       "file": "data_png/selection_code1_ssp585_rad6.png",
-      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - ensemble selection (%)",
+      "title": "T1: Spatial planning in vulnerable landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -3708,7 +3708,7 @@
     },
     {
       "file": "data_png/calibrated_score_code1_ssp585_rad6.png",
-      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - mean calibrated score",
+      "title": "T1: Spatial planning in vulnerable landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp585",
@@ -3731,7 +3731,7 @@
     },
     {
       "file": "data_png/selection_code21_ssp585_rad6.png",
-      "title": "T2: ecosystem/connectivity restoration - ensemble selection (%)",
+      "title": "T2: Restore vertebrates-relevant degraded landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -3754,7 +3754,7 @@
     },
     {
       "file": "data_png/calibrated_score_code21_ssp585_rad6.png",
-      "title": "T2: ecosystem/connectivity restoration - mean calibrated score",
+      "title": "T2: Restore vertebrates-relevant degraded landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp585",
@@ -3777,7 +3777,7 @@
     },
     {
       "file": "data_png/selection_code8_ssp585_rad6.png",
-      "title": "T8: climate-adaptation conservation priority - ensemble selection (%)",
+      "title": "T8: Promote climate-adaptation - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -3800,7 +3800,7 @@
     },
     {
       "file": "data_png/calibrated_score_code8_ssp585_rad6.png",
-      "title": "T8: climate-adaptation conservation priority - mean calibrated score",
+      "title": "T8: Promote climate-adaptation - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp585",
@@ -3823,7 +3823,7 @@
     },
     {
       "file": "data_png/selection_code10_ssp585_rad6.png",
-      "title": "T10: biodiversity-sensitive production landscapes - ensemble selection (%)",
+      "title": "T10: Enhance sustainability in agricultural landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -3846,7 +3846,7 @@
     },
     {
       "file": "data_png/calibrated_score_code10_ssp585_rad6.png",
-      "title": "T10: biodiversity-sensitive production landscapes - mean calibrated score",
+      "title": "T10: Enhance sustainability in agricultural landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp585",
@@ -3869,7 +3869,7 @@
     },
     {
       "file": "data_png/selection_code31_ssp585_rad6.png",
-      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - ensemble selection (%)",
+      "title": "T3.1: Protect diverse, well-connected and climate-resilient landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -3892,7 +3892,7 @@
     },
     {
       "file": "data_png/calibrated_score_code31_ssp585_rad6.png",
-      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - mean calibrated score",
+      "title": "T3.1: Protect diverse, well-connected and climate-resilient landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp585",
@@ -3915,7 +3915,7 @@
     },
     {
       "file": "data_png/selection_code32_ssp585_rad6.png",
-      "title": "T3.2: protect concentrated connectivity - ensemble selection (%)",
+      "title": "T3.2: Protect landscapes important for connectivity - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -3938,7 +3938,7 @@
     },
     {
       "file": "data_png/calibrated_score_code32_ssp585_rad6.png",
-      "title": "T3.2: protect concentrated connectivity - mean calibrated score",
+      "title": "T3.2: Protect landscapes important for connectivity - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp585",
@@ -3961,7 +3961,7 @@
     },
     {
       "file": "data_png/selection_code33_ssp585_rad6.png",
-      "title": "T3.3: support existing PA/OECM under climate vulnerability - ensemble selection (%)",
+      "title": "T3.3: Support existing PA/OECM under climate vulnerability - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -3984,7 +3984,7 @@
     },
     {
       "file": "data_png/calibrated_score_code33_ssp585_rad6.png",
-      "title": "T3.3: support existing PA/OECM under climate vulnerability - mean calibrated score",
+      "title": "T3.3: Support existing PA/OECM under climate vulnerability - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp585",
@@ -4007,7 +4007,7 @@
     },
     {
       "file": "data_png/selection_code34_ssp585_rad6.png",
-      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - ensemble selection (%)",
+      "title": "T3.4: Safeguard existing PA/OECM under land-use pressure - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -4030,7 +4030,7 @@
     },
     {
       "file": "data_png/calibrated_score_code34_ssp585_rad6.png",
-      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - mean calibrated score",
+      "title": "T3.4: Safeguard existing PA/OECM under land-use pressure - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp585",
@@ -4280,7 +4280,7 @@
     },
     {
       "file": "data_png/selection_code1_ssp585_rad14.png",
-      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - ensemble selection (%)",
+      "title": "T1: Spatial planning in vulnerable landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -4303,7 +4303,7 @@
     },
     {
       "file": "data_png/calibrated_score_code1_ssp585_rad14.png",
-      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - mean calibrated score",
+      "title": "T1: Spatial planning in vulnerable landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp585",
@@ -4326,7 +4326,7 @@
     },
     {
       "file": "data_png/selection_code21_ssp585_rad14.png",
-      "title": "T2: ecosystem/connectivity restoration - ensemble selection (%)",
+      "title": "T2: Restore vertebrates-relevant degraded landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -4349,7 +4349,7 @@
     },
     {
       "file": "data_png/calibrated_score_code21_ssp585_rad14.png",
-      "title": "T2: ecosystem/connectivity restoration - mean calibrated score",
+      "title": "T2: Restore vertebrates-relevant degraded landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp585",
@@ -4372,7 +4372,7 @@
     },
     {
       "file": "data_png/selection_code8_ssp585_rad14.png",
-      "title": "T8: climate-adaptation conservation priority - ensemble selection (%)",
+      "title": "T8: Promote climate-adaptation - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -4395,7 +4395,7 @@
     },
     {
       "file": "data_png/calibrated_score_code8_ssp585_rad14.png",
-      "title": "T8: climate-adaptation conservation priority - mean calibrated score",
+      "title": "T8: Promote climate-adaptation - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp585",
@@ -4418,7 +4418,7 @@
     },
     {
       "file": "data_png/selection_code10_ssp585_rad14.png",
-      "title": "T10: biodiversity-sensitive production landscapes - ensemble selection (%)",
+      "title": "T10: Enhance sustainability in agricultural landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -4441,7 +4441,7 @@
     },
     {
       "file": "data_png/calibrated_score_code10_ssp585_rad14.png",
-      "title": "T10: biodiversity-sensitive production landscapes - mean calibrated score",
+      "title": "T10: Enhance sustainability in agricultural landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp585",
@@ -4464,7 +4464,7 @@
     },
     {
       "file": "data_png/selection_code31_ssp585_rad14.png",
-      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - ensemble selection (%)",
+      "title": "T3.1: Protect diverse, well-connected and climate-resilient landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -4487,7 +4487,7 @@
     },
     {
       "file": "data_png/calibrated_score_code31_ssp585_rad14.png",
-      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - mean calibrated score",
+      "title": "T3.1: Protect diverse, well-connected and climate-resilient landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp585",
@@ -4510,7 +4510,7 @@
     },
     {
       "file": "data_png/selection_code32_ssp585_rad14.png",
-      "title": "T3.2: protect concentrated connectivity - ensemble selection (%)",
+      "title": "T3.2: Protect landscapes important for connectivity - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -4533,7 +4533,7 @@
     },
     {
       "file": "data_png/calibrated_score_code32_ssp585_rad14.png",
-      "title": "T3.2: protect concentrated connectivity - mean calibrated score",
+      "title": "T3.2: Protect landscapes important for connectivity - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp585",
@@ -4556,7 +4556,7 @@
     },
     {
       "file": "data_png/selection_code33_ssp585_rad14.png",
-      "title": "T3.3: support existing PA/OECM under climate vulnerability - ensemble selection (%)",
+      "title": "T3.3: Support existing PA/OECM under climate vulnerability - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -4579,7 +4579,7 @@
     },
     {
       "file": "data_png/calibrated_score_code33_ssp585_rad14.png",
-      "title": "T3.3: support existing PA/OECM under climate vulnerability - mean calibrated score",
+      "title": "T3.3: Support existing PA/OECM under climate vulnerability - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp585",
@@ -4602,7 +4602,7 @@
     },
     {
       "file": "data_png/selection_code34_ssp585_rad14.png",
-      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - ensemble selection (%)",
+      "title": "T3.4: Safeguard existing PA/OECM under land-use pressure - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -4625,7 +4625,7 @@
     },
     {
       "file": "data_png/calibrated_score_code34_ssp585_rad14.png",
-      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - mean calibrated score",
+      "title": "T3.4: Safeguard existing PA/OECM under land-use pressure - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp585",
@@ -4875,7 +4875,7 @@
     },
     {
       "file": "data_png/selection_code1_ssp585_rad20.png",
-      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - ensemble selection (%)",
+      "title": "T1: Spatial planning in vulnerable landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -4898,7 +4898,7 @@
     },
     {
       "file": "data_png/calibrated_score_code1_ssp585_rad20.png",
-      "title": "T1: spatial planning under biodiversity and intact ecosystems loss - mean calibrated score",
+      "title": "T1: Spatial planning in vulnerable landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp585",
@@ -4921,7 +4921,7 @@
     },
     {
       "file": "data_png/selection_code21_ssp585_rad20.png",
-      "title": "T2: ecosystem/connectivity restoration - ensemble selection (%)",
+      "title": "T2: Restore vertebrates-relevant degraded landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -4944,7 +4944,7 @@
     },
     {
       "file": "data_png/calibrated_score_code21_ssp585_rad20.png",
-      "title": "T2: ecosystem/connectivity restoration - mean calibrated score",
+      "title": "T2: Restore vertebrates-relevant degraded landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp585",
@@ -4967,7 +4967,7 @@
     },
     {
       "file": "data_png/selection_code8_ssp585_rad20.png",
-      "title": "T8: climate-adaptation conservation priority - ensemble selection (%)",
+      "title": "T8: Promote climate-adaptation - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -4990,7 +4990,7 @@
     },
     {
       "file": "data_png/calibrated_score_code8_ssp585_rad20.png",
-      "title": "T8: climate-adaptation conservation priority - mean calibrated score",
+      "title": "T8: Promote climate-adaptation - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp585",
@@ -5013,7 +5013,7 @@
     },
     {
       "file": "data_png/selection_code10_ssp585_rad20.png",
-      "title": "T10: biodiversity-sensitive production landscapes - ensemble selection (%)",
+      "title": "T10: Enhance sustainability in agricultural landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -5036,7 +5036,7 @@
     },
     {
       "file": "data_png/calibrated_score_code10_ssp585_rad20.png",
-      "title": "T10: biodiversity-sensitive production landscapes - mean calibrated score",
+      "title": "T10: Enhance sustainability in agricultural landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp585",
@@ -5059,7 +5059,7 @@
     },
     {
       "file": "data_png/selection_code31_ssp585_rad20.png",
-      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - ensemble selection (%)",
+      "title": "T3.1: Protect diverse, well-connected and climate-resilient landscapes - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -5082,7 +5082,7 @@
     },
     {
       "file": "data_png/calibrated_score_code31_ssp585_rad20.png",
-      "title": "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes - mean calibrated score",
+      "title": "T3.1: Protect diverse, well-connected and climate-resilient landscapes - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp585",
@@ -5105,7 +5105,7 @@
     },
     {
       "file": "data_png/selection_code32_ssp585_rad20.png",
-      "title": "T3.2: protect concentrated connectivity - ensemble selection (%)",
+      "title": "T3.2: Protect landscapes important for connectivity - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -5128,7 +5128,7 @@
     },
     {
       "file": "data_png/calibrated_score_code32_ssp585_rad20.png",
-      "title": "T3.2: protect concentrated connectivity - mean calibrated score",
+      "title": "T3.2: Protect landscapes important for connectivity - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp585",
@@ -5151,7 +5151,7 @@
     },
     {
       "file": "data_png/selection_code33_ssp585_rad20.png",
-      "title": "T3.3: support existing PA/OECM under climate vulnerability - ensemble selection (%)",
+      "title": "T3.3: Support existing PA/OECM under climate vulnerability - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -5174,7 +5174,7 @@
     },
     {
       "file": "data_png/calibrated_score_code33_ssp585_rad20.png",
-      "title": "T3.3: support existing PA/OECM under climate vulnerability - mean calibrated score",
+      "title": "T3.3: Support existing PA/OECM under climate vulnerability - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp585",
@@ -5197,7 +5197,7 @@
     },
     {
       "file": "data_png/selection_code34_ssp585_rad20.png",
-      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - ensemble selection (%)",
+      "title": "T3.4: Safeguard existing PA/OECM under land-use pressure - ensemble selection (%)",
       "kind": "continuous",
       "group": "targets",
       "ssp": "ssp585",
@@ -5220,7 +5220,7 @@
     },
     {
       "file": "data_png/calibrated_score_code34_ssp585_rad20.png",
-      "title": "T3.4: safeguard existing PA/OECM under land-use pressure - mean calibrated score",
+      "title": "T3.4: Safeguard existing PA/OECM under land-use pressure - mean calibrated score",
       "kind": "continuous",
       "group": "calibrated_target_scores",
       "ssp": "ssp585",

@@ -74,28 +74,28 @@ ACTION_LABELS = {
         "No positive policy score",
 
     1:
-        "T1: spatial planning under biodiversity and intact ecosystems loss",
+        "T1: Spatial planning in vulnerable landscapes",
 
     21:
-        "T2: ecosystem/connectivity restoration",
+        "T2: Restore vertebrates-relevant degraded landscapes",
 
     8:
-        "T8: climate-adaptation conservation priority",
+        "T8: Promote climate-adaptation",
 
     10:
-        "T10: biodiversity-sensitive production landscapes",
+        "T10: Enhance sustainability in agricultural landscapes",
 
     31:
-        "T3.1: protect biodiversity-relevant and climate-persistent diffuse/permeable landscapes",
+        "T3.1: Protect diverse, well-connected and climate-resilient landscapes",
 
     32:
-        "T3.2: protect concentrated connectivity",
+        "T3.2: Protect landscapes important for connectivity",
 
     33:
-        "T3.3: support existing PA/OECM under climate vulnerability",
+        "T3.3: Support existing PA/OECM under climate vulnerability",
 
     34:
-        "T3.4: safeguard existing PA/OECM under land-use pressure",
+        "T3.4: Safeguard existing PA/OECM under land-use pressure",
 
     # In the modal map, 97 marks either exact score ties within members
     # or cells where two or more actions share the highest ensemble count.
@@ -105,19 +105,16 @@ ACTION_LABELS = {
 
 
 ACTION_COLORS = {
-    0:  "#D9D9D9",  # No positive action
-
-    1:  "#D55E00",  # T1  vermillion
-    21: "#009E73",  # T2  bluish green
-    8:  "#CC79A7",  # T8  reddish purple
-    10: "#E5C000",  # T10 golden yellow
-
-    31: "#56B4E9",  # T3.1 sky blue
-    32: "#005AB5",  # T3.2 strong blue
-    33: "#6F4C9B",  # T3.3 violet
-    34: "#8C564B",  # T3.4 brown
-
-    97: "#202020",  # unresolved tie
+    0: "#B8B8B8",
+    1: "#D55E00",
+    21: "#009E73",
+    8: "#CC79A7",
+    10: "#E5C000",
+    31: "#56B4E9",
+    32: "#006D77",
+    33: "#6F4C9B",
+    34: "#8C564B",
+    97: "#4D4D4D",
 }
 
 
